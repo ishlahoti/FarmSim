@@ -4,7 +4,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
@@ -12,7 +11,6 @@ import java.io.IOException;
  * TODO: can customize/initialize button here
  */
 public class WelcomeController {
-    static Stage primaryStage;
     @FXML
     private Button start;
 
@@ -24,9 +22,7 @@ public class WelcomeController {
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
         Parent root2 = FXMLLoader.load(getClass().getResource("Config.fxml"));
-        primaryStage = new Stage();
-        primaryStage.setScene(new Scene(root2, 800, 800));
-        primaryStage.show();
-        Main.primaryStage.close();
+        Main.primaryStage.setScene(new Scene(root2, 800, 800));
+        Main.primaryStage.show();
     }
 }
