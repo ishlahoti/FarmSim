@@ -34,7 +34,16 @@ public class ConfigController {
      */
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
-        Parent root3 = FXMLLoader.load(getClass().getResource("Ifarmui.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Ifarmui.fxml"));
+        if (loader == null) {
+            System.out.print("Yes");
+        }
+        else {
+            System.out.print(loader.getLocation());
+        }
+        Parent root3 = loader.load();
+        IfarmuiController ifarmui = loader.getController();
+        ifarmui.getDifficulty(difficulty.getValue());
         Main.primaryStage.setScene(new Scene(root3, 800, 800));
         Main.primaryStage.show();
     }
@@ -46,7 +55,6 @@ public class ConfigController {
     private void initialize() {
         difficulty.getItems().addAll("Easy", "Medium", "Hard");
         difficulty.setValue("Easy");
-
         startingSeed.getItems().addAll("Strawberry", "Raspberry", "Passion Fruit", "Grape");
         startingSeed.setValue("Strawberry");
 

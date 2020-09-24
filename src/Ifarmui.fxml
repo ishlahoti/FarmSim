@@ -8,10 +8,20 @@ open all layout components with <layout name> and after implementation close the
 TODO: add layout nodes. player enters name/selects starting season/seed/game difficulty
 -->
 <GridPane  fx:controller="IfarmuiController"
-           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="20" vgap="20">
     <children>
-    <Label text = "Welcome to your farm!">
+    <Label fx:id = "day">
+        <GridPane.rowIndex>1</GridPane.rowIndex>
+        <GridPane.columnIndex>0</GridPane.columnIndex>
             </Label>
+        <Label fx:id = "money" >
+            <GridPane.rowIndex>0</GridPane.rowIndex>
+            <GridPane.columnIndex>0</GridPane.columnIndex>
+        </Label>
+        <GridPane fx:id = "grid" >
+            <GridPane.rowIndex>5</GridPane.rowIndex>
+            <GridPane.columnIndex>0</GridPane.columnIndex>
+        </GridPane>
     </children>
 
 
