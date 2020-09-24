@@ -1,0 +1,20 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<!--
+This is where all the layout nodes for the initial configuration screen should be added (below children)
+open all layout components with <layout name> and after implementation close them with </layoutname>
+TODO: add layout nodes. player enters name/selects starting season/seed/game difficulty
+-->
+<GridPane  fx:controller="IfarmuiController"
+           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <children>
+    <Label text = "Welcome to your farm!">
+            </Label>
+    </children>
+
+
+
+
+</GridPane>
