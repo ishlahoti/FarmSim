@@ -27,6 +27,7 @@ public class ConfigController {
 
     @FXML
     private Label error;
+    private Game game = Game.factory();
 
     @FXML
     /**
@@ -37,15 +38,12 @@ public class ConfigController {
         // don't allow a blank name
         if (this.error == null) System.out.println("uh oh");
 
-    private Game game = Game.factory();
-
-
         if (name == null || name.getText() == null || name.getText().equals("")) {
             this.error.setText("Please enter a name");
             this.error.setTextFill(Color.web("#FF0000"));
             System.out.println("here");
         } else {
-            changeScreen();
+            changeScreen(event);
         }
     }
     /**
@@ -60,9 +58,8 @@ public class ConfigController {
         this.game.setDifficulty((String) this.difficulty.getValue());
         this.game.setSeed((String) this.startingSeed.getValue());
         this.game.setSeason((String) this.startingSeason.getValue());
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Ifarmui.fxml"));
-        Parent root3 = loader.load();
+        Parent root3 = (Parent) loader.load();
         Main.primaryStage.setScene(new Scene(root3, 800, 800));
         Main.primaryStage.show();
     }
