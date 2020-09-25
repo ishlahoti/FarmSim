@@ -1,67 +1,44 @@
-import javafx.event.ActionEvent;
+import java.net.URL;
+import java.util.ResourceBundle;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
-import java.io.IOException;
 
-/**
- * Controller class for Initial Farm User Interface
- * TODO: display starting money/farm plots/day based on what user selects in previous screen
- */
-public class IfarmuiController {
-
-    final int[] moneyval = {0};
-    final int[] dayval = {0};
-
+public class IfarmuiController implements Initializable {
     @FXML
     private Label day;
-
     @FXML
     private Label money;
-
     @FXML
     private GridPane grid;
+    private Game game = Game.factory();
+
+    public IfarmuiController() {
+    }
 
     @FXML
-    public void getDifficulty(String difficulty) {
+    private void difficultyLabel() {
+        String difficulty = this.game.getDifficulty();
         int mon = 0;
-        switch (difficulty) {
+        switch(difficulty) {
             case "Easy":
-                mon = 20;
+                    mon = 60;
                 break;
             case "Medium":
                 mon = 40;
                 break;
             case "Hard":
-                mon = 60;
+                mon = 20;
         }
-        moneyval[0] = moneyval[0] + mon;
-        money.setText("Money: $" + moneyval[0]);
-        updateDay();
-        plots();
+        this.game.setMoney(mon);
+        this.money.setText("Money: $" + mon);
     }
 
-
-        @FXML
-        private void updateDay() {
-            day.setText("Day " + (dayval[0] + 1));
-        }
-
-
-        @FXML
-        private void plots() {
-            grid.setGridLinesVisible(true);
-        }
-
-
-
-
-
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        this.day.setText("Day " + this.game.getDay());
+        this.difficultyLabel();
     }
+}
 
 

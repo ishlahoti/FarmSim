@@ -24,6 +24,7 @@ public class ConfigController {
     private ChoiceBox<String> startingSeed = new ChoiceBox<>();
     @FXML
     private ChoiceBox<String> startingSeason = new ChoiceBox<>();
+
     @FXML
     private Label error;
 
@@ -35,6 +36,9 @@ public class ConfigController {
     private void checkBlankName(ActionEvent event) throws IOException {
         // don't allow a blank name
         if (this.error == null) System.out.println("uh oh");
+
+    private Game game = Game.factory();
+
 
         if (name == null || name.getText() == null || name.getText().equals("")) {
             this.error.setText("Please enter a name");
@@ -49,11 +53,16 @@ public class ConfigController {
      * changes screen to ifarmui
      * does not need to be changed
      */
-    private void changeScreen() throws IOException {
+
+
+    @FXML
+    private void changeScreen(ActionEvent event) throws IOException {
+        this.game.setDifficulty((String) this.difficulty.getValue());
+        this.game.setSeed((String) this.startingSeed.getValue());
+        this.game.setSeason((String) this.startingSeason.getValue());
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Ifarmui.fxml"));
         Parent root3 = loader.load();
-        IfarmuiController ifarmui = loader.getController();
-        ifarmui.getDifficulty(difficulty.getValue());
         Main.primaryStage.setScene(new Scene(root3, 800, 800));
         Main.primaryStage.show();
     }
@@ -71,4 +80,5 @@ public class ConfigController {
         startingSeason.getItems().addAll("Spring", "Summer", "Fall", "Winter");
         startingSeason.setValue("Spring");
     }
+
 }
