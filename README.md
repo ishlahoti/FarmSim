@@ -1,2 +1,2 @@
 # CS2340
-Repo CS2340 milestones 2+
+Repo for CS2340 Group 68, milestones 2+
