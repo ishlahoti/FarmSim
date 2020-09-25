@@ -22,7 +22,10 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
         <GridPane.rowIndex>0</GridPane.rowIndex>
         <GridPane.columnIndex>1</GridPane.columnIndex>
     </TextField>
-
+    <Label fx:id="error" text = "">
+        <GridPane.rowIndex>0</GridPane.rowIndex>
+        <GridPane.columnIndex>2</GridPane.columnIndex>
+    </Label>
     <Label text = "Choose Difficulty:">
         <GridPane.rowIndex>1</GridPane.rowIndex>
         <GridPane.columnIndex>0</GridPane.columnIndex>
@@ -50,7 +53,7 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
         <GridPane.columnIndex>1</GridPane.columnIndex>
     </ChoiceBox>
 
-    <Button fx:id="submit" text = "Submit" onAction = "#changeScreen">
+    <Button fx:id="submit" text = "Submit" onAction = "#checkBlankName">
         <GridPane.rowIndex>4</GridPane.rowIndex>
         <GridPane.columnIndex>0</GridPane.columnIndex>
         <!--

@@ -5,15 +5,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.paint.Color;
+
 import java.io.IOException;
 
 
 /**
  * Controller class for Configuration Screen
- * TODO: handle implementation of layout nodes. initialize them similarly to how nextScreen button was initialized
- * below. variable names should match fxid. variables such as season/etc may need to be imported by ifarmui fxml-
- * will be used in next screen, should be accessible
  */
 public class ConfigController {
     @FXML
@@ -26,21 +26,33 @@ public class ConfigController {
     private ChoiceBox<String> startingSeed = new ChoiceBox<>();
     @FXML
     private ChoiceBox<String> startingSeason = new ChoiceBox<>();
+    @FXML
+    private Label error;
 
+    @FXML
+    /**
+     * Handles action event of clicking button. Checks if name
+     * is blank, if not then changes screen to ifarmui.
+     */
+    private void checkBlankName(ActionEvent event) throws IOException {
+        // don't allow a blank name
+        if (this.error == null) System.out.println("uh oh");
+
+        if (name == null || name.getText() == null || name.getText().equals("")) {
+            this.error.setText("Please enter a name");
+            this.error.setTextFill(Color.web("#FF0000"));
+            System.out.println("here");
+        } else {
+            changeScreen();
+        }
+    }
     /**
      * Handles action event of clicking button
      * changes screen to ifarmui
      * does not need to be changed
      */
-    @FXML
-    private void changeScreen(ActionEvent event) throws IOException {
+    private void changeScreen() throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Ifarmui.fxml"));
-        if (loader == null) {
-            System.out.print("Yes");
-        }
-        else {
-            System.out.print(loader.getLocation());
-        }
         Parent root3 = loader.load();
         IfarmuiController ifarmui = loader.getController();
         ifarmui.getDifficulty(difficulty.getValue());
@@ -60,29 +72,5 @@ public class ConfigController {
 
         startingSeason.getItems().addAll("Spring", "Summer", "Fall", "Winter");
         startingSeason.setValue("Spring");
-    }
-
-    /**
-     * Outputs the selected difficulty
-     * @return the String representing difficulty
-     */
-    public String getDifficulty() {
-        return difficulty.getValue();
-    }
-
-    /**
-     * Outputs the selected starting seed
-     * @return the String representing starting seed
-     */
-    public String getStartingSeed() {
-        return startingSeed.getValue();
-    }
-
-    /**
-     * Outputs the selected starting season
-     * @return the String representing starting season
-     */
-    public String getStartingSeason() {
-        return startingSeason.getValue();
     }
 }
