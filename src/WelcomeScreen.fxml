@@ -14,7 +14,7 @@ TODO: implement a welcome screen with a start button that takes you to initial c
 
 <BorderPane prefHeight="800" prefWidth="800" xmlns:fx="http://javafx.com/fxml" fx:controller="WelcomeController">
     <center>
-        <Label style="-fx-font-size: 32; -fx-text-fill: gold" text="WELCOME TO THE FARM"/>
+        <Label style="-fx-font-size: 32; -fx-text-fill: whitesmoke" text="WELCOME TO THE FARM"/>
     </center>
     <bottom>
         <Button fx:id="start"  text="Click to configure your farm!" mnemonicParsing="false" onAction="#changeScreen"/>
