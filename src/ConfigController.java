@@ -26,6 +26,7 @@ public class ConfigController {
     private ChoiceBox<String> startingSeed = new ChoiceBox<>();
     @FXML
     private ChoiceBox<String> startingSeason = new ChoiceBox<>();
+    private Game game = Game.factory();
 
     /**
      * Handles action event of clicking button
@@ -34,16 +35,11 @@ public class ConfigController {
      */
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
+        this.game.setDifficulty((String) this.difficulty.getValue());
+        this.game.setSeed((String) this.startingSeed.getValue());
+        this.game.setSeason((String) this.startingSeason.getValue());
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Ifarmui.fxml"));
-        if (loader == null) {
-            System.out.print("Yes");
-        }
-        else {
-            System.out.print(loader.getLocation());
-        }
         Parent root3 = loader.load();
-        IfarmuiController ifarmui = loader.getController();
-        ifarmui.getDifficulty(difficulty.getValue());
         Main.primaryStage.setScene(new Scene(root3, 800, 800));
         Main.primaryStage.show();
     }
@@ -60,29 +56,5 @@ public class ConfigController {
 
         startingSeason.getItems().addAll("Spring", "Summer", "Fall", "Winter");
         startingSeason.setValue("Spring");
-    }
-
-    /**
-     * Outputs the selected difficulty
-     * @return the String representing difficulty
-     */
-    public String getDifficulty() {
-        return difficulty.getValue();
-    }
-
-    /**
-     * Outputs the selected starting seed
-     * @return the String representing starting seed
-     */
-    public String getStartingSeed() {
-        return startingSeed.getValue();
-    }
-
-    /**
-     * Outputs the selected starting season
-     * @return the String representing starting season
-     */
-    public String getStartingSeason() {
-        return startingSeason.getValue();
     }
 }
