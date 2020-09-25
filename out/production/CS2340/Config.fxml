@@ -14,7 +14,6 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
 
 <children>
-<<<<<<< HEAD
     <Label text = "Enter name:">
         <GridPane.rowIndex>0</GridPane.rowIndex>
         <GridPane.columnIndex>0</GridPane.columnIndex>
@@ -57,11 +56,6 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
     <Button text = "Submit" onAction = "#checkBlankName">
         <GridPane.rowIndex>4</GridPane.rowIndex>
         <GridPane.columnIndex>0</GridPane.columnIndex>
-=======
-    <Label text = "This is the second screen">
-    </Label>
-    <Button fx:id="nextScreen" text = "SETBUTTONTEXTHERE" onAction = "#changeScreen">
->>>>>>> ankit
         <!--
     "nextScreen" will be name of button variable in controller, set text according to what we want to appear
     changeScreen is method in controller class that handles what happens when you click button
