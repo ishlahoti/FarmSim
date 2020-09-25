@@ -17,8 +17,6 @@ import java.io.IOException;
  */
 public class ConfigController {
     @FXML
-    private Button submit;
-    @FXML
     private TextField name;
     @FXML
     private ChoiceBox<String> difficulty = new ChoiceBox<>();
