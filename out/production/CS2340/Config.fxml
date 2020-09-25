@@ -13,10 +13,8 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
 
 <children>
     <Label text = "This is the second screen">
-        <GridPane.rowIndex>0</GridPane.rowIndex>
     </Label>
     <Button fx:id="nextScreen" text = "SETBUTTONTEXTHERE" onAction = "#changeScreen">
-        <GridPane.rowIndex>2</GridPane.rowIndex>
         <!--
     "nextScreen" will be name of button variable in controller, set text according to what we want to appear
     changeScreen is method in controller class that handles what happens when you click button
