@@ -36,13 +36,12 @@ public class ConfigController {
      */
     private void checkBlankName(ActionEvent event) throws IOException {
         // don't allow a blank name
-        if (this.error == null) System.out.println("uh oh");
-
-        if (name == null || name.getText() == null || name.getText().equals("")) {
+        if (name == null || name.getText() == null || name.getText().trim().equals("")) {
             this.error.setText("Please enter a name");
             this.error.setTextFill(Color.web("#FF0000"));
             System.out.println("here");
         } else {
+            name.setText(name.getText().trim());
             changeScreen(event);
         }
     }
