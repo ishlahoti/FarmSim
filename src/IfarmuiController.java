@@ -3,7 +3,8 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.*;
+
 
 public class IfarmuiController implements Initializable {
     @FXML
@@ -14,6 +15,8 @@ public class IfarmuiController implements Initializable {
     private Label name;
     @FXML
     private GridPane grid;
+    @FXML
+    private StackPane plot1;
     private Game game = Game.factory();
 
     public IfarmuiController() {
@@ -35,12 +38,15 @@ public class IfarmuiController implements Initializable {
         }
         this.game.setMoney(mon);
         this.money.setText("Money: $" + mon);
+
+
     }
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.day.setText("Day " + this.game.getDay());
         this.name.setText(this.game.getName() + "'s Farm");
         this.difficultyLabel();
+
     }
 }
 

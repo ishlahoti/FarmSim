@@ -7,4 +7,7 @@
     -fx-border-color: azure;
     -fx-max-width: 50;
 }
-
+.plotImage{
+    -fx-background-image: url('https://fossies.org/linux/three.js/examples/textures/terrain/grasslight-big.jpg');
+    -fx-background-size: 100% 100%;
+}
