@@ -11,6 +11,8 @@ public class IfarmuiController implements Initializable {
     @FXML
     private Label money;
     @FXML
+    private Label name;
+    @FXML
     private GridPane grid;
     private Game game = Game.factory();
 
@@ -37,6 +39,7 @@ public class IfarmuiController implements Initializable {
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.day.setText("Day " + this.game.getDay());
+        this.name.setText(this.game.getName() + "'s Farm");
         this.difficultyLabel();
     }
 }
