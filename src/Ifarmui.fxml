@@ -14,23 +14,23 @@ open all layout components with <layout name> and after implementation close the
 TODO: add layout nodes. player enters name/selects starting season/seed/game difficulty
 -->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
    <children>
-      <Label fx:id="money" layoutX="272.0" layoutY="359.0" text="Label" textFill="#017c34">
+      <Label fx:id="money" layoutX="372.0" layoutY="550.0" text="Label" textFill="lawngreen">
          <font>
             <Font name="Avenir Next Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="day" layoutX="50.0" layoutY="359.0" text="Label" textFill="#600097">
+      <Label fx:id="day" layoutX="150.0" layoutY="550.0" text="Label" textFill="cyan">
          <font>
             <Font name="Avenir Next Bold" size="24.0" />
          </font>
       </Label>
-       <Label fx:id="name" layoutX="50.0" layoutY="14.0" text="Label" textFill="darkgreen">
+       <Label fx:id="name" layoutX="150.0" layoutY="215.0" text="Label" textFill="ivory">
            <font>
                <Font name="Avenir Next Bold" size="24.0" />           </font>
        </Label>
-      <GridPane gridLinesVisible="true" layoutX="50.0" layoutY="59.0" prefHeight="300.0" prefWidth="500.0">
+      <GridPane gridLinesVisible="true" layoutX="150.0" layoutY="250.0" prefHeight="300.0" prefWidth="500.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="99.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="101.0" />

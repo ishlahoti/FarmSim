@@ -15,3 +15,7 @@
     -fx-background-image: url('https://img.freepik.com/free-vector/illustration-mountain-countryside-farm-barn-with-windmill_50699-621.jpg?size=626&ext=jpg');
     -fx-background-size: 100% 100%;
 }
+.farmBackgroundImage{
+    -fx-background-image: url('http://texturelib.com/Textures/soil/ground/soil_ground_0064_01_preview.jpg');
+    -fx-background-size: 100% 100%;
+}
