@@ -1,0 +1,21 @@
+.root{
+    -fx-background-image: url("https://cdn.pixabay.com/photo/2017/11/07/18/26/minecraft-2927742__340.jpg");
+    -fx-background-size: 100% 100%;
+    -fx-font-size: 20;
+    -fx-font-weight: bolder;
+    -fx-font-style: oblique;
+    -fx-border-color: azure;
+    -fx-max-width: 50;
+}
+.plotImage{
+    -fx-background-image: url('https://fossies.org/linux/three.js/examples/textures/terrain/grasslight-big.jpg');
+    -fx-background-size: 100% 100%;
+}
+.configImage{
+    -fx-background-image: url('https://img.freepik.com/free-vector/illustration-mountain-countryside-farm-barn-with-windmill_50699-621.jpg?size=626&ext=jpg');
+    -fx-background-size: 100% 100%;
+}
+.farmBackgroundImage{
+    -fx-background-image: url('http://texturelib.com/Textures/soil/ground/soil_ground_0064_01_preview.jpg');
+    -fx-background-size: 100% 100%;
+}
