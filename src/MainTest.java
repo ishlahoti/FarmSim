@@ -85,6 +85,7 @@ public class MainTest extends ApplicationTest {
         clickOn("#submit");
         GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
         TextField newName = (TextField) GuiTest.find("#name");
-        assertEquals("space before name", newName.getText());
+        assertEquals(" space before name", newName.getText());
     }
+
 }
