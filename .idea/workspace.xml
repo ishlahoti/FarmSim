@@ -1,100 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CS2340.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS2340.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/CS2340.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/CS2340.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/Config.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/Ifarmui.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/WelcomeScreen.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/CS2340.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/Config.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/Ifarmui.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/out/production/CS2340/WelcomeScreen.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/out/production/CS2340/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS2340/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS2340/Config.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/Config.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS2340/WelcomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/WelcomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS2340/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/CS2340.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/Config.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/ConfigController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/Ifarmui.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/IfarmuiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/WelcomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/WelcomeScreen.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/src.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/CS2340.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/Config.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/Ifarmui.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/out/production/CS2340/WelcomeScreen.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/src/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Config.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Config.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfigController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ifarmui.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IfarmuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IfarmuiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WelcomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WelcomeScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601230592297</updated>
       <workItem from="1601230593455" duration="2151000" />
-      <workItem from="1601233025525" duration="3654000" />
+      <workItem from="1601233025525" duration="4152000" />
     </task>
     <servers />
   </component>
@@ -201,25 +108,29 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1855" height="266" key="GridCell.Tab.0.bottom" timestamp="1601235772249">
+    <state width="1855" height="266" key="GridCell.Tab.0.bottom" timestamp="1601236894277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601235772249" />
-    <state width="1855" height="266" key="GridCell.Tab.0.center" timestamp="1601235772249">
+    <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
+    <state width="1855" height="266" key="GridCell.Tab.0.center" timestamp="1601236894277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601235772249" />
-    <state width="1855" height="266" key="GridCell.Tab.0.left" timestamp="1601235772249">
+    <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
+    <state width="1855" height="266" key="GridCell.Tab.0.left" timestamp="1601236894277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601235772249" />
-    <state width="1855" height="266" key="GridCell.Tab.0.right" timestamp="1601235772249">
+    <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
+    <state width="1855" height="266" key="GridCell.Tab.0.right" timestamp="1601236894277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601235772249" />
+    <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state x="437" y="95" key="SettingsEditor" timestamp="1601233122811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="437" y="95" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601233122811" />
+    <state x="549" y="254" key="Vcs.Push.Dialog.v2" timestamp="1601237096684">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="549" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601237096684" />
   </component>
 </project>
