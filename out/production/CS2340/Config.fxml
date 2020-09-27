@@ -17,7 +17,7 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
 -->
 
 
-<AnchorPane prefHeight="800.0" prefWidth="800.0" styleClass="configImage" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConfigController">
+<AnchorPane prefHeight="800.0" prefWidth="800.0" styleClass="configImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/" fx:controller="ConfigController">
    <children>
       <GridPane alignment="center" hgap="10" layoutX="14.0" layoutY="14.0" vgap="10">
       
