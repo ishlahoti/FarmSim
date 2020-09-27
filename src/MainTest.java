@@ -80,9 +80,19 @@ public class MainTest extends ApplicationTest {
     }
 
     @Test
-    public void testNameTrim() {
+    public void testNameTrimStart() {
         TextField name = (TextField) GuiTest.find("#name");
         name.setText(" space before name");
+        clickOn("#submit");
+        GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
+        TextField newName = (TextField) GuiTest.find("#name");
+        assertEquals("space before name", newName.getText());
+    }
+
+    @Test
+    public void testNameTrimEnd() {
+        TextField name = (TextField) GuiTest.find("#name");
+        name.setText("space before name ");
         clickOn("#submit");
         GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
         TextField newName = (TextField) GuiTest.find("#name");
@@ -108,6 +118,19 @@ public class MainTest extends ApplicationTest {
         ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
         assertEquals("Strawberry", newStartingSeed.getValue());
     }
+
+    @Test
+    public void testDefaultStartingSeasonSpring() {
+        ChoiceBox<String> startingSeason = (ChoiceBox<String>) GuiTest.find("#startingSeason");
+
+        startingSeason.setValue("Spring");
+        clickOn("#submit");
+
+        GuiTest.waitUntil("#startingSeason", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeason");
+        assertEquals("Spring", newStartingSeed.getValue());
+    }
+
 
 
 }
