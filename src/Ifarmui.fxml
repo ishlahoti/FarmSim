@@ -16,17 +16,17 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
    <children>
-      <Label fx:id="money" layoutX="150.0" layoutY="585.0" text="Label" textFill="lawngreen">
+      <Label fx:id="money" layoutX="14.0" layoutY="751.0" text="Label" textFill="lawngreen">
          <font>
             <Font name="Avenir Next Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="day" layoutX="150.0" layoutY="550.0" text="Label" textFill="cyan">
+      <Label fx:id="day" layoutX="14.0" layoutY="49.0" text="Label" textFill="cyan">
          <font>
             <Font name="Avenir Next Bold" size="24.0" />
          </font>
       </Label>
-       <Label fx:id="name" layoutX="150.0" layoutY="215.0" text="Label" textFill="ivory">
+       <Label fx:id="name" layoutX="14.0" layoutY="14.0" text="Label" textFill="ivory">
            <font>
                <Font name="Avenir Next Bold" size="24.0" />           </font>
        </Label>
