@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="" />
+    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2340/Config.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/Config.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i6aejDqLfPzbWK1N9RgR0BJbKK" />
@@ -47,6 +74,7 @@
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainTest.testDefaultStartingSeasonSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -102,28 +130,63 @@
       <workItem from="1601230593455" duration="2151000" />
       <workItem from="1601233025525" duration="4152000" />
     </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
+      <created>1601241342840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601241342840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1855" height="266" key="GridCell.Tab.0.bottom" timestamp="1601236894277">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1243" height="210" key="GridCell.Tab.0.bottom" timestamp="1601241544230">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1855" height="266" key="GridCell.Tab.0.center" timestamp="1601236894277">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1601241544230" />
+    <state width="1243" height="210" key="GridCell.Tab.0.center" timestamp="1601241544229">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1855" height="266" key="GridCell.Tab.0.left" timestamp="1601236894277">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
+    <state width="1243" height="210" key="GridCell.Tab.0.left" timestamp="1601241544228">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1855" height="266" key="GridCell.Tab.0.right" timestamp="1601236894277">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1601241544228" />
+    <state width="1243" height="210" key="GridCell.Tab.0.right" timestamp="1601241544229">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
+    <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
+    <state x="117" y="93" key="MergeDialog" timestamp="1601241460569">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="117" y="93" key="MergeDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241460569" />
+    <state x="333" y="198" key="MultipleFileMergeDialog" timestamp="1601241330024">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="333" y="198" key="MultipleFileMergeDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241330024" />
     <state x="437" y="95" key="SettingsEditor" timestamp="1601233122811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -132,5 +195,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601237096684" />
+    <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601241435369">
+      <screen x="0" y="23" width="1440" height="814" />
+    </state>
+    <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241435369" />
   </component>
 </project>
