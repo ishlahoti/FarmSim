@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -87,5 +88,26 @@ public class MainTest extends ApplicationTest {
         TextField newName = (TextField) GuiTest.find("#name");
         assertEquals(" space before name", newName.getText());
     }
+
+    @Test
+    public void testDefaultDifficulty() {
+        ChoiceBox<String> difficulty = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        difficulty.setValue("Easy");
+        clickOn("#submit");
+        GuiTest.waitUntil("#difficulty", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newDiff = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        assertEquals("Easy", newDiff.getValue());
+    }
+
+    @Test
+    public void testDefaultStartingSeed() {
+        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        startingSeed.setValue("Strawberry");
+        clickOn("#submit");
+        GuiTest.waitUntil("#startingSeed", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        assertEquals("Strawberry", newStartingSeed.getValue());
+    }
+
 
 }
