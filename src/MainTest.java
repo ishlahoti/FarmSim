@@ -4,10 +4,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
 import java.io.IOException;
 
-import jdk.jfr.StackTrace;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,12 +34,24 @@ public class MainTest extends ApplicationTest {
         primaryStage.show();
     }
 
+    @Before
+    public void setUp() throws Exception {
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        FxToolkit.hideStage();
+        release(new KeyCode[]{});
+        release(new MouseButton[]{});
+    }
+
     @Test
     public void testError() {
         TextField name = (TextField) GuiTest.find("#name");
+        System.out.println(name);
 
         name.setText("");
-        clickOn("#Submit");
+        clickOn("#submit");
 
         Label error = (Label) GuiTest.find("#error");
         assertEquals("Please enter a name", error.getText());
@@ -49,8 +62,8 @@ public class MainTest extends ApplicationTest {
         TextField name = (TextField) GuiTest.find("#name");
 
         name.setText("Test Name");
-        clickOn("#Submit");
+        clickOn("#submit");
 
-        assertEquals("Test name", name.getText());
+        assertEquals("Test Name", name.getText());
     }
 }
