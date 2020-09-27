@@ -15,6 +15,8 @@ import org.junit.Test;
 import org.loadui.testfx.GuiTest;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit.ApplicationTest;
+import org.hamcrest.Matchers;
+import org.loadui.testfx.controls.impl.VisibleNodesMatcher;
 
 import static org.junit.Assert.*;
 
@@ -46,7 +48,7 @@ public class MainTest extends ApplicationTest {
     }
 
     @Test
-    public void testError() {
+    public void testBlankName() {
         TextField name = (TextField) GuiTest.find("#name");
         System.out.println(name);
 
@@ -65,5 +67,24 @@ public class MainTest extends ApplicationTest {
         clickOn("#submit");
 
         assertEquals("Test Name", name.getText());
+    }
+
+    @Test
+    public void testSpaceName() {
+        TextField name = (TextField) GuiTest.find("#name");
+        name.setText(" ");
+        clickOn("#submit");
+        Label error = (Label) GuiTest.find("#error");
+        assertEquals("Please enter a name", error.getText());
+    }
+
+    @Test
+    public void testNameTrim() {
+        TextField name = (TextField) GuiTest.find("#name");
+        name.setText(" space before name");
+        clickOn("#submit");
+        GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
+        TextField newName = (TextField) GuiTest.find("#name");
+        assertEquals("space before name", newName.getText());
     }
 }
