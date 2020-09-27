@@ -58,7 +58,7 @@ public class ConfigController {
         this.game.setSeed((String) this.startingSeed.getValue());
         this.game.setSeason((String) this.startingSeason.getValue());
         this.game.setName((String) this.name.getText());
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Ifarmui.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
         Main.primaryStage.setScene(new Scene(root3, 800, 800));
         Main.primaryStage.show();
