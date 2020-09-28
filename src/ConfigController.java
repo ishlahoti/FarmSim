@@ -66,8 +66,10 @@ public class ConfigController {
         this.game.setName((String) this.name.getText());
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
-        Main.primaryStage.setScene(new Scene(root3, 800, 800));
-        Main.primaryStage.show();
+        //Main.primaryStage.setScene(new Scene(root3, 800, 800));
+        //Main.primaryStage.show();
+        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
+        Main.getPrimaryStage().show();
     }
 
     /**
