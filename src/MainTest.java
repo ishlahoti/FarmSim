@@ -139,5 +139,25 @@ public class MainTest extends ApplicationTest {
     }
 
 
+    
 
+    @Test
+    public void alternateDifficulty() {
+        ChoiceBox<String> difficulty = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        difficulty.setValue("Medium");
+        clickOn("#submit");
+        GuiTest.waitUntil("#difficulty", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newDiff = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        assertEquals("Medium", newDiff.getValue());
+    }
+
+    @Test
+    public void alternateStartingSeed() {
+        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        startingSeed.setValue("Grape");
+        clickOn("#submit");
+        GuiTest.waitUntil("#startingSeed", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        assertEquals("Grape", newStartingSeed.getValue());
+    }
 }
