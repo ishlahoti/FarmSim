@@ -1,4 +1,5 @@
 // import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -7,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -14,10 +16,12 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.loadui.testfx.GuiTest;
+import org.testfx.api.FxAssert;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit.ApplicationTest;
 import org.hamcrest.Matchers;
 import org.loadui.testfx.controls.impl.VisibleNodesMatcher;
+import org.testfx.matcher.base.WindowMatchers;
 
 import static org.junit.Assert.*;
 
@@ -25,6 +29,9 @@ import static org.junit.Assert.*;
 
 public class MainTest extends ApplicationTest {
     private static Stage primaryStage;
+
+    @FXML
+    private AnchorPane configScreen = new AnchorPane();
 
     /**
      * Accessor for primaryStage
@@ -139,6 +146,23 @@ public class MainTest extends ApplicationTest {
         assertEquals("Spring", newStartingSeed.getValue());
     }
 
+    @Test
+    public void alternateDifficulty() {
+        ChoiceBox<String> difficulty = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        difficulty.setValue("Medium");
+        clickOn("#submit");
+        GuiTest.waitUntil("#difficulty", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newDiff = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        assertEquals("Medium", newDiff.getValue());
+    }
 
-
+    @Test
+    public void alternateStartingSeed() {
+        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        startingSeed.setValue("Grape");
+        clickOn("#submit");
+        GuiTest.waitUntil("#startingSeed", Matchers.is(VisibleNodesMatcher.visible()));
+        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        assertEquals("Grape", newStartingSeed.getValue());
+    }
 }
