@@ -1,5 +1,6 @@
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
@@ -7,8 +8,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.Collection;
+
+import javafx.scene.control.Button;
 
 import org.junit.After;
 import org.junit.Before;
@@ -129,6 +135,21 @@ public class MainTest extends ApplicationTest {
         GuiTest.waitUntil("#startingSeason", Matchers.is(VisibleNodesMatcher.visible()));
         ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeason");
         assertEquals("Spring", newStartingSeed.getValue());
+    }
+
+    @Test
+    public void testDefaultChangeScreenButton() {
+        Button start = (Button) GuiTest.find(".start");
+
+        assertEquals("Click to configure your farm!", start.getText());
+    }
+
+    @Test
+    public void testSubmitButton() throws IOException{
+        Parent test = FXMLLoader.load(getClass().getResource("Config.fxml"));
+        AnchorPane screen2 = (AnchorPane) test.getScene().getRoot();
+        Button submit = from(screen2).lookup(".submit").query();
+        assertEquals("Submit", submit.getText());
     }
 
 
