@@ -146,8 +146,8 @@ public class MainTest extends ApplicationTest {
     }
 
     @Test
-    public void testDefaultChangeScreenButton() {
-        Button start = (Button) GuiTest.find(".start");
+    public void testChangeScreenButton() {
+        Button start = (Button) GuiTest.find("#start");
 
         assertEquals("Click to configure your farm!", start.getText());
     }
