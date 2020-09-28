@@ -10,7 +10,7 @@ import java.io.IOException;
  * This is the Main class where the applications is launched from
  */
 public class Main extends Application {
-    static Stage primaryStage;
+    private static Stage primaryStage;
 
     /**
      * Loads the Main.fxml file and launches the application
@@ -32,5 +32,13 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    /**
+     * Accessor for primaryStage
+     * @return the primaryStage
+    */
+    public static Stage getPrimaryStage() {
+        return primaryStage;
     }
 }

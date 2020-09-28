@@ -3,7 +3,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
+// import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -29,11 +29,13 @@ public class ConfigController {
     private Label error;
     private Game game = Game.factory();
 
-    @FXML
     /**
      * Handles action event of clicking button. Checks if name
      * is blank, if not then changes screen to ifarmui.
+     * @param event the action taken by the user
+     * @throws IOException if Ifarmui.fxml not found in call to changeScreen()
      */
+    @FXML
     private void checkBlankName(ActionEvent event) throws IOException {
         // don't allow a blank name
         if (name == null || name.getText() == null || name.getText().trim().equals("")) {
@@ -52,6 +54,10 @@ public class ConfigController {
      */
 
 
+    /**
+     * @param event the action taken by the user
+     * @throws IOException if Ifarmui.fxml is not found
+     */
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
         this.game.setDifficulty((String) this.difficulty.getValue());
