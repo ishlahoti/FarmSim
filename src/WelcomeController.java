@@ -23,6 +23,8 @@ public class WelcomeController {
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
         Parent root2 = FXMLLoader.load(getClass().getResource("Config.fxml"));
+        //Main.primaryStage.setScene(new Scene(root2, 800, 800));
+        //Main.primaryStage.show();
         Main.getPrimaryStage().setScene(new Scene(root2, 800, 800));
         Main.getPrimaryStage().show();
     }

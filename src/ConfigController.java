@@ -41,7 +41,6 @@ public class ConfigController {
         if (name == null || name.getText() == null || name.getText().trim().equals("")) {
             this.error.setText("Please enter a name");
             this.error.setTextFill(Color.web("#FF0000"));
-            System.out.println("here");
         } else {
             name.setText(name.getText().trim());
             changeScreen(event);
@@ -66,8 +65,10 @@ public class ConfigController {
         this.game.setName((String) this.name.getText());
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
-        Main.primaryStage.setScene(new Scene(root3, 800, 800));
-        Main.primaryStage.show();
+        //Main.primaryStage.setScene(new Scene(root3, 800, 800));
+        //Main.primaryStage.show();
+        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
+        Main.getPrimaryStage().show();
     }
 
     /**
