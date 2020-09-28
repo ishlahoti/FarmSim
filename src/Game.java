@@ -51,7 +51,7 @@ public class Game {
     }
 
     public void setMoney(int money) {
-        this.money = (double)money;
+        this.money = (double) money;
     }
 
     public double getMoney() {

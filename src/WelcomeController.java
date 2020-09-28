@@ -8,7 +8,6 @@ import java.io.IOException;
 
 /**
  * Controller class for Welcome Screen
- * TODO: can customize/initialize button here
  */
 public class WelcomeController {
     @FXML
@@ -18,6 +17,8 @@ public class WelcomeController {
      * Handles action event of clicking button
      * changes screen to initial configuration
      * does not need to be changed
+     * @param event the action taken by the user
+     * @throws IOException if Config.fxml is not found
      */
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {

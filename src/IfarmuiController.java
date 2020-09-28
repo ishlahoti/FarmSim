@@ -26,15 +26,18 @@ public class IfarmuiController implements Initializable {
     private void difficultyLabel() {
         String difficulty = this.game.getDifficulty();
         int mon = 0;
-        switch(difficulty) {
-            case "Easy":
-                    mon = 60;
-                break;
-            case "Medium":
-                mon = 40;
-                break;
-            case "Hard":
-                mon = 20;
+        switch (difficulty) {
+        case "Easy":
+            mon = 60;
+            break;
+        case "Medium":
+            mon = 40;
+            break;
+        case "Hard":
+            mon = 20;
+            break;
+        default:
+            break;
         }
         this.game.setMoney(mon);
         this.money.setText("Money: $" + mon);
