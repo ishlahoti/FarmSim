@@ -59,7 +59,6 @@ public class MainTest extends ApplicationTest {
     @Test
     public void testBlankName() {
         TextField name = (TextField) GuiTest.find("#name");
-        System.out.println(name);
 
         name.setText("");
         clickOn("#submit");
