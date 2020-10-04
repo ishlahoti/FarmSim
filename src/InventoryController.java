@@ -23,7 +23,7 @@ public class InventoryController implements Initializable {
                     Item item = new Item(s, 1);
                     inventory[i][j] = item;
                     Label item1 = new Label(item.getInfo());
-                    item1.setFont(new Font("Verdana", 15));
+                    item1.setFont(new Font("Verdana", 11));
                     item1.setTextFill(Color.web("#0076a3"));
                     gridPane.add(item1, i, j, 1, 1);
                     return;
