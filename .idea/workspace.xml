@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="update basic inventory">
+    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="fix font size inventory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InventoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601837472613</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix font size inventory">
+      <created>1601837572007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601837572007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,45 +243,46 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
     <MESSAGE value="create initial inventory" />
     <MESSAGE value="update basic inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="update basic inventory" />
+    <MESSAGE value="fix font size inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix font size inventory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="782" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1601830669541">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="782" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821@0.23.1440.821" timestamp="1601830669541" />
-    <state width="1440" height="75" key="GridCell.Tab.0.bottom" timestamp="1601837544427">
+    <state width="1440" height="75" key="GridCell.Tab.0.bottom" timestamp="1601841320540">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1601241544230" />
     <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
     <state width="1368" height="75" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
-    <state width="1440" height="75" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1601837544427" />
-    <state width="1440" height="75" key="GridCell.Tab.0.center" timestamp="1601837544426">
+    <state width="1440" height="75" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1440" height="75" key="GridCell.Tab.0.center" timestamp="1601841320540">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
     <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
     <state width="1368" height="75" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
-    <state width="1440" height="75" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1601837544426" />
-    <state width="1440" height="75" key="GridCell.Tab.0.left" timestamp="1601837544425">
+    <state width="1440" height="75" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1440" height="75" key="GridCell.Tab.0.left" timestamp="1601841320539">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1601241544228" />
     <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
     <state width="1368" height="75" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601831629273" />
-    <state width="1440" height="75" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1601837544425" />
-    <state width="1440" height="75" key="GridCell.Tab.0.right" timestamp="1601837544426">
+    <state width="1440" height="75" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1601841320539" />
+    <state width="1440" height="75" key="GridCell.Tab.0.right" timestamp="1601841320540">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
     <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
     <state width="1368" height="75" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
-    <state width="1440" height="75" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1601837544426" />
+    <state width="1440" height="75" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
     <state x="117" y="93" key="MergeDialog" timestamp="1601241460569">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
@@ -291,14 +300,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601237096684" />
-    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601828796446">
+    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601837581963">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="485" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1601241929633" />
-    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1601828796446" />
+    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1601837581963" />
     <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601241435369">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241435369" />
+    <state x="406" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1601840438203">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="406" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1601840438203" />
   </component>
 </project>
