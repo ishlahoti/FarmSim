@@ -19,7 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <list default="true" id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/Inventory.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2340/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ifarmui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IfarmuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IfarmuiController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,8 +77,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -106,6 +114,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -161,8 +174,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testNameTrimEnd" />
@@ -174,7 +187,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="" />
+      <changelist id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
       <created>1601230592297</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -248,41 +261,41 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="782" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821@0.23.1440.821" timestamp="1601830669541" />
-    <state width="1398" height="75" key="GridCell.Tab.0.bottom" timestamp="1601841891943">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1088" height="258" key="GridCell.Tab.0.bottom" timestamp="1601846943301">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="75" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601841891943" />
     <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1601241544230" />
     <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
-    <state width="1368" height="75" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
+    <state width="1088" height="258" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601846943301" />
     <state width="1440" height="75" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
-    <state width="1398" height="75" key="GridCell.Tab.0.center" timestamp="1601841891940">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1088" height="258" key="GridCell.Tab.0.center" timestamp="1601846943300">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="75" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601841891940" />
     <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
     <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
-    <state width="1368" height="75" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
+    <state width="1088" height="258" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601846943300" />
     <state width="1440" height="75" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
-    <state width="1398" height="75" key="GridCell.Tab.0.left" timestamp="1601841891939">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1088" height="258" key="GridCell.Tab.0.left" timestamp="1601846943300">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="75" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601841891939" />
     <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1601241544228" />
     <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
-    <state width="1368" height="75" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601831629273" />
+    <state width="1088" height="258" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601846943300" />
     <state width="1440" height="75" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1601841320539" />
-    <state width="1398" height="75" key="GridCell.Tab.0.right" timestamp="1601841891942">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1088" height="258" key="GridCell.Tab.0.right" timestamp="1601846943301">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1398" height="75" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601841891942" />
     <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
     <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
-    <state width="1368" height="75" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
+    <state width="1088" height="258" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601846943301" />
     <state width="1440" height="75" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
     <state x="117" y="93" key="MergeDialog" timestamp="1601241460569">
       <screen x="0" y="23" width="1440" height="814" />
