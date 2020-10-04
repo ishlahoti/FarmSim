@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
-      <change beforePath="$PROJECT_DIR$/src/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfigController.java" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +27,52 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -60,21 +103,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -92,16 +123,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.testDefaultStartingSeasonSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2340" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testDefaultStartingSeasonSpring" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="MainTest.testNameTrimEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -124,13 +145,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2340" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.testNameTrimEnd" />
-        <item itemvalue="JUnit.MainTest.testUnderscoreName" />
-        <item itemvalue="JUnit.MainTest.testDefaultStartingSeasonSpring" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +181,6 @@
       <updated>1601230592297</updated>
       <workItem from="1601230593455" duration="2151000" />
       <workItem from="1601233025525" duration="4152000" />
-      <workItem from="1601246821445" duration="209000" />
     </task>
     <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
       <created>1601241342840</created>
@@ -155,54 +189,101 @@
       <option name="project" value="LOCAL" />
       <updated>1601241342840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
+      <created>1601828784183</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601828784183</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create initial inventory">
+      <created>1601833966394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601833966395</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update basic inventory">
+      <created>1601837472613</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601837472613</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix font size inventory">
+      <created>1601837572007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601837572007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
+    <MESSAGE value="create initial inventory" />
+    <MESSAGE value="update basic inventory" />
+    <MESSAGE value="fix font size inventory" />
+    <MESSAGE value="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1243" height="210" key="GridCell.Tab.0.bottom" timestamp="1601241907666">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="782" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1601830669541">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state x="782" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821@0.23.1440.821" timestamp="1601830669541" />
+    <state width="1398" height="75" key="GridCell.Tab.0.bottom" timestamp="1601841891943">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="75" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601841891943" />
     <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1601241544230" />
     <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
-    <state width="1243" height="210" key="GridCell.Tab.0.center" timestamp="1601241907665">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1368" height="75" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
+    <state width="1440" height="75" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1398" height="75" key="GridCell.Tab.0.center" timestamp="1601841891940">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="75" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601841891940" />
     <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
     <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
-    <state width="1243" height="210" key="GridCell.Tab.0.left" timestamp="1601241907665">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1368" height="75" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
+    <state width="1440" height="75" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1398" height="75" key="GridCell.Tab.0.left" timestamp="1601841891939">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="75" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601841891939" />
     <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1601241544228" />
     <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
-    <state width="1243" height="210" key="GridCell.Tab.0.right" timestamp="1601241907666">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1368" height="75" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601831629273" />
+    <state width="1440" height="75" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1601841320539" />
+    <state width="1398" height="75" key="GridCell.Tab.0.right" timestamp="1601841891942">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="75" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601841891942" />
     <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
     <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
     <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
+    <state width="1368" height="75" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601831629274" />
+    <state width="1440" height="75" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
     <state x="117" y="93" key="MergeDialog" timestamp="1601241460569">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
@@ -211,21 +292,28 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="333" y="198" key="MultipleFileMergeDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241330024" />
-    <state x="437" y="95" key="SettingsEditor" timestamp="1601233122811">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="328" y="23" width="1024" height="822" key="SettingsEditor" timestamp="1601829928764">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="437" y="95" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601233122811" />
+    <state x="328" y="23" width="1024" height="822" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1601829928764" />
     <state x="549" y="254" key="Vcs.Push.Dialog.v2" timestamp="1601237096684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601237096684" />
-    <state x="485" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601241929633">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601837581963">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="485" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1601241929633" />
-    <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601241435369">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1601837581963" />
+    <state x="444" y="140" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601841871511">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="444" y="140" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900@0.0.1440.900" timestamp="1601841871511" />
     <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241435369" />
+    <state x="406" y="169" width="670" height="676" key="search.everywhere.popup" timestamp="1601840438203">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="406" y="169" width="670" height="676" key="search.everywhere.popup/0.23.1440.822@0.23.1440.822" timestamp="1601840438203" />
   </component>
 </project>
