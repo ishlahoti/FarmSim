@@ -2,7 +2,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.TilePane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
@@ -15,30 +14,32 @@ public class InventoryController implements Initializable {
     @FXML
     Label error;
 
-    String[][] inventory = new String[3][4]; //max 12 items in inventory for now
+    Item[][] inventory = new Item[3][4]; //max 12 items in inventory for now. array version of inventory for list
 
     public void addItem(String s) {
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 4; j++)
-            if (inventory[i][j] == null) {
-                inventory[i][j] = s;
-                Label item = new Label(inventory[i][j]);
-                item.setFont(new Font("Verdana", 15));
-                item.setTextFill(Color.web("#0076a3"));
-                gridPane.add(item, i, j, 1, 1);
-                return;
+            for (int j = 0; j < 4; j++) {
+                if (inventory[i][j] == null) {
+                    Item item = new Item(s, 1);
+                    inventory[i][j] = item;
+                    Label item1 = new Label(item.getInfo());
+                    item1.setFont(new Font("Verdana", 15));
+                    item1.setTextFill(Color.web("#0076a3"));
+                    gridPane.add(item1, i, j, 1, 1);
+                    return;
+                }
             }
+            error.setText("Your inventory is full-you cannot add more items");
         }
-        error.setText("Your inventory is full-you cannot add more items");
     }
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        addItem("Strawberry");
-        addItem("Raspberry");
-        addItem("Passion Fruit");
-        addItem("Grape");
+        addItem("Strawberry Seed");
+        addItem("Raspberry Seed");
+        addItem("Passion Fruit Seed");
+        addItem("Grape Seed");
 
     }
 }
