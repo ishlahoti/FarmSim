@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <!--
 This is where all the layout nodes for the initial configuration screen should be added (below children)
@@ -14,7 +10,7 @@ open all layout components with <layout name> and after implementation close the
 TODO: add layout nodes. player enters name/selects starting season/seed/game difficulty
 -->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="IfarmuiController">
     <children>
         <Label fx:id="money" layoutX="14.0" layoutY="751.0" text="Label" textFill="lawngreen">
             <font>
@@ -55,5 +51,10 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
                 <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
             </children>
         </GridPane>
+      <Button fx:id="inventory" layoutX="650.0" layoutY="18.0" mnemonicParsing="false" onAction="#changeScreen" text="INVENTORY">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
