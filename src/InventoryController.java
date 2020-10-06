@@ -25,6 +25,14 @@ public class InventoryController implements Initializable {
     Label grapeSeedQuantity;
     @FXML
     Button farm;
+    @FXML
+    Label strawberryCropQ;
+    @FXML
+    Label raspberryCropQ;
+    @FXML
+    Label passionFruitCropQ;
+    @FXML
+    Label grapeCropQ;
 
     final int capacity = 20;
     int size = 4;
@@ -90,6 +98,67 @@ public class InventoryController implements Initializable {
         grapeSeedQuantity.setText("" + val);
         size--;
     }
+    public void addStrawberryCrop(int x) {
+        if (size == capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        int curr = Integer.parseInt(strawberryCropQ.getText());
+        int val = curr + x;
+        strawberryCropQ.setText("" + val);
+        size+=x;
+    }
+    public void removeStrawberryCrop() {
+        int curr = Integer.parseInt(strawberryCropQ.getText());
+        int val = curr - 1;
+        strawberryCropQ.setText("" + val);
+        size--;
+    }
+    public void addRaspberryCrop(int x) {
+        if (size == capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        int curr = Integer.parseInt(raspberryCropQ.getText());
+        int val = curr + x;
+        raspberryCropQ.setText("" + val);
+        size+=x;
+    }
+    public void removeRaspberryCrop() {
+        int curr = Integer.parseInt(raspberryCropQ.getText());
+        int val = curr - 1;
+        raspberryCropQ.setText("" + val);
+        size--;
+    }
+    public void addPassionFruitCrop(int x) {
+        if (size == capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        int curr = Integer.parseInt(passionFruitCropQ.getText());
+        int val = curr + x;
+        passionFruitCropQ.setText("" + val);
+        size+=x;
+    }
+    public void removePassionFruitCrop() {
+        int curr = Integer.parseInt(passionFruitCropQ.getText());
+        int val = curr - 1;
+        passionFruitCropQ.setText("" + val);
+        size--;
+    }
+    public void addGrapeCrop(int x) {
+        if (size == capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        int curr = Integer.parseInt(grapeCropQ.getText());
+        int val = curr + x;
+        grapeCropQ.setText("" + val);
+        size+=x;
+    }
+    public void removeGrapeCrop() {
+        int curr = Integer.parseInt(grapeCropQ.getText());
+        int val = curr - 1;
+        grapeCropQ.setText("" + val);
+        size--;
+    }
+
 
 
     @Override
