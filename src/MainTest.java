@@ -1,6 +1,7 @@
 // import javafx.application.Application;
-import javafx.fxml.FXML;
+//import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+//import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
@@ -8,20 +9,21 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import java.io.IOException;
+
+//import javafx.scene.control.Button;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.loadui.testfx.GuiTest;
-import org.testfx.api.FxAssert;
+//import org.testfx.api.FxAssert;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit.ApplicationTest;
 import org.hamcrest.Matchers;
 import org.loadui.testfx.controls.impl.VisibleNodesMatcher;
-import org.testfx.matcher.base.WindowMatchers;
+//import org.testfx.matcher.base.WindowMatchers;
 
 import static org.junit.Assert.*;
 
@@ -29,9 +31,6 @@ import static org.junit.Assert.*;
 
 public class MainTest extends ApplicationTest {
     private static Stage primaryStage;
-
-    @FXML
-    private AnchorPane configScreen = new AnchorPane();
 
     /**
      * Accessor for primaryStage
