@@ -20,17 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshot1601250482409.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot1601250638240.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot1601250680192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot1601250692211.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Market.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Marketcontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,9 +53,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.24482758" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="CS2340" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -62,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601925521838</updated>
       <workItem from="1601925527135" duration="300000" />
+      <workItem from="1602022963449" duration="4148000" />
     </task>
     <servers />
   </component>
@@ -69,28 +90,41 @@
     <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="43" key="GridCell.Tab.0.bottom" timestamp="1601266403914">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602023188553">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="43" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1601266403914" />
-    <state width="1398" height="43" key="GridCell.Tab.0.center" timestamp="1601266403913">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1602023188553" />
+    <state width="1398" height="23" key="GridCell.Tab.0.bottom" timestamp="1602029214663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="43" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1601266403913" />
-    <state width="1398" height="43" key="GridCell.Tab.0.left" timestamp="1601266403913">
+    <state width="1398" height="23" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602029214663" />
+    <state width="1398" height="23" key="GridCell.Tab.0.center" timestamp="1602029214662">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="43" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1601266403913" />
-    <state width="1398" height="43" key="GridCell.Tab.0.right" timestamp="1601266403914">
+    <state width="1398" height="23" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602029214662" />
+    <state width="1398" height="23" key="GridCell.Tab.0.left" timestamp="1602029214662">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="43" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1601266403914" />
-    <state x="208" y="31" key="SettingsEditor" timestamp="1601925709039">
+    <state width="1398" height="23" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602029214662" />
+    <state width="1398" height="23" key="GridCell.Tab.0.right" timestamp="1602029214663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601925709039" />
+    <state width="1398" height="23" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602029214663" />
+    <state x="208" y="31" key="SettingsEditor" timestamp="1602023180451">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602023180451" />
   </component>
 </project>
