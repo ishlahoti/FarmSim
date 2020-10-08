@@ -13,16 +13,18 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class Marketcontroller implements Initializable {
+public class MarketController implements Initializable {
 
     @FXML
     Label error;
     @FXML
-    Label PineappleSeed;
+    Label raspberrySeed;
     @FXML
-    Label WatermelonSeed;
+    Label strawberrySeed;
     @FXML
-    Label DragonFruitSeed;
+    Label passionFruitSeed;
+    @FXML
+    Label grapeSeed;
     // TO get money and other valuable information from other screens.
     @FXML
     private Game game = Game.factory();
@@ -49,15 +51,17 @@ public class Marketcontroller implements Initializable {
     // or crop to buy
     public double sellingPriceCalculator() {
         double sellPrice = BasePrice * difficultyPrice() + randomValue;
+        return sellPrice;
     }
 
     public double buyingPriceCalculator() {
         double buyPrice = BasePrice * difficultyPrice() + (randomValue -1);
+        return buyPrice;
     }
 
 
     public void buy() {
-        if (()game.getMoney());
+//        if (game.getMoney());
     }
 
     public void sell() {
