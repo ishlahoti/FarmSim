@@ -14,6 +14,14 @@ public class Game {
     private int raspberryCropQ;
     private int passionFruitCropQ;
     private int grapeCropQ;
+    private int watCropQ;
+    private int pinCropQ;
+    private int dragCropQ;
+    private int beanCropQ;
+    private int watSeedQ;
+    private int pinSeedQ;
+    private int dragSeedQ;
+    private int beanSeedQ;
     final int capacity = 20;
     private int size = 4;
 
@@ -83,8 +91,14 @@ public class Game {
     public int getRaspberryCropQ(){return raspberryCropQ;}
     public int getPassionFruitCropQ(){return passionFruitCropQ;}
     public int getGrapeFruitCropQ() {return grapeCropQ;}
-
-
+    public int getWatCropQ() {return watCropQ;}
+    public int getWatSeedQ(){return watSeedQ;}
+    public int getPinCropQ(){return pinCropQ;}
+    public int getPinSeedQ(){return pinSeedQ;}
+    public int getDragCropQ(){return dragCropQ;}
+    public int getDragSeedQ(){return dragSeedQ;}
+    public int getBeanCropQ(){return beanCropQ;}
+    public int getBeanSeedQ(){return beanSeedQ;}
 
 
     //made add & remove for each item in inventory
@@ -176,4 +190,93 @@ public class Game {
         grapeCropQ--;
         size--;
     }
+    public void addBeanCrop(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        beanCropQ+=x;
+        size+=x;
+    }
+    public void removeBeanCrop() {
+        beanCropQ--;
+        size--;
+    }
+    public void addBeanSeed(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        beanSeedQ+=x;
+        size+=x;
+    }
+    public void removeBeanSeed() {
+        beanSeedQ--;
+        size--;
+    }
+    public void addPinCrop(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        pinCropQ+=x;
+        size+=x;
+    }
+    public void removePinCrop() {
+        pinCropQ--;
+        size--;
+    }
+    public void addPinSeed(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        pinSeedQ+=x;
+        size+=x;
+    }
+    public void removePinSeed() {
+        pinSeedQ--;
+        size--;
+    }
+    public void addWatCrop(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        watCropQ+=x;
+        size+=x;
+    }
+    public void removeWatCrop() {
+        watCropQ--;
+        size--;
+    }
+    public void addWatSeed(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        watSeedQ+=x;
+        size+=x;
+    }
+    public void removeWatSeed() {
+        watSeedQ--;
+        size--;
+    }
+    public void addDragCrop(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        dragCropQ+=x;
+        size+=x;
+    }
+    public void removeDragCrop() {
+        dragCropQ--;
+        size--;
+    }
+    public void addDragSeed(int x) {
+        if (size + x >= capacity) {
+            //for market, should have error message pop up when trying to buy
+        }
+        dragSeedQ+=x;
+        size+=x;
+    }
+    public void removeDragSeed() {
+        dragSeedQ--;
+        size--;
+    }
+
 }

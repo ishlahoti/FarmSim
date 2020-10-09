@@ -31,6 +31,23 @@ public class InventoryController implements Initializable {
     Label passionFruitCropQ;
     @FXML
     Label grapeCropQ;
+    @FXML
+    Label pinCropQ;
+    @FXML
+    Label pinSeedQ;
+    @FXML
+    Label beanCropQ;
+    @FXML
+    Label beanSeedQ;
+    @FXML
+    Label dragCropQ;
+    @FXML
+    Label dragSeedQ;
+    @FXML
+    Label watCropQ;
+    @FXML
+    Label watSeedQ;
+
 
 
     @Override
@@ -44,6 +61,15 @@ public class InventoryController implements Initializable {
         raspberryCropQ.setText("" + game.getRaspberryCropQ());
         passionFruitCropQ.setText("" + game.getPassionFruitCropQ());
         grapeCropQ.setText("" + game.getGrapeFruitCropQ());
+        watCropQ.setText("" + game.getWatCropQ());
+        watSeedQ.setText("" + game.getWatSeedQ());
+        dragCropQ.setText("" + game.getDragCropQ());
+        dragSeedQ.setText("" + game.getDragSeedQ());
+        beanCropQ.setText("" + game.getBeanCropQ());
+        beanSeedQ.setText("" + game.getBeanSeedQ());
+        pinCropQ.setText("" + game.getPinCropQ());
+        pinSeedQ.setText("" + game.getPinSeedQ());
+
     }
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
