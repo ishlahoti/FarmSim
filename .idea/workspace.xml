@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="" />
+    <list default="true" id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Market.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Market.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MarketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarketController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +70,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,6 +83,7 @@
       <updated>1601925521838</updated>
       <workItem from="1601925527135" duration="300000" />
       <workItem from="1602022963449" duration="4148000" />
+      <workItem from="1602277394954" duration="5381000" />
     </task>
     <servers />
   </component>
