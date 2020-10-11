@@ -69,7 +69,6 @@ public class InventoryController implements Initializable {
         beanSeedQ.setText("" + game.getBeanSeedQ());
         pinCropQ.setText("" + game.getPinCropQ());
         pinSeedQ.setText("" + game.getPinSeedQ());
-
     }
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
