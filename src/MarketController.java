@@ -194,7 +194,7 @@ public class MarketController implements Initializable {
                 break;
 
         }
-        //render();
+        render();
     }
 
     @FXML
@@ -282,20 +282,20 @@ public class MarketController implements Initializable {
             default:
                 break;
         }
-        //render();
+        render();
     }
 
-    /*
-    public void render(){
-        dragonBuyPrice.setText(Integer.toString(market.getPBuy("DragonFruit Seed")));
-        watermelonBuyPrice.setText(Integer.toString(market.getPBuy("Watermelon Seed")));
-        pineappleBuyPrice.setText(Integer.toString(market.getPBuy("Pineapple Seed")));
-        beanBuyPrice.setText(Integer.toString(market.getPBuy("Bean Seed")));
 
-        dragonSellPrice.setText(Integer.toString(market.getPSell("DragonFruit Seed")));
-        watermelonSellPrice.setText(Integer.toString(market.getPSell("Watermelon Seed")));
-        pineappleSellPrice.setText(Integer.toString(market.getPSell("Pineapple Seed")));
-        beanSellPrice.setText(Integer.toString(market.getPSell("Bean Seed")));
+    public void render(){
+        dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
+        watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));
+        pineappleBuyPrice.setText(Integer.toString(market.getPBuy(Items.PINEAPPLES)));
+        beanBuyPrice.setText(Integer.toString(market.getPBuy(Items.BEANS)));
+
+        dragonSellPrice.setText(Integer.toString(market.getPSell(Items.DRAGONS)));
+        watermelonSellPrice.setText(Integer.toString(market.getPSell(Items.WATERMELONS)));
+        pineappleSellPrice.setText(Integer.toString(market.getPSell(Items.PINEAPPLES)));
+        beanSellPrice.setText(Integer.toString(market.getPSell(Items.BEANS)));
 
         // Quantities for the new seeds in the market.
         dragonQMarket.setText(Integer.toString(game.getDragSeedQ()));
@@ -314,26 +314,26 @@ public class MarketController implements Initializable {
         passionFruitSeed.setText(Integer.toString(game.getPassionFruitSeedQuantity()));
 
         // The farmer can sell crops and seeds from his inventory;
-        raspberryCSellPrice.setText(Integer.toString(market.getPSell("Raspberry Crop")));
-        strawberryCSellPrice.setText(Integer.toString(market.getPSell("Strawberry Crop")));
-        grapeCSellPrice.setText(Integer.toString(market.getPSell("GrapeFruit Crop")));
-        passionCSellPrice.setText(Integer.toString(market.getPSell("PassionFruit Crop")));
+        raspberryCSellPrice.setText(Integer.toString(market.getPSell(Items.RASPBERRYC)));
+        strawberryCSellPrice.setText(Integer.toString(market.getPSell(Items.STRAWBERRYC)));
+        grapeCSellPrice.setText(Integer.toString(market.getPSell(Items.GRAPEC)));
+        passionCSellPrice.setText(Integer.toString(market.getPSell(Items.PASSIONC)));
 
-        raspberrySSellPrice.setText(Integer.toString(market.getPSell("Raspberry Seed")));
-        strawberrySSellPrice.setText(Integer.toString(market.getPSell("Strawberry Seed")));
-        grapeSSellPrice.setText(Integer.toString(market.getPSell("GrapeFruit Seed")));
-        passionSSellPrice.setText(Integer.toString(market.getPSell("PassionFruit Seed")));
+        raspberrySSellPrice.setText(Integer.toString(market.getPSell(Items.RASPBERRYS)));
+        strawberrySSellPrice.setText(Integer.toString(market.getPSell(Items.STRAWBERRYS)));
+        grapeSSellPrice.setText(Integer.toString(market.getPSell(Items.GRAPES)));
+        passionSSellPrice.setText(Integer.toString(market.getPSell(Items.PASSIONS)));
 
         // The farmer can buy crops and seeds from the market;
-        raspberryCBuyPrice.setText(Integer.toString(market.getPBuy("Raspberry Crop")));
-        strawberryCBuyPrice.setText(Integer.toString(market.getPBuy("Strawberry Crop")));
-        grapeCBuyPrice.setText(Integer.toString(market.getPBuy("GrapeFruit Crop")));
-        passionCBuyPrice.setText(Integer.toString(market.getPBuy("PassionFruit Crop")));
+        raspberryCBuyPrice.setText(Integer.toString(market.getPBuy(Items.RASPBERRYC)));
+        strawberryCBuyPrice.setText(Integer.toString(market.getPBuy(Items.STRAWBERRYC)));
+        grapeCBuyPrice.setText(Integer.toString(market.getPBuy(Items.GRAPEC)));
+        passionCBuyPrice.setText(Integer.toString(market.getPBuy(Items.PASSIONC)));
 
-        raspberrySBuyPrice.setText(Integer.toString(market.getPBuy("Raspberry Seed")));
-        strawberrySBuyPrice.setText(Integer.toString(market.getPBuy("Strawberry Seed")));
-        grapeSBuyPrice.setText(Integer.toString(market.getPBuy("GrapeFruit Seed")));
-        passionSBuyPrice.setText(Integer.toString(market.getPBuy("PassionFruit Seed")));
+        raspberrySBuyPrice.setText(Integer.toString(market.getPBuy(Items.RASPBERRYS)));
+        strawberrySBuyPrice.setText(Integer.toString(market.getPBuy(Items.STRAWBERRYS)));
+        grapeSBuyPrice.setText(Integer.toString(market.getPBuy(Items.GRAPES)));
+        passionSBuyPrice.setText(Integer.toString(market.getPBuy(Items.PASSIONS)));
 
         // Inventory quantities
         money.setText(Integer.toString((int) game.getMoney()));
@@ -349,7 +349,7 @@ public class MarketController implements Initializable {
 
     }
 
-     */
+
 
     /**
      * Called to initialize a controller after its root element has been
