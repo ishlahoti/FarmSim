@@ -361,7 +361,8 @@ public class MarketController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        Game game = Game.factory();
+        market = new Market();
+        this.game = Game.factory();
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
         watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));
         pineappleBuyPrice.setText(Integer.toString(market.getPBuy(Items.PINEAPPLES)));

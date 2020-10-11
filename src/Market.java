@@ -22,11 +22,13 @@ public class Market {
 
 
     public Market() {
+        game = Game.factory();
         itemsPBuy = new Hashtable<>();
         itemsPSell = new Hashtable<>();
 
        for (Items i: Items.values()) {
-            int random = rand.nextInt(6 - 1) + 1;
+           rand = new Random();
+           int random = rand.nextInt(6 - 1) + 1;
             itemsPBuy.put(i, (int) (i.getBasePrice() + (seasonPrice() * difficulty()) + random));
             itemsPSell.put(i, (int) (i.getBasePrice() + (seasonPrice() - 1) * difficulty() + random));
         }
