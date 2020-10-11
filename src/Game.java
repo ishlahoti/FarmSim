@@ -6,22 +6,22 @@ public class Game {
     private String seed;
     private double money = 0.0D;
     private int day = 1;
-    private int raspberrySeedQuantity = 1;
-    private int strawberrySeedQuantity = 1;
-    private int passionFruitSeedQuantity = 1;
-    private int grapeSeedQuantity = 1;
-    private int strawberryCropQ;
-    private int raspberryCropQ;
-    private int passionFruitCropQ;
-    private int grapeCropQ;
-    private int watCropQ;
-    private int pinCropQ;
-    private int dragCropQ;
-    private int beanCropQ;
-    private int watSeedQ;
-    private int pinSeedQ;
-    private int dragSeedQ;
-    private int beanSeedQ;
+    private int raspberrySeedQuantity = 5;
+    private int strawberrySeedQuantity = 6;
+    private int passionFruitSeedQuantity = 7;
+    private int grapeSeedQuantity = 8;
+    private int strawberryCropQ = 9;
+    private int raspberryCropQ = 2;
+    private int passionFruitCropQ = 4;
+    private int grapeCropQ = 3;
+    private int watCropQ = 1;
+    private int pinCropQ = 6;
+    private int dragCropQ = 7;
+    private int beanCropQ = 9;
+    private int watSeedQ = 8;
+    private int pinSeedQ = 4;
+    private int dragSeedQ = 3;
+    private int beanSeedQ = 4;
     final int capacity = 20;
     private int size = 4;
 
@@ -277,6 +277,24 @@ public class Game {
     public void removeDragSeed() {
         dragSeedQ--;
         size--;
+    }
+
+    public int getTotalQuantity() {
+        return getRaspberrySeedQuantity() +
+         getStrawberrySeedQuantity() +
+         getPassionFruitSeedQuantity() +
+         getGrapeSeedQuantity() +
+         getRaspberryCropQ() +
+        getPassionFruitCropQ() +
+         getGrapeFruitCropQ() +
+       getWatCropQ() +
+         getWatSeedQ() +
+       getPinCropQ() +
+        getPinSeedQ() +
+      getDragCropQ() +
+        getDragSeedQ() +
+         getBeanCropQ() +
+         getBeanSeedQ();
     }
 
 }
