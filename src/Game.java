@@ -103,8 +103,8 @@ public class Game {
 
     //made add & remove for each item in inventory
     public void addRaspberrySeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
        raspberrySeedQuantity+=x;
         size+=x;
@@ -114,8 +114,8 @@ public class Game {
         size--;
     }
     public void addStrawberrySeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         strawberrySeedQuantity+=x;
         size+=x;
@@ -125,8 +125,8 @@ public class Game {
         size--;
     }
     public void addPassionFruitSeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         passionFruitSeedQuantity+=x;
         size+=x;
@@ -136,8 +136,8 @@ public class Game {
         size--;
     }
     public void addGrapeSeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         grapeSeedQuantity+=x;
         size+=x;
@@ -147,8 +147,8 @@ public class Game {
         size--;
     }
     public void addStrawberryCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         strawberryCropQ+=x;
         size+=x;
@@ -158,8 +158,8 @@ public class Game {
         size--;
     }
     public void addRaspberryCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         raspberryCropQ+=x;
         size+=x;
@@ -169,8 +169,8 @@ public class Game {
         size--;
     }
     public void addPassionFruitCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         passionFruitCropQ+=x;
         size+=x;
@@ -180,8 +180,8 @@ public class Game {
         size--;
     }
     public void addGrapeCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         grapeCropQ+=x;
         size+=x;
@@ -191,8 +191,8 @@ public class Game {
         size--;
     }
     public void addBeanCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         beanCropQ+=x;
         size+=x;
@@ -202,8 +202,8 @@ public class Game {
         size--;
     }
     public void addBeanSeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+             return;
         }
         beanSeedQ+=x;
         size+=x;
@@ -213,8 +213,8 @@ public class Game {
         size--;
     }
     public void addPinCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         pinCropQ+=x;
         size+=x;
@@ -224,8 +224,8 @@ public class Game {
         size--;
     }
     public void addPinSeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         pinSeedQ+=x;
         size+=x;
@@ -235,8 +235,8 @@ public class Game {
         size--;
     }
     public void addWatCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         watCropQ+=x;
         size+=x;
@@ -247,7 +247,7 @@ public class Game {
     }
     public void addWatSeed(int x) {
         if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+            return;
         }
         watSeedQ+=x;
         size+=x;
@@ -257,8 +257,8 @@ public class Game {
         size--;
     }
     public void addDragCrop(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         dragCropQ+=x;
         size+=x;
@@ -268,8 +268,8 @@ public class Game {
         size--;
     }
     public void addDragSeed(int x) {
-        if (size + x >= capacity) {
-            //for market, should have error message pop up when trying to buy
+        if (size + x > capacity) {
+            return;
         }
         dragSeedQ+=x;
         size+=x;
