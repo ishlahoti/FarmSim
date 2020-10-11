@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="fix buy button and initial inventory" />
+    <list default="true" id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="redo inventory">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Inventory.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Inventory.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,11 +60,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.24482758" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CS2340" />
@@ -66,9 +79,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CS2340" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -78,13 +101,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="" />
+      <changelist id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="redo inventory" />
       <created>1601925521838</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601925521838</updated>
       <workItem from="1601925527135" duration="300000" />
       <workItem from="1602022963449" duration="4148000" />
+      <workItem from="1602372025356" duration="4206000" />
+      <workItem from="1602384279638" duration="704000" />
+      <workItem from="1602441794756" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="merge">
       <created>1602284808304</created>
@@ -126,6 +152,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../CS240-Tristin repo" />
+    </ignored-roots>
     <MESSAGE value="merge" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
     <MESSAGE value="create initial inventory" />
@@ -142,34 +171,37 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1602023188553" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1602190704608">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1855" height="266" key="GridCell.Tab.0.bottom" timestamp="1602446850545">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="23" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602029214663" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602190704608" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1602190704608">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602446850545" />
+    <state width="1855" height="266" key="GridCell.Tab.0.center" timestamp="1602446850545">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="23" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602029214662" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602190704608" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1602190704608">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602446850545" />
+    <state width="1855" height="266" key="GridCell.Tab.0.left" timestamp="1602446850545">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="23" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602029214662" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602190704608" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1602190704608">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602446850545" />
+    <state width="1855" height="266" key="GridCell.Tab.0.right" timestamp="1602446850545">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="23" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602029214663" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602190704608" />
+    <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602446850545" />
     <state x="311" y="197" key="MultipleFileMergeDialog" timestamp="1602284776710">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="311" y="197" key="MultipleFileMergeDialog/0.23.1440.814@0.23.1440.814" timestamp="1602284776710" />
-    <state x="208" y="31" key="SettingsEditor" timestamp="1602023180451" />
-    <state x="480" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602458975704">
-      <screen x="0" y="23" width="1440" height="814" />
+    <state x="208" y="31" key="SettingsEditor" timestamp="1602441888721">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="480" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.814@0.23.1440.814" timestamp="1602458975704" />
+    <state x="208" y="31" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602441888721" />
   </component>
 </project>
