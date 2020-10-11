@@ -4,7 +4,7 @@ public class Game {
     private String difficulty = "Medium";
     private String season = "Fall";
     private String seed;
-    private double money = 0.0D;
+    private double money = 0.00D;
     private int day = 1;
     private int raspberrySeedQuantity = 5;
     private int strawberrySeedQuantity = 6;

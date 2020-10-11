@@ -27,39 +27,38 @@ public class IfarmuiController implements Initializable {
     @FXML
     private Button inventory;
     private Game game = Game.factory();
-
-    public IfarmuiController() {
-    }
+    private static boolean alreadyExecuted;
 
     @FXML
     private void difficultyLabel() {
-        String difficulty = this.game.getDifficulty();
-        int mon = 0;
-        switch (difficulty) {
-        case "Easy":
-            mon = 60;
-            break;
-        case "Medium":
-            mon = 40;
-            break;
-        case "Hard":
-            mon = 20;
-            break;
-        default:
-            break;
-        }
-        this.game.setMoney(mon);
-        this.money.setText("Money: $" + mon);
-
-
+            String difficulty = this.game.getDifficulty();
+            int mon = 0;
+            switch (difficulty) {
+                case "Easy":
+                    mon = 60;
+                    break;
+                case "Medium":
+                    mon = 40;
+                    break;
+                case "Hard":
+                    mon = 20;
+                    break;
+                default:
+                    break;
+            }
+            this.game.setMoney(mon);
     }
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.day.setText("Day " + this.game.getDay());
         this.name.setText(this.game.getName() + "'s Farm");
-        this.difficultyLabel();
-
+        if (!alreadyExecuted) {
+            difficultyLabel();
+            alreadyExecuted = true;
+        }
+        this.money.setText("Money $" + this.game.getMoney());
     }
+
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Inventory.fxml"));

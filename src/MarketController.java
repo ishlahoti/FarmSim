@@ -434,7 +434,7 @@ public class MarketController implements Initializable {
     void initData(Market market, Game game) {
         this.market = market;
         this.game = game;
-        //render();
+        render();
     }
 
     @FXML
