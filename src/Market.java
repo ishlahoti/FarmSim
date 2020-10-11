@@ -15,43 +15,41 @@ import java.util.Set;
 
 public class Market {
 
-    private Hashtable plants;
-    private Hashtable<String, Integer> goodsQ;
-    private Hashtable<String, Integer> itemsPBuy;
-    private Hashtable<String, Integer> itemsPSell;
-    private int quantity;
+    private Hashtable<Items, Integer> itemsPBuy;
+    private Hashtable<Items, Integer> itemsPSell;
     private Game game;
-    private Items item;
     private Random rand;
-    private static int basePrice = 2;
-    private Set<String> key = plants.keySet();
-    Iterator<String> itr = key.iterator();
 
 
     public Market() {
         itemsPBuy = new Hashtable<>();
-        goodsQ = new Hashtable<>();
         itemsPSell = new Hashtable<>();
 
-        while (itr.hasNext()) {
-            String str = itr.next();
+       for (Items i: Items.values()) {
             int random = rand.nextInt(6 - 1) + 1;
-            itemsPBuy.put(str, (int) ((int) basePrice + (item.getQuantity(str) * difficulty()) + random));
-            goodsQ.put(str, item.getQuantity(str));
-            itemsPSell.put(str, (int) ((int) basePrice + ((item.getQuantity(str) - 1) * difficulty() + random)));
+            itemsPBuy.put(i, (int) (i.getBasePrice() + (seasonPrice() * difficulty()) + random));
+            itemsPSell.put(i, (int) (i.getBasePrice() + (seasonPrice() - 1) * difficulty() + random));
         }
     }
 
-    public int getPBuy(String plant) {
-        return itemsPBuy.get(plant);
+    public int getPBuy(Items item) {
+        return itemsPBuy.getOrDefault(item,0);
     }
 
-    public int getQuantity(String plant) {
-        return goodsQ.get(plant);
+    public int getPSell(Items item) {
+        return itemsPSell.getOrDefault(item, 0);
     }
 
-    public int getPSell(String plant) {
-        return itemsPSell.get(plant);
+    private int seasonPrice() {
+        if (game.getSeason().equals("Winter")) {
+            return 4;
+        } else if (game.getSeason().equals("Summer")){
+            return 2;
+        } else if (game.getSeason().equals("Fall")) {
+            return 3;
+        } else {
+            return 1;
+        }
     }
 
     private double difficulty() {

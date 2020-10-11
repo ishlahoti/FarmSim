@@ -1,47 +1,37 @@
 import java.util.Hashtable;
 
-/**
- * This class is only for the new seeds being introduced in
- * the game.
- */
-public class Items {
+public enum Items {
 
+    RASPBERRYC(2),
+    STRAWBERRYC(3),
+    PASSIONC(4),
+    GRAPEC(5),
+    DRAGONC(6),
+    WATERMELONC(1),
+    PINEAPPLEC(2),
+    BEANC(2),
+    RASPBERRYS(3),
+    STRAWBERRYS(4),
+    PASSIONS(5),
+    GRAPES(3),
+    DRAGONS(2),
+    WATERMELONS(4),
+    PINEAPPLES(5),
+    BEANS(1);
+
+    public int getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice() {
+        this.basePrice = basePrice;
+    }
+
+    private Items(int basePrice) {
+        this.basePrice = basePrice;
+    }
     private Game game;
-    private Hashtable<String, Integer> plants; //key == name; value == quantity
-
-    private Items() {
-        plants = new Hashtable<>();
-        plants.put("Raspberry Crop", game.getRaspberryCropQ());
-        plants.put("Strawberry Crop", game.getStrawberryCropQ());
-        plants.put("PassionFruit Crop", game.getPassionFruitCropQ());
-        plants.put("GrapeFruit Crop", game.getGrapeFruitCropQ());
-        plants.put("DragonFruit Crop", game.getDragCropQ());
-        plants.put("Watermelon Crop", game.getWatCropQ());
-        plants.put("Pineapple Crop", game.getPinCropQ());
-        plants.put("Bean Crop", game.getBeanCropQ());
-
-        plants.put("Raspberry Seed", game.getRaspberrySeedQuantity());
-        plants.put("Strawberry Seed", game.getStrawberrySeedQuantity());
-        plants.put("PassionFruit Seed", game.getPassionFruitSeedQuantity());
-        plants.put("GrapeFruit Seed", game.getGrapeSeedQuantity());
-        plants.put("DragonFruit Seed", game.getDragSeedQ());
-        plants.put("Watermelon Seed", game.getWatSeedQ());
-        plants.put("Pineapple Seed", game.getPinSeedQ());
-        plants.put("Bean Seed", game.getBeanSeedQ());
-    }
-
-    public int getQuantity(String plant) {
-        return plants.get("plant");
-    }
-    public void setQuantity(String plant, int quantity) {
-        plants.replace(plant, quantity);
-    }
-    public Hashtable getPlants() {
-        return plants;
-    }
-
-
-
+    private int basePrice;
 
 
 }
