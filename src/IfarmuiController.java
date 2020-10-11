@@ -67,6 +67,13 @@ public class IfarmuiController implements Initializable {
         Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
         Main.getPrimaryStage().show();
     }
+    @FXML
+    private void changeScreen2(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
+        Parent root3 = (Parent) loader.load();
+        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
+        Main.getPrimaryStage().show();
+    }
 }
 
 
