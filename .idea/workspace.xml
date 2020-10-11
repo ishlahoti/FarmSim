@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Market.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MarketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MarketController.java" afterDir="false" />
+    <list default="true" id="ceeafc6c-d318-4889-af82-7480219cfc3c" name="Default Changelist" comment="fix wat seed">
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ishuma" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1iTJCcxYEXTrzxzKYjS9wNrPOZQ" />
@@ -67,6 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -108,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602282733961</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix wat seed">
+      <created>1602455534275</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602455534275</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +146,8 @@
     <MESSAGE value="create inventory" />
     <MESSAGE value="add crops to inventory" />
     <MESSAGE value="redo inventory" />
-    <option name="LAST_COMMIT_MESSAGE" value="redo inventory" />
+    <MESSAGE value="fix wat seed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix wat seed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602023188553">
