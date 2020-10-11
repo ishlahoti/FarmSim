@@ -11,6 +11,14 @@
     -fx-background-size: 100% 100%;
 }
 .farmBackgroundImage{
-    -fx-background-image: url('http://texturelib.com/Textures/soil/ground/soil_ground_0064_01_preview.jpg');
+    -fx-background-image: url('https://media.freestocktextures.com/cache/2a/1e/2a1e5fea33634b0f0e26fa5e86ae100a.jpg');
+    -fx-background-size: 100% 100%;
+}
+.inventoryBackgroundImage{
+    -fx-background-image: url('https://img.freepik.com/free-vector/farm-barn-house-inside-view_33099-2165.jpg?size=626&ext=jpg');
+    -fx-background-size: 100% 100%;
+}
+.inventoryChalkboardImage{
+    -fx-background-image: url('https://img.freepik.com/free-photo/black-chalk-board-texture_89245-170.jpg?size=626&ext=jpg');
     -fx-background-size: 100% 100%;
 }

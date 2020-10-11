@@ -8,12 +8,12 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="InventoryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="inventoryBackgroundImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="InventoryController">
    <children>
-      <GridPane gridLinesVisible="true" layoutX="55.0" layoutY="59.0" prefHeight="320.0" prefWidth="229.0">
+      <GridPane gridLinesVisible="true" layoutX="109.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="inventoryChalkboardImage" stylesheets="@style.css">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="221.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="67.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="196.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="33.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -29,28 +29,28 @@
         </rowConstraints>
          <children>
             <Label text="Raspberry Seed" textFill="#7e12a6" />
-            <Label fx:id="raspberrySeedQuantity" alignment="CENTER" contentDisplay="RIGHT" text="1" GridPane.columnIndex="1" />
+            <Label fx:id="raspberrySeedQuantity" alignment="CENTER" contentDisplay="RIGHT" text="1" textFill="WHITE" GridPane.columnIndex="1" />
             <Label layoutX="10.0" layoutY="17.0" text="Strawberry Seed" textFill="#7e12a6" GridPane.rowIndex="1" />
-            <Label fx:id="strawberrySeedQuantity" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="strawberrySeedQuantity" text="1" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Passion Fruit Seed" textFill="#7e12a6" GridPane.rowIndex="2" />
-            <Label fx:id="passionFruitSeedQuantity" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="passionFruitSeedQuantity" text="1" textFill="#f5f4f4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label text="Grape Seed" textFill="#7e12a6" GridPane.rowIndex="3" />
-            <Label fx:id="grapeSeedQuantity" text="1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="raspberryCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="grapeSeedQuantity" text="1" textFill="#f8f6f6" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="raspberryCropQ" text="0" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="Strawberry Crop" textFill="#12a65c" GridPane.rowIndex="5" />
-            <Label fx:id="strawberryCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="strawberryCropQ" text="0" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Label prefHeight="17.0" prefWidth="130.0" text="Passion Fruit Crop" textFill="#12a65c" GridPane.rowIndex="6" />
-            <Label fx:id="passionFruitCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="passionFruitCropQ" text="0" textFill="#fcfafa" GridPane.columnIndex="1" GridPane.rowIndex="6" />
             <Label prefHeight="17.0" prefWidth="130.0" text="Grape Crop" textFill="#12a65c" GridPane.rowIndex="7" />
-            <Label fx:id="grapeCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="grapeCropQ" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
             <Label text="Raspberry Crop" textFill="#12a65c" GridPane.rowIndex="4" />
             <Label text="Watermelon Seed" textFill="#7e12a6" GridPane.rowIndex="8" />
             <Label text="Pineapple Seed" textFill="#7e12a6" GridPane.rowIndex="9" />
-            <Label fx:id="watSeedQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Label fx:id="pinSeedQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="watSeedQ" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="pinSeedQ" text="0" textFill="#fffdfd" GridPane.columnIndex="1" GridPane.rowIndex="9" />
          </children>
       </GridPane>
-      <GridPane gridLinesVisible="true" layoutX="313.0" layoutY="59.0" prefHeight="320.0" prefWidth="229.0">
+      <GridPane gridLinesVisible="true" layoutX="382.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="inventoryChalkboardImage" stylesheets="@style.css">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="221.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="67.0" />
@@ -70,19 +70,19 @@
          <children>
             <Label text="Dragon Fruit Seed" textFill="#7e12a6" />
             <Label text="Bean Stalk Seed" textFill="#7e12a6" GridPane.rowIndex="1" />
-            <Label fx:id="dragSeedQ" text="0" GridPane.columnIndex="1" />
-            <Label fx:id="beanSeedQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="dragSeedQ" text="0" textFill="#fcfafa" GridPane.columnIndex="1" />
+            <Label fx:id="beanSeedQ" text="0" textFill="#f8f8f8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Watermelon Crop" textFill="#12a65c" GridPane.rowIndex="2" />
-            <Label fx:id="watCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="watCropQ" text="0" textFill="#f8f7f7" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label text="Pineapple Crop" textFill="#12a65c" GridPane.rowIndex="3" />
             <Label text="Dragon Fruit Crop" textFill="#12a65c" GridPane.rowIndex="4" />
             <Label text="Bean Stalk Crop" textFill="#12a65c" GridPane.rowIndex="5" />
-            <Label fx:id="pinCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label fx:id="dragCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="beanCropQ" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="pinCropQ" text="0" textFill="#fffbfb" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="dragCropQ" text="0" textFill="#fffdfd" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="beanCropQ" text="0" textFill="#f5f0f0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
-      <Button layoutX="54.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreen" text="Return To Farm">
+      <Button layoutX="611.0" layoutY="33.0" mnemonicParsing="false" onAction="#changeScreen" text="Return To Farm">
          <font>
             <Font name="Avenir Next Bold" size="13.0" />
          </font>

@@ -105,11 +105,11 @@ public class MainTest extends ApplicationTest {
     @Test
     public void testNameTrimEnd() {
         TextField name = (TextField) GuiTest.find("#name");
-        name.setText("space before name ");
+        name.setText("space after name ");
         clickOn("#submit");
         GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
         TextField newName = (TextField) GuiTest.find("#name");
-        assertEquals("space before name", newName.getText());
+        assertEquals("space after name", newName.getText());
     }
 
     @Test
