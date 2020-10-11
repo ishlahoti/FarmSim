@@ -246,7 +246,7 @@ public class Game {
         size--;
     }
     public void addWatSeed(int x) {
-        if (size + x >= capacity) {
+        if (size + x > capacity) {
             return;
         }
         watSeedQ+=x;
