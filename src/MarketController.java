@@ -24,7 +24,7 @@ public class MarketController implements Initializable {
     @FXML
     private static final int capacity = 20;
 
-    private int marketCapacity = 25;
+    private static int marketCapacity = 25;
 
     @FXML
     private Label marketLabel;
@@ -126,11 +126,11 @@ public class MarketController implements Initializable {
     @FXML
     private Label dragonSQ, watermelonSQ, pineappleSQ, beanSQ;
 
-    // I havent out crops for the new seeds!!
+    // starts out with a full market capacity of 25, must buy first before you sell
 
     @FXML
     private void sell(ActionEvent event) {
-        if (marketCapacity > 0) {
+        if (marketCapacity < 25) {
             switch (((Button) event.getSource()).getId()) {
                 case "dragonSell":
                     if (game.getDragSeedQ() > 0) {
@@ -208,13 +208,13 @@ public class MarketController implements Initializable {
                     break;
             }
         }
-        marketCapacity--;
+        marketCapacity++;
         render();
     }
 
     @FXML
     private void buy(ActionEvent event) {
-        if (marketCapacity < 25) {
+        if (marketCapacity > 0) {
             switch (((Button) event.getSource()).getId()) {
                 case "dragonBuy":
                     if ((game.getMoney() - market.getPBuy(Items.DRAGONS) > 0)
@@ -303,7 +303,7 @@ public class MarketController implements Initializable {
                     break;
             }
         }
-        marketCapacity++;
+        marketCapacity--;
         render();
     }
 
@@ -389,6 +389,7 @@ public class MarketController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         market = new Market();
+        marketLabel.setText(Integer.toString(Integer.parseInt("MarketCapacity:" + marketCapacity)));
         this.game = Game.factory();
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
         watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));

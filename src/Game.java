@@ -296,5 +296,4 @@ public class Game {
          getBeanCropQ() +
          getBeanSeedQ();
     }
-
 }
