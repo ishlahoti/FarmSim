@@ -117,6 +117,9 @@ public class MarketController implements Initializable {
     @FXML
     private Button leave;
 
+    @FXML
+    private Label dragonSQ, watermelonSQ, pineappleSQ, beanSQ;
+
     // I havent out crops for the new seeds!!
 
     @FXML
@@ -361,6 +364,7 @@ public class MarketController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         market = new Market();
         this.game = Game.factory();
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
@@ -384,6 +388,7 @@ public class MarketController implements Initializable {
         strawberryCrop.setText(Integer.toString(game.getStrawberryCropQ()));
         grapeCrop.setText(Integer.toString(game.getGrapeFruitCropQ()));
         passionFruitCrop.setText(Integer.toString(game.getPassionFruitCropQ()));
+
         raspberrySeed.setText(Integer.toString(game.getRaspberrySeedQuantity()));
         strawberrySeed.setText(Integer.toString(game.getStrawberrySeedQuantity()));
         grapeSeed.setText(Integer.toString(game.getGrapeSeedQuantity()));
@@ -421,6 +426,12 @@ public class MarketController implements Initializable {
         strawberrySQ.setText(Integer.toString(game.getStrawberrySeedQuantity()));
         grapeFruitSQ.setText(Integer.toString(game.getGrapeSeedQuantity()));
         passionFruitSQ.setText(Integer.toString(game.getPassionFruitSeedQuantity()));
+        dragonSQ.setText(Integer.toString(game.getDragSeedQ()));
+        watermelonSQ.setText(Integer.toString(game.getWatSeedQ()));
+        pineappleSQ.setText(Integer.toString(game.getPinSeedQ()));
+        beanSQ.setText(Integer.toString(game.getBeanSeedQ()));
+
+
         //render();
     }
 

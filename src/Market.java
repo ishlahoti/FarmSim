@@ -27,10 +27,10 @@ public class Market {
         itemsPSell = new Hashtable<>();
 
        for (Items i: Items.values()) {
-           rand = new Random();
-           int random = rand.nextInt(6 - 1) + 1;
-            itemsPBuy.put(i, (int) (i.getBasePrice() + (seasonPrice() * difficulty()) + random));
-            itemsPSell.put(i, (int) (i.getBasePrice() + (seasonPrice() - 1) * difficulty() + random));
+           //rand = new Random();
+           //int random = rand.nextInt(6 - 1) + 1;
+            itemsPBuy.put(i, (int) (i.getBasePrice() + (seasonPrice() * difficulty())));
+            itemsPSell.put(i, (int) (i.getBasePrice() + (seasonPrice() - 1) * difficulty()));
         }
     }
 

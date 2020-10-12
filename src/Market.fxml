@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Text?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarketController">
     <children>
-        <Button fx:id="leave" layoutX="513.0" layoutY="346.0" mnemonicParsing="false" onAction="#leave" text="Leave" />
+        <Button fx:id="leave" layoutX="513.0" layoutY="600.0" mnemonicParsing="false" onAction="#leave" text="Leave" />
         <VBox layoutX="35.0" layoutY="52.0" prefHeight="354.0" prefWidth="359.0">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
@@ -558,6 +558,30 @@
                         <Label fx:id="passionFruitSQ" alignment="TOP_CENTER" />
                     </children>
                 </HBox>
+                <HBox prefHeight="30.0" prefWidth="150.0">
+                    <children>
+                        <Label minHeight="30.0" minWidth="150.0" text="DragonFruit Seed" />
+                        <Label fx:id="dragonSQ" alignment="TOP_CENTER" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="30.0" prefWidth="150.0">
+                    <children>
+                        <Label minHeight="30.0" minWidth="150.0" text="Watermelon Seed" />
+                        <Label fx:id="watermelonSQ" alignment="TOP_CENTER" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="30.0" prefWidth="150.0">
+                    <children>
+                        <Label minHeight="30.0" minWidth="150.0" text="Pineapple Seed" />
+                        <Label fx:id="pineappleSQ" alignment="TOP_CENTER" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="30.0" prefWidth="150.0">
+                    <children>
+                        <Label minHeight="30.0" minWidth="150.0" text="Bean Seed" />
+                        <Label fx:id="beanSQ" alignment="TOP_CENTER" />
+                    </children>
+                </HBox>
             </children>
         </VBox>
         <Text layoutX="35.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farming Trading Screen">
@@ -575,6 +599,5 @@
                 <Font name="Avenir Next Bold" size="13.0" />
             </font>
         </Button>
-
     </children>
 </AnchorPane>
