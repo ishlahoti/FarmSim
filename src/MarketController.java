@@ -207,9 +207,9 @@ public class MarketController implements Initializable {
                 default:
                     break;
             }
+            marketCapacity++;
+            render();
         }
-        marketCapacity++;
-        render();
     }
 
     @FXML
@@ -302,13 +302,13 @@ public class MarketController implements Initializable {
                 default:
                     break;
             }
+            marketCapacity--;
+            render();
         }
-        marketCapacity--;
-        render();
     }
 
     public void render(){
-        marketLabel.setText(Integer.toString(Integer.parseInt("MarketCapacity:" + marketCapacity)));
+        marketLabel.setText("MarketCapacity: " + (Integer.toString(marketCapacity)));
 
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
         watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));
@@ -389,7 +389,7 @@ public class MarketController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         market = new Market();
-        marketLabel.setText(Integer.toString(Integer.parseInt("MarketCapacity:" + marketCapacity)));
+        marketLabel.setText("MarketCapacity: " + (Integer.toString(marketCapacity)));
         this.game = Game.factory();
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
         watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));
