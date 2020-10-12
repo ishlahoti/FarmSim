@@ -14,7 +14,8 @@ open all layout components with <layout name> and after implementation close the
 TODO: add layout nodes. player enters name/selects starting season/seed/game difficulty
 -->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
+<?import javafx.scene.image.ImageView?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
     <children>
         <Label fx:id="money" layoutX="14.0" layoutY="751.0" text="Label" textFill="lawngreen">
             <font>
@@ -43,16 +44,17 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="2" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="3" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <StackPane fx:id="plot0" prefHeight="150.0" prefWidth="200.0" stylesheets="@style.css" />
+<!--                    <ImageView fx:id="img0" fitHeight="150.0" fitWidth="200.0" />-->
+                <StackPane fx:id="plot1" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="1" />
+                <StackPane fx:id="plot2" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="2" />
+                <StackPane fx:id="plot3" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="3" />
+                <StackPane fx:id="plot4" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" />
+                <StackPane fx:id="plot5" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.rowIndex="1" />
+                <StackPane fx:id="plot6" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <StackPane fx:id="plot7" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <StackPane fx:id="plot8" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <StackPane fx:id="plot9" prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
             </children>
         </GridPane>
     </children>

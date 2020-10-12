@@ -11,6 +11,7 @@ import java.io.IOException;
  */
 public class Main extends Application {
     private static Stage primaryStage;
+    private static Scene scene;
 
     /**
      * Loads the Main.fxml file and launches the application
@@ -23,7 +24,7 @@ public class Main extends Application {
         this.primaryStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("WelcomeScreen.fxml"));
         primaryStage.setTitle("Farm Simulation"); //feel free to replace w/ something more creative
-        Scene scene = new Scene(root, 800, 800);
+        scene = new Scene(root, 800, 800);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -41,4 +42,6 @@ public class Main extends Application {
     public static Stage getPrimaryStage() {
         return primaryStage;
     }
+
+    public static Scene getScene() { return scene; }
 }
