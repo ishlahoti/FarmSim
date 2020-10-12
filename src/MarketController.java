@@ -307,7 +307,6 @@ public class MarketController implements Initializable {
         render();
     }
 
-
     public void render(){
         marketLabel.setText(Integer.toString(Integer.parseInt("MarketCapacity:" + marketCapacity)));
 
@@ -389,7 +388,6 @@ public class MarketController implements Initializable {
      */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
         market = new Market();
         this.game = Game.factory();
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
