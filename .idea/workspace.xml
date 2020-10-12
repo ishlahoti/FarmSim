@@ -20,14 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CS2340.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CS2340.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfigController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ifarmui.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IfarmuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IfarmuiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +152,7 @@
       <workItem from="1601246821445" duration="663000" />
       <workItem from="1601923800935" duration="993000" />
       <workItem from="1601926065503" duration="111000" />
-      <workItem from="1602290353906" duration="11788000" />
+      <workItem from="1602290353906" duration="18008000" />
     </task>
     <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
       <created>1601241342840</created>
