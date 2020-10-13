@@ -69,11 +69,18 @@ public class InventoryController implements Initializable {
         beanSeedQ.setText("" + game.getBeanSeedQ());
         pinCropQ.setText("" + game.getPinCropQ());
         pinSeedQ.setText("" + game.getPinSeedQ());
-
     }
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
+        Parent root3 = (Parent) loader.load();
+        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
+        Main.getPrimaryStage().show();
+    }
+
+    @FXML
+    private void changeScreentoMarket(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
         Parent root3 = (Parent) loader.load();
         Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
         Main.getPrimaryStage().show();

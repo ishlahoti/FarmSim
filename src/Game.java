@@ -4,7 +4,7 @@ public class Game {
     private String difficulty = "Medium";
     private String season = "Fall";
     private String seed;
-    private double money = 0.0D;
+    private double money = 0.00D;
     private int day = 1;
     private int raspberrySeedQuantity = 1;
     private int strawberrySeedQuantity = 1;
@@ -203,7 +203,7 @@ public class Game {
     }
     public void addBeanSeed(int x) {
         if (size + x > capacity) {
-            return;
+             return;
         }
         beanSeedQ+=x;
         size+=x;
@@ -279,4 +279,21 @@ public class Game {
         size--;
     }
 
+    public int getTotalQuantity() {
+        return getRaspberrySeedQuantity() +
+         getStrawberrySeedQuantity() +
+         getPassionFruitSeedQuantity() +
+         getGrapeSeedQuantity() +
+         getRaspberryCropQ() +
+        getPassionFruitCropQ() +
+         getGrapeFruitCropQ() +
+       getWatCropQ() +
+         getWatSeedQ() +
+       getPinCropQ() +
+        getPinSeedQ() +
+      getDragCropQ() +
+        getDragSeedQ() +
+         getBeanCropQ() +
+         getBeanSeedQ();
+    }
 }
