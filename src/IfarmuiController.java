@@ -59,22 +59,28 @@ public class IfarmuiController implements Initializable {
 
     @FXML
     private void harvest(ActionEvent event) throws IOException {
-        List<Label> maturePlants = new LinkedList<>();
+        int numMature = 0;
         for (Label plot : plots) {
+            String text = plot.getText();
+            if (text.contains("Mature")) {
+                numMature++;
+                plot.setText("Empty Plot");
 
-            if (plot.getText().contains("Mature"))
-                maturePlants.add(plot);
-        }
-
-        for (Label maturePlant : maturePlants) {
-            maturePlant.setText("Empty Plot");
-            // add to inventory
+                String lower = text.toLowerCase();
+                if (lower.contains("strawberry"))
+                    game.addStrawberryCrop(1);
+                else if (lower.contains("raspberry"))
+                    game.addRaspberryCrop(1);
+                else if (lower.contains("passion fruit"))
+                    game.addPassionFruitCrop(1);
+                else if (lower.contains("grape"))
+                    game.addGrapeCrop(1);
+            }
         }
 
 
         Label label;
 
-        int numMature = maturePlants.size();
         if (numMature == 0) {
             label = new Label("You don't have any mature plants to harvest!");
         } else {
@@ -88,6 +94,7 @@ public class IfarmuiController implements Initializable {
         label.setMinHeight(50);
         label.setAlignment(Pos.CENTER);
         popup.show(Main.getPrimaryStage());
+        popup.setAutoHide(true);
     }
 
 
