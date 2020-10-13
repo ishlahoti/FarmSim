@@ -19,33 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
+    <list default="true" id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/CS2340/Inventory.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/CS2340/Market.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/Ifarmui.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS2340/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS2340/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ifarmui.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ifarmui.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IfarmuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IfarmuiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="1" />
-  </component>
-  <component name="ProjectId" id="1i6aejDqLfPzbWK1N9RgR0BJbKK" />
+  <component name="ProjectId" id="1iTJCcxYEXTrzxzKYjS9wNrPOZQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,6 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PATH_TO_FX$" />
@@ -64,8 +65,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.24482758" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,78 +96,57 @@
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.testDefaultStartingSeasonSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2340" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testDefaultStartingSeasonSpring" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.testNameTrimEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2340" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testNameTrimEnd" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.testUnderscoreName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CS2340" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testUnderscoreName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
-        <item itemvalue="JUnit.MainTest.testNameTrimEnd" />
-        <item itemvalue="JUnit.MainTest.testUnderscoreName" />
-        <item itemvalue="JUnit.MainTest.testDefaultStartingSeasonSpring" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3de645a6-9934-471c-99db-7512eb8930b3" name="Default Changelist" comment="" />
-      <created>1601230592297</created>
+      <changelist id="f431bd73-cc54-43bb-ad21-a50e7c25bd40" name="Default Changelist" comment="redo inventory" />
+      <created>1601925521838</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601230592297</updated>
-      <workItem from="1601230593455" duration="2151000" />
-      <workItem from="1601233025525" duration="4152000" />
-      <workItem from="1601246821445" duration="663000" />
-      <workItem from="1601923800935" duration="993000" />
-      <workItem from="1601926065503" duration="111000" />
-      <workItem from="1602290353906" duration="18008000" />
+      <updated>1601925521838</updated>
+      <workItem from="1601925527135" duration="300000" />
+      <workItem from="1602022963449" duration="4148000" />
+      <workItem from="1602277394954" duration="5458000" />
+      <workItem from="1602290363858" duration="606000" />
     </task>
-    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java">
-      <created>1601241342840</created>
+    <task id="LOCAL-00001" summary="merge">
+      <created>1602284808304</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1601241342840</updated>
+      <updated>1602284808304</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00006" summary="add crops to inventory">
+      <created>1602010330274</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602010330274</updated>
+    </task>
+    <task id="LOCAL-00007" summary="redo inventory">
+      <created>1602282733961</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602282733961</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -181,34 +162,85 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../CS240-Tristin repo" />
+    </ignored-roots>
+    <MESSAGE value="merge" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Tristin' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/production/CS2340/.idea/misc.xml&#10;#&#9;out/production/CS2340/Config.fxml&#10;#&#9;out/production/CS2340/Ifarmui.fxml&#10;#&#9;src/Config.fxml&#10;#&#9;src/Ifarmui.fxml&#10;#&#9;src/MainTest.java" />
+    <MESSAGE value="create initial inventory" />
+    <MESSAGE value="update basic inventory" />
+    <MESSAGE value="fix font size inventory" />
+    <MESSAGE value="Merge branch 'ishuma' into master&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="create inventory" />
+    <MESSAGE value="add crops to inventory" />
+    <MESSAGE value="redo inventory" />
+    <option name="LAST_COMMIT_MESSAGE" value="redo inventory" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1243" height="210" key="GridCell.Tab.0.bottom" timestamp="1601241907666">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602023188553">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="782" y="143" key="#com.intellij.ide.util.MemberChooser/0.23.1440.821@0.23.1440.821" timestamp="1601830669541" />
+    <state width="1398" height="73" key="GridCell.Tab.0.bottom" timestamp="1602604995419">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="73" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602604995419" />
     <state width="1855" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1601241544230" />
-    <state width="1243" height="210" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
-    <state width="1243" height="210" key="GridCell.Tab.0.center" timestamp="1601241907665">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1295" height="209" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1602452356235" />
+    <state width="1295" height="209" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1602453886901" />
+    <state width="1295" height="247" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1602280225079" />
+    <state width="1088" height="258" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1601847185866" />
+    <state width="1440" height="75" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1602442865438" />
+    <state width="1398" height="73" key="GridCell.Tab.0.center" timestamp="1602604995417">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="73" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1602604995417" />
     <state width="1855" height="266" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
-    <state width="1243" height="210" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
-    <state width="1243" height="210" key="GridCell.Tab.0.left" timestamp="1601241907665">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1295" height="209" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1602452356234" />
+    <state width="1295" height="209" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1602453886901" />
+    <state width="1295" height="247" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1602280225078" />
+    <state width="1088" height="258" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1601847185864" />
+    <state width="1440" height="75" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1602442865437" />
+    <state width="1398" height="73" key="GridCell.Tab.0.left" timestamp="1602604995416">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="73" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1602604995416" />
     <state width="1855" height="266" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1601241544228" />
-    <state width="1243" height="210" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1601241907665" />
-    <state width="1243" height="210" key="GridCell.Tab.0.right" timestamp="1601241907666">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1295" height="209" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1602452356234" />
+    <state width="1295" height="209" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1602453886900" />
+    <state width="1295" height="247" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1602280225077" />
+    <state width="1088" height="258" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1601847185863" />
+    <state width="1440" height="75" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1601841320539" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1602442865436" />
+    <state width="1398" height="73" key="GridCell.Tab.0.right" timestamp="1602604995418">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1398" height="73" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1602604995418" />
     <state width="1855" height="266" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601236894277" />
-    <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1601241544229" />
-    <state width="1243" height="210" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1601241907666" />
+    <state width="1295" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1602452356235" />
+    <state width="1295" height="209" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1602453886901" />
+    <state width="1295" height="247" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1602280225078" />
+    <state width="1088" height="258" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1601847185864" />
+    <state width="1440" height="75" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1601841320540" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1602442865437" />
+    <state width="1398" height="28" key="GridCell.Tab.1.bottom" timestamp="1602432722862">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="28" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1602432722862" />
+    <state width="1398" height="28" key="GridCell.Tab.1.center" timestamp="1602432722861">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="28" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1602432722861" />
+    <state width="1398" height="28" key="GridCell.Tab.1.left" timestamp="1602432722860">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="28" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1602432722860" />
+    <state width="1398" height="28" key="GridCell.Tab.1.right" timestamp="1602432722862">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="28" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1602432722862" />
     <state x="117" y="93" key="MergeDialog" timestamp="1601241460569">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
@@ -217,21 +249,33 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="333" y="198" key="MultipleFileMergeDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241330024" />
-    <state x="437" y="95" key="SettingsEditor" timestamp="1601233122811">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="208" y="30" width="1024" height="822" key="SettingsEditor" timestamp="1602605090537">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="437" y="95" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601233122811" />
-    <state x="549" y="254" key="Vcs.Push.Dialog.v2" timestamp="1601237096684">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="208" y="30" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1602605090537" />
+    <state x="208" y="31" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1602441888721" />
+    <state x="328" y="23" width="1024" height="822" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1601829928764" />
+    <state x="412" y="220" key="Vcs.Push.Dialog.v2" timestamp="1602467796248">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="412" y="220" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1602467796248" />
     <state x="549" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1601237096684" />
-    <state x="485" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601241929633">
-      <screen x="0" y="23" width="1440" height="816" />
-    </state>
-    <state x="485" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1601241929633" />
-    <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601241435369">
+    <state x="412" y="224" key="Vcs.Push.Dialog.v2/0.23.1440.821@0.23.1440.821" timestamp="1601847160168" />
+    <state x="485" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602280020919">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
-    <state x="444" y="150" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.814@0.23.1440.814" timestamp="1601241435369" />
+    <state x="485" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1601868538417" />
+    <state x="485" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.812@0.23.1440.812" timestamp="1602003853123" />
+    <state x="485" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.814@0.23.1440.814" timestamp="1602280020919" />
+    <state x="485" y="351" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1601908977877" />
+    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821@0.23.1440.821" timestamp="1601847178015" />
+    <state x="485" y="353" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.822@0.23.1440.822" timestamp="1601837581963" />
+    <state x="458" y="205" key="extract.method.dialog" timestamp="1602450604767">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="205" key="extract.method.dialog/0.0.1440.900@0.0.1440.900" timestamp="1602450604767" />
+    <state x="444" y="140" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601841871511">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
   </component>
 </project>

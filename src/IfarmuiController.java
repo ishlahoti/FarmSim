@@ -7,17 +7,15 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Popup;
-import sun.awt.image.ImageWatched;
 
 
 public class IfarmuiController implements Initializable {
@@ -34,39 +32,35 @@ public class IfarmuiController implements Initializable {
     @FXML
     private GridPane grid;
 
+    @FXML
+    private Button inventory;
     private Game game = Game.factory();
-
-    public IfarmuiController() {
-    }
+    private static boolean alreadyExecuted;
 
     @FXML
     private void difficultyLabel() {
-        String difficulty = this.game.getDifficulty();
-        int mon = 0;
-        switch (difficulty) {
-        case "Easy":
-            mon = 60;
-            break;
-        case "Medium":
-            mon = 40;
-            break;
-        case "Hard":
-            mon = 20;
-            break;
-        default:
-            break;
-        }
-        this.game.setMoney(mon);
-        this.money.setText("Money: $" + mon);
-
-
+            String difficulty = this.game.getDifficulty();
+            int mon = 0;
+            switch (difficulty) {
+                case "Easy":
+                    mon = 60;
+                    break;
+                case "Medium":
+                    mon = 40;
+                    break;
+                case "Hard":
+                    mon = 20;
+                    break;
+                default:
+                    break;
+            }
+            this.game.setMoney(mon);
     }
 
     @FXML
     private void harvest(ActionEvent event) throws IOException {
         List<Label> maturePlants = new LinkedList<>();
         for (Label plot : plots) {
-//            Label plot = (Label) plotNode;
 
             if (plot.getText().contains("Mature"))
                 maturePlants.add(plot);
@@ -127,10 +121,31 @@ public class IfarmuiController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.day.setText("Day " + this.game.getDay());
         this.name.setText(this.game.getName() + "'s Farm");
-        this.difficultyLabel();
+        if (!alreadyExecuted) {
+            difficultyLabel();
+            alreadyExecuted = true;
+        }
+        this.money.setText("Money $" + this.game.getMoney());
 
+//        grid.setStyle("-fx-background-color: #000000; --fx-border-color: #c4c4c4;");
         plots =  new Label[] {text0,text1,text2,text3,text4,text5,text6,text7,text8,text9};
         this.initializePlants();
+    }
+
+    @FXML
+    private void changeScreen(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Inventory.fxml"));
+        Parent root3 = (Parent) loader.load();
+        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
+        Main.getPrimaryStage().show();
+    }
+
+    @FXML
+    private void changeScreentoMarket(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
+        Parent root3 = (Parent) loader.load();
+        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
+        Main.getPrimaryStage().show();
     }
 }
 

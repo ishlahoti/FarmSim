@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
 
 <!--
 This is where all the layout nodes for the initial configuration screen should be added (below children)
@@ -14,9 +15,7 @@ open all layout components with <layout name> and after implementation close the
 TODO: add layout nodes. player enters name/selects starting season/seed/game difficulty
 -->
 
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.BorderPane?>
+
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="farmBackgroundImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IfarmuiController">
     <children>
         <Label fx:id="money" layoutX="14.0" layoutY="751.0" text="Label" textFill="lawngreen">
@@ -33,7 +32,7 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
             <font>
                 <Font name="Avenir Next Bold" size="24.0" />           </font>
         </Label>
-        <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" layoutX="150.0" layoutY="250.0" prefHeight="100.0" prefWidth="500.0">
+        <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" layoutX="150.0" layoutY="250.0" prefHeight="100.0" prefWidth="500.0"  styleClass="plotsGrid" stylesheets="@style.css">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="99.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="101.0" />
@@ -69,6 +68,16 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
                 <Label fx:id="text9" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
             </children>
         </GridPane>
-        <Button fx:id="harvest" layoutX="650" layoutY="750" onAction="#harvest" text="Harvest Plants" />
+      <Button fx:id="harvest" layoutX="650" layoutY="750" onAction="#harvest" text="Harvest Plants" />
+      <Button fx:id="inventory" layoutX="564.0" layoutY="29.0" mnemonicParsing="false" onAction="#changeScreen" prefHeight="41.0" prefWidth="101.0" text="Inventory">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </Button>
+        <Button layoutX="564.0" layoutY="92.0" mnemonicParsing="false" onAction="#changeScreentoMarket" prefHeight="41.0" prefWidth="101.0" text="Market">
+            <font>
+                <Font name="Avenir Next Bold" size="13.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>
