@@ -1,5 +1,6 @@
 // import javafx.application.Application;
 //import javafx.fxml.FXML;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 //import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -30,20 +31,15 @@ import static org.junit.Assert.*;
 
 
 public class MainTest extends ApplicationTest {
-    private static Stage primaryStage;
 
     /**
      * Accessor for primaryStage
      * @return the primaryStage
     */
-    public static Stage getPrimaryStage() {
-        return primaryStage;
-    }
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        this.primaryStage = primaryStage;
-        Parent root = FXMLLoader.load(getClass().getResource("Config.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("WelcomeScreen.fxml"));
         //primaryStage.setTitle("Farm Simulation");
         Scene scene = new Scene(root, 800, 800);
         scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
@@ -53,6 +49,8 @@ public class MainTest extends ApplicationTest {
 
     @Before
     public void setUp() throws Exception {
+        clickOn("#start");
+        GuiTest.waitUntil("#submit", Matchers.is(VisibleNodesMatcher.visible()));
     }
 
     @After
@@ -98,8 +96,8 @@ public class MainTest extends ApplicationTest {
         name.setText(" space before name");
         clickOn("#submit");
         GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
-        TextField newName = (TextField) GuiTest.find("#name");
-        assertEquals("space before name", newName.getText());
+        Label newName = (Label) GuiTest.find("#name");
+        assertEquals("space before name's Farm", newName.getText());
     }
 
     @Test
@@ -108,70 +106,60 @@ public class MainTest extends ApplicationTest {
         name.setText("space after name ");
         clickOn("#submit");
         GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
-        TextField newName = (TextField) GuiTest.find("#name");
-        assertEquals("space after name", newName.getText());
+        Label newName = (Label) GuiTest.find("#name");
+        assertEquals("space after name's Farm", newName.getText());
     }
 
     @Test
     public void testDefaultDifficulty() {
-        ChoiceBox<String> difficulty = (ChoiceBox<String>) GuiTest.find("#difficulty");
-        difficulty.setValue("Easy");
+        ChoiceBox<String> difficulty = GuiTest.find("#difficulty");
+        Platform.runLater(() -> difficulty.setValue("Easy"));
         clickOn("#submit");
         GuiTest.waitUntil("#difficulty", Matchers.is(VisibleNodesMatcher.visible()));
-        ChoiceBox<String> newDiff = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        ChoiceBox<String> newDiff = GuiTest.find("#difficulty");
         assertEquals("Easy", newDiff.getValue());
     }
 
     @Test
     public void testDefaultStartingSeed() {
-        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
         startingSeed.setValue("Strawberry");
         clickOn("#submit");
         GuiTest.waitUntil("#startingSeed", Matchers.is(VisibleNodesMatcher.visible()));
-        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        ChoiceBox<String> newStartingSeed = GuiTest.find("#startingSeed");
         assertEquals("Strawberry", newStartingSeed.getValue());
     }
 
     @Test
     public void testDefaultStartingSeasonSpring() {
-        ChoiceBox<String> startingSeason = (ChoiceBox<String>) GuiTest.find("#startingSeason");
+        ChoiceBox<String> startingSeason = GuiTest.find("#startingSeason");
 
         startingSeason.setValue("Spring");
         clickOn("#submit");
 
         GuiTest.waitUntil("#startingSeason", Matchers.is(VisibleNodesMatcher.visible()));
-        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeason");
+        ChoiceBox<String> newStartingSeed = GuiTest.find("#startingSeason");
         assertEquals("Spring", newStartingSeed.getValue());
     }
 
     @Test
     public void alternateDifficulty() {
-        ChoiceBox<String> difficulty = (ChoiceBox<String>) GuiTest.find("#difficulty");
-        difficulty.setValue("Medium");
+        ChoiceBox<String> difficulty = GuiTest.find("#difficulty");
+        Platform.runLater(()->difficulty.setValue("Medium"));
         clickOn("#submit");
         GuiTest.waitUntil("#difficulty", Matchers.is(VisibleNodesMatcher.visible()));
-        ChoiceBox<String> newDiff = (ChoiceBox<String>) GuiTest.find("#difficulty");
+        ChoiceBox<String> newDiff = GuiTest.find("#difficulty");
         assertEquals("Medium", newDiff.getValue());
     }
 
     @Test
     public void alternateStartingSeed() {
-        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
-        startingSeed.setValue("Grape");
+        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
+        Platform.runLater(()->startingSeed.setValue("Grape"));
         clickOn("#submit");
         GuiTest.waitUntil("#startingSeed", Matchers.is(VisibleNodesMatcher.visible()));
-        ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        ChoiceBox<String> newStartingSeed = GuiTest.find("#startingSeed");
         assertEquals("Grape", newStartingSeed.getValue());
     }
 
-    @Test
-    public void checkInitialInventory() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
-        startingSeed.setValue("Grape");
-
-        clickOn("#submit");
-
-    }
 }
