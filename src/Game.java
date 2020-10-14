@@ -41,7 +41,12 @@ public class Game {
     private int beanSeedQMarket = 2;
 
 
-    final int inventoryCapacity = 20;
+    private final int inventoryCapacity = 20;
+
+    public int getInventoryCapacity() {
+        return inventoryCapacity;
+    }
+
     private int size = 0;
 
     private Game() {
@@ -102,22 +107,54 @@ public class Game {
     public int getDay() {
         return this.day;
     }
-    public int getRaspberrySeedQuantity(){ return raspberrySeedQuantity;}
-    public int getStrawberrySeedQuantity(){ return strawberrySeedQuantity;}
-    public int getPassionFruitSeedQuantity() { return passionFruitSeedQuantity;}
-    public int getGrapeSeedQuantity() { return grapeSeedQuantity;}
-    public int getStrawberryCropQ() { return strawberryCropQ;}
-    public int getRaspberryCropQ(){return raspberryCropQ;}
-    public int getPassionFruitCropQ(){return passionFruitCropQ;}
-    public int getGrapeFruitCropQ() {return grapeCropQ;}
-    public int getWatCropQ() {return watCropQ;}
-    public int getWatSeedQ(){return watSeedQ;}
-    public int getPinCropQ(){return pinCropQ;}
-    public int getPinSeedQ(){return pinSeedQ;}
-    public int getDragCropQ(){return dragCropQ;}
-    public int getDragSeedQ(){return dragSeedQ;}
-    public int getBeanCropQ(){return beanCropQ;}
-    public int getBeanSeedQ(){return beanSeedQ;}
+    public int getRaspberrySeedQuantity() {
+        return raspberrySeedQuantity;
+    }
+    public int getStrawberrySeedQuantity() {
+        return strawberrySeedQuantity;
+    }
+    public int getPassionFruitSeedQuantity() {
+        return passionFruitSeedQuantity;
+    }
+    public int getGrapeSeedQuantity() {
+        return grapeSeedQuantity;
+    }
+    public int getStrawberryCropQ() {
+        return strawberryCropQ;
+    }
+    public int getRaspberryCropQ() {
+        return raspberryCropQ;
+    }
+    public int getPassionFruitCropQ() {
+        return passionFruitCropQ;
+    }
+    public int getGrapeFruitCropQ() {
+        return grapeCropQ;
+    }
+    public int getWatCropQ() {
+        return watCropQ;
+    }
+    public int getWatSeedQ() {
+        return watSeedQ;
+    }
+    public int getPinCropQ() {
+        return pinCropQ;
+    }
+    public int getPinSeedQ() {
+        return pinSeedQ;
+    }
+    public int getDragCropQ() {
+        return dragCropQ;
+    }
+    public int getDragSeedQ() {
+        return dragSeedQ;
+    }
+    public int getBeanCropQ() {
+        return beanCropQ;
+    }
+    public int getBeanSeedQ() {
+        return beanSeedQ;
+    }
     public int getRaspberrySeedQuantityMarket() {
         return raspberrySeedQuantityMarket;
     }
@@ -250,134 +287,134 @@ public class Game {
         if (size + x > inventoryCapacity) {
             return;
         }
-        raspberrySeedQuantity+=x;
-        size+=x;
+        raspberrySeedQuantity += x;
+        size += x;
     }
     public void addStrawberrySeed(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        strawberrySeedQuantity+=x;
-        size+=x;
+        strawberrySeedQuantity += x;
+        size += x;
     }
     public void addPassionFruitSeed(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        passionFruitSeedQuantity+=x;
-        size+=x;
+        passionFruitSeedQuantity += x;
+        size += x;
     }
     public void addGrapeSeed(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        grapeSeedQuantity+=x;
-        size+=x;
+        grapeSeedQuantity += x;
+        size += x;
     }
     public void addStrawberryCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        strawberryCropQ+=x;
-        size+=x;
+        strawberryCropQ += x;
+        size += x;
     }
     public void addRaspberryCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        raspberryCropQ+=x;
-        size+=x;
+        raspberryCropQ += x;
+        size += x;
     }
     public void addPassionFruitCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        passionFruitCropQ+=x;
-        size+=x;
+        passionFruitCropQ += x;
+        size += x;
     }
     public void addGrapeCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        grapeCropQ+=x;
-        size+=x;
+        grapeCropQ += x;
+        size += x;
     }
     public void addBeanCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        beanCropQ+=x;
-        size+=x;
+        beanCropQ += x;
+        size += x;
     }
     public void addBeanSeed(int x) {
         if (size + x > inventoryCapacity) {
-             return;
+            return;
         }
-        beanSeedQ+=x;
-        size+=x;
+        beanSeedQ += x;
+        size += x;
     }
 
     public void addPinCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        pinCropQ+=x;
-        size+=x;
+        pinCropQ += x;
+        size += x;
     }
     public void addPinSeed(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        pinSeedQ+=x;
-        size+=x;
+        pinSeedQ += x;
+        size += x;
     }
 
     public void addWatCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        watCropQ+=x;
-        size+=x;
+        watCropQ += x;
+        size += x;
     }
 
     public void addWatSeed(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        watSeedQ+=x;
-        size+=x;
+        watSeedQ += x;
+        size += x;
     }
     public void addDragCrop(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        dragCropQ+=x;
-        size+=x;
+        dragCropQ += x;
+        size += x;
     }
     public void addDragSeed(int x) {
         if (size + x > inventoryCapacity) {
             return;
         }
-        dragSeedQ+=x;
-        size+=x;
+        dragSeedQ += x;
+        size += x;
     }
 
     public int getTotalInventoryQuantity() {
-        return getRaspberrySeedQuantity() +
-            getStrawberrySeedQuantity() +
-            getPassionFruitSeedQuantity() +
-            getGrapeSeedQuantity() +
-            getRaspberryCropQ() +
-            getPassionFruitCropQ() +
-            getGrapeFruitCropQ() +
-            getWatCropQ() +
-            getWatSeedQ() +
-            getPinCropQ() +
-            getPinSeedQ() +
-            getDragCropQ() +
-            getDragSeedQ() +
-            getBeanCropQ() +
-            getBeanSeedQ();
+        return getRaspberrySeedQuantity()
+            + getStrawberrySeedQuantity()
+            + getPassionFruitSeedQuantity()
+            + getGrapeSeedQuantity()
+            + getRaspberryCropQ()
+            + getPassionFruitCropQ()
+            + getGrapeFruitCropQ()
+            + getWatCropQ()
+            + getWatSeedQ()
+            + getPinCropQ()
+            + getPinSeedQ()
+            + getDragCropQ()
+            + getDragSeedQ()
+            + getBeanCropQ()
+            + getBeanSeedQ();
     }
 
     public int getTotalMarketQuantity() {

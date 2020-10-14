@@ -227,7 +227,7 @@ public class MarketController implements Initializable {
             switch (((Button) event.getSource()).getId()) {
                 case "dragonBuy":
                     if ((game.getMoney() - market.getPBuy(Items.DRAGONS) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getDragSeedQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.DRAGONS));
                         game.changeDragSeedQMarket(-1);
@@ -236,7 +236,7 @@ public class MarketController implements Initializable {
                     break;
                 case "watermelonBuy":
                     if ((game.getMoney() - market.getPBuy(Items.WATERMELONS) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getWatSeedQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.WATERMELONS));
                         game.changeWatSeedQMarket(-1);
@@ -245,7 +245,7 @@ public class MarketController implements Initializable {
                     break;
                 case "pineappleBuy":
                     if ((game.getMoney() - market.getPBuy(Items.PINEAPPLES) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getPinSeedQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.PINEAPPLES));
                         game.changePinSeedQMarket(-1);
@@ -254,7 +254,7 @@ public class MarketController implements Initializable {
                     break;
                 case "beanBuy":
                     if ((game.getMoney() - market.getPBuy(Items.BEANS) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getBeanSeedQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.BEANS));
                         game.changeBeanSeedQMarket(-1);
@@ -263,7 +263,7 @@ public class MarketController implements Initializable {
                     break;
                 case "raspberryCBuy":
                     if ((game.getMoney() - market.getPBuy(Items.RASPBERRYC) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getRaspberryCropQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.RASPBERRYC));
                         game.changeRaspberryCropQMarket(-1);
@@ -272,7 +272,7 @@ public class MarketController implements Initializable {
                     break;
                 case "strawberryCBuy":
                     if ((game.getMoney() - market.getPBuy(Items.STRAWBERRYC) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getStrawberryCropQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.STRAWBERRYC));
                         game.changeStrawberryCropQMarket(-1);
@@ -281,7 +281,7 @@ public class MarketController implements Initializable {
                     break;
                 case "grapeCBuy":
                     if ((game.getMoney() - market.getPBuy(Items.GRAPEC) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getGrapeCropQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.GRAPEC));
                         game.changeGrapeCropQMarket(-1);
@@ -290,7 +290,7 @@ public class MarketController implements Initializable {
                     break;
                 case "passionCBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.PASSIONC) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getPassionFruitCropQMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.PASSIONC));
                         game.changePassionFruitCropQMarket(-1);
@@ -299,7 +299,7 @@ public class MarketController implements Initializable {
                     break;
                 case "raspberrySBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.RASPBERRYS) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getRaspberrySeedQuantityMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.RASPBERRYS));
                         game.changeRaspberrySeedQuantityMarket(-1);
@@ -308,7 +308,7 @@ public class MarketController implements Initializable {
                     break;
                 case "strawberrySBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.STRAWBERRYS) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getStrawberrySeedQuantityMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.STRAWBERRYS));
                         game.changeStrawberrySeedQuantityMarket(-1);
@@ -317,7 +317,7 @@ public class MarketController implements Initializable {
                     break;
                 case "grapeSBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.GRAPES) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getGrapeSeedQuantityMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.GRAPES));
                         game.changeGrapeSeedQuantityMarket(-1);
@@ -326,7 +326,7 @@ public class MarketController implements Initializable {
                     break;
                 case "passionSBuy":
                     if ((game.getMoney() - market.getPBuy(Items.PASSIONS) >= 0)
-                            && game.getTotalInventoryQuantity() < game.inventoryCapacity
+                            && game.getTotalInventoryQuantity() < game.getInventoryCapacity()
                             && game.getPassionFruitSeedQuantityMarket() > 0) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.PASSIONS));
                         game.changePassionFruitSeedQuantityMarket(-1);
