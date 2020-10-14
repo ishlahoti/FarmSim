@@ -22,7 +22,8 @@ public class Game {
     private int pinSeedQ;
     private int dragSeedQ;
     private int beanSeedQ;
-    final int capacity = 20;
+    
+    final int inventoryCapacity = 20;
     private int size = 4;
 
     private Game() {
@@ -103,7 +104,7 @@ public class Game {
 
     //made add & remove for each item in inventory
     public void addRaspberrySeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
        raspberrySeedQuantity+=x;
@@ -114,7 +115,7 @@ public class Game {
         size--;
     }
     public void addStrawberrySeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         strawberrySeedQuantity+=x;
@@ -125,7 +126,7 @@ public class Game {
         size--;
     }
     public void addPassionFruitSeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         passionFruitSeedQuantity+=x;
@@ -136,7 +137,7 @@ public class Game {
         size--;
     }
     public void addGrapeSeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         grapeSeedQuantity+=x;
@@ -147,7 +148,7 @@ public class Game {
         size--;
     }
     public void addStrawberryCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         strawberryCropQ+=x;
@@ -158,7 +159,7 @@ public class Game {
         size--;
     }
     public void addRaspberryCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         raspberryCropQ+=x;
@@ -169,7 +170,7 @@ public class Game {
         size--;
     }
     public void addPassionFruitCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         passionFruitCropQ+=x;
@@ -180,7 +181,7 @@ public class Game {
         size--;
     }
     public void addGrapeCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         grapeCropQ+=x;
@@ -191,7 +192,7 @@ public class Game {
         size--;
     }
     public void addBeanCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         beanCropQ+=x;
@@ -202,7 +203,7 @@ public class Game {
         size--;
     }
     public void addBeanSeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
              return;
         }
         beanSeedQ+=x;
@@ -213,7 +214,7 @@ public class Game {
         size--;
     }
     public void addPinCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         pinCropQ+=x;
@@ -224,7 +225,7 @@ public class Game {
         size--;
     }
     public void addPinSeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         pinSeedQ+=x;
@@ -235,7 +236,7 @@ public class Game {
         size--;
     }
     public void addWatCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         watCropQ+=x;
@@ -246,7 +247,7 @@ public class Game {
         size--;
     }
     public void addWatSeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         watSeedQ+=x;
@@ -257,7 +258,7 @@ public class Game {
         size--;
     }
     public void addDragCrop(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         dragCropQ+=x;
@@ -268,7 +269,7 @@ public class Game {
         size--;
     }
     public void addDragSeed(int x) {
-        if (size + x > capacity) {
+        if (size + x > inventoryCapacity) {
             return;
         }
         dragSeedQ+=x;
