@@ -2,10 +2,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -47,6 +49,10 @@ public class InventoryController implements Initializable {
     Label watCropQ;
     @FXML
     Label watSeedQ;
+    @FXML
+    Button farm;
+    @FXML
+    Button market;
 
 
 
@@ -74,15 +80,17 @@ public class InventoryController implements Initializable {
     private void changeScreen(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 
     @FXML
     private void changeScreentoMarket(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
         Parent root3 = (Parent) loader.load();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 }

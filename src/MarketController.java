@@ -2,6 +2,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -507,8 +508,9 @@ public class MarketController implements Initializable {
     private void changeScreen(ActionEvent actionEvent) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = loader.load();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 }
 

@@ -163,4 +163,15 @@ public class MainTest extends ApplicationTest {
         ChoiceBox<String> newStartingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
         assertEquals("Grape", newStartingSeed.getValue());
     }
+
+    @Test
+    public void checkInitialInventory() {
+        TextField name = (TextField) GuiTest.find("#name");
+        name.setText("Name");
+        ChoiceBox<String> startingSeed = (ChoiceBox<String>) GuiTest.find("#startingSeed");
+        startingSeed.setValue("Grape");
+
+        clickOn("#submit");
+
+    }
 }

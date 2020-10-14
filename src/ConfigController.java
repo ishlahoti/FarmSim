@@ -1,12 +1,14 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -75,8 +77,9 @@ public class ConfigController {
         Parent root3 = (Parent) loader.load();
         //Main.primaryStage.setScene(new Scene(root3, 800, 800));
         //Main.primaryStage.show();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 
     /**

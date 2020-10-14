@@ -8,6 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -15,6 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Popup;
+import javafx.stage.Stage;
 
 
 public class IfarmuiController implements Initializable {
@@ -52,6 +54,8 @@ public class IfarmuiController implements Initializable {
 
     @FXML
     private Button inventory;
+    @FXML
+    private Button market;
     private Game game = Game.factory();
     private static boolean alreadyExecuted;
 
@@ -115,7 +119,8 @@ public class IfarmuiController implements Initializable {
         label.setMinHeight(50);
         label.setAlignment(Pos.CENTER);
         label.setTextAlignment(TextAlignment.CENTER);
-        popup.show(Main.getPrimaryStage());
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        popup.show(window);
         popup.setAutoHide(true);
     }
 
@@ -165,16 +170,18 @@ public class IfarmuiController implements Initializable {
         FXMLLoader loader
                 = new FXMLLoader(getClass().getClassLoader().getResource("Inventory.fxml"));
         Parent root3 = (Parent) loader.load();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 
     @FXML
     private void changeScreentoMarket(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
         Parent root3 = (Parent) loader.load();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 }
 
