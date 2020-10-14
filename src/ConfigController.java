@@ -61,6 +61,15 @@ public class ConfigController {
     private void changeScreen(ActionEvent event) throws IOException {
         this.game.setDifficulty((String) this.difficulty.getValue());
         this.game.setSeed((String) this.startingSeed.getValue());
+        if (this.startingSeed.getValue().equals("Strawberry")) {
+            this.game.addStrawberrySeed(1);
+        } else if (this.startingSeed.getValue().equals("Raspberry")) {
+            this.game.addRaspberrySeed(1);
+        } else if (this.startingSeed.getValue().equals("Passion Fruit")) {
+            this.game.addPassionFruitSeed(1);
+        } else {
+            this.game.addGrapeSeed(1);
+        }
         this.game.setSeason((String) this.startingSeason.getValue());
         this.game.setName((String) this.name.getText());
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));

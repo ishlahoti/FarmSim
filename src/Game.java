@@ -3,13 +3,13 @@ public class Game {
     private String name = "";
     private String difficulty = "Medium";
     private String season = "Fall";
-    private String seed;
+    private String startingSeed;
     private double money = 0.00D;
     private int day = 1;
-    private int raspberrySeedQuantity = 1;
-    private int strawberrySeedQuantity = 1;
-    private int passionFruitSeedQuantity = 1;
-    private int grapeSeedQuantity = 1;
+    private int raspberrySeedQuantity;
+    private int strawberrySeedQuantity;
+    private int passionFruitSeedQuantity;
+    private int grapeSeedQuantity;
     private int strawberryCropQ;
     private int raspberryCropQ;
     private int passionFruitCropQ;
@@ -53,11 +53,11 @@ public class Game {
     }
 
     public void setSeed(String seed) {
-        this.seed = seed;
+        this.startingSeed = seed;
     }
 
     public String getSeed() {
-        return this.seed;
+        return this.startingSeed;
     }
 
     public void setSeason(String season) {
