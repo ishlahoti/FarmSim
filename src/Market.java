@@ -1,4 +1,3 @@
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,9 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Hashtable;
-import java.util.Iterator;
 import java.util.Random;
-import java.util.Set;
 
 public class Market {
 
@@ -26,9 +23,9 @@ public class Market {
         itemsPBuy = new Hashtable<>();
         itemsPSell = new Hashtable<>();
 
-       for (Items i: Items.values()) {
-           //rand = new Random();
-           //int random = rand.nextInt(6 - 1) + 1;
+        for (Items i: Items.values()) {
+            //rand = new Random();
+            //int random = rand.nextInt(6 - 1) + 1;
             itemsPBuy.put(i, (int) (i.getBasePrice() + (seasonPrice() * difficulty())));
             itemsPSell.put(i, (int) (i.getBasePrice() + (seasonPrice() - 1) * difficulty()));
         }
