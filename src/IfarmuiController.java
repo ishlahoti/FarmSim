@@ -86,6 +86,7 @@ public class IfarmuiController implements Initializable {
         } else {
             label = new Label("You harvested " + numMature + " mature plant" + (numMature == 1 ? "!" : "s!"));
         }
+        label.setText(label.getText() + "\nClick out of this box to exit");
 
         Popup popup = new Popup();
         label.setStyle(" -fx-background-color: lightgray;");
@@ -99,7 +100,7 @@ public class IfarmuiController implements Initializable {
 
 
     @FXML
-    private void initializePlants(){
+    private void initializePlants() {
         String[] plantTypes = new String[3];
         plantTypes[0] = "seed";
         plantTypes[1] = "immature";
@@ -132,10 +133,9 @@ public class IfarmuiController implements Initializable {
             difficultyLabel();
             alreadyExecuted = true;
         }
-        this.money.setText("Money $" + this.game.getMoney());
+        this.money.setText(String.format("Money $%10.2f", this.game.getMoney()));
 
-//        grid.setStyle("-fx-background-color: #000000; --fx-border-color: #c4c4c4;");
-        plots =  new Label[] {text0,text1,text2,text3,text4,text5,text6,text7,text8,text9};
+        plots = new Label[]{text0, text1, text2, text3, text4, text5, text6, text7, text8, text9};
         this.initializePlants();
     }
 
