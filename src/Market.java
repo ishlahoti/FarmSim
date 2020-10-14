@@ -32,7 +32,7 @@ public class Market {
     }
 
     public int getPBuy(Items item) {
-        return itemsPBuy.getOrDefault(item,0);
+        return itemsPBuy.getOrDefault(item, 0);
     }
 
     public int getPSell(Items item) {
@@ -42,7 +42,7 @@ public class Market {
     private int seasonPrice() {
         if (game.getSeason().equals("Winter")) {
             return 4;
-        } else if (game.getSeason().equals("Summer")){
+        } else if (game.getSeason().equals("Summer")) {
             return 2;
         } else if (game.getSeason().equals("Fall")) {
             return 3;

@@ -16,43 +16,43 @@ import java.util.ResourceBundle;
 public class InventoryController implements Initializable {
 
     @FXML
-    Label error;
+    private Label error;
     @FXML
-    Label raspberrySeedQuantity;
+    private Label raspberrySeedQuantity;
     @FXML
-    Label strawberrySeedQuantity;
+    private Label strawberrySeedQuantity;
     @FXML
-    Label passionFruitSeedQuantity;
+    private Label passionFruitSeedQuantity;
     @FXML
-    Label grapeSeedQuantity;
+    private Label grapeSeedQuantity;
     @FXML
-    Label strawberryCropQ;
+    private Label strawberryCropQ;
     @FXML
-    Label raspberryCropQ;
+    private Label raspberryCropQ;
     @FXML
-    Label passionFruitCropQ;
+    private Label passionFruitCropQ;
     @FXML
-    Label grapeCropQ;
+    private Label grapeCropQ;
     @FXML
-    Label pinCropQ;
+    private Label pinCropQ;
     @FXML
-    Label pinSeedQ;
+    private Label pinSeedQ;
     @FXML
-    Label beanCropQ;
+    private Label beanCropQ;
     @FXML
-    Label beanSeedQ;
+    private Label beanSeedQ;
     @FXML
-    Label dragCropQ;
+    private Label dragCropQ;
     @FXML
-    Label dragSeedQ;
+    private Label dragSeedQ;
     @FXML
-    Label watCropQ;
+    private Label watCropQ;
     @FXML
-    Label watSeedQ;
+    private Label watSeedQ;
     @FXML
-    Button farm;
+    private Button farm;
     @FXML
-    Button market;
+    private Button market;
 
 
 

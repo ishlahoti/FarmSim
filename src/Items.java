@@ -1,5 +1,3 @@
-import java.util.Hashtable;
-
 public enum Items {
 
     RASPBERRYC(2),

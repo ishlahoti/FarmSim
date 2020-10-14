@@ -32,11 +32,6 @@ import static org.junit.Assert.*;
 
 public class MainTest extends ApplicationTest {
 
-    /**
-     * Accessor for primaryStage
-     * @return the primaryStage
-    */
-
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("WelcomeScreen.fxml"));
@@ -145,7 +140,7 @@ public class MainTest extends ApplicationTest {
     @Test
     public void alternateDifficulty() {
         ChoiceBox<String> difficulty = GuiTest.find("#difficulty");
-        Platform.runLater(()->difficulty.setValue("Medium"));
+        Platform.runLater(() -> difficulty.setValue("Medium"));
         clickOn("#submit");
         GuiTest.waitUntil("#difficulty", Matchers.is(VisibleNodesMatcher.visible()));
         ChoiceBox<String> newDiff = GuiTest.find("#difficulty");
@@ -155,7 +150,7 @@ public class MainTest extends ApplicationTest {
     @Test
     public void alternateStartingSeed() {
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(()->startingSeed.setValue("Grape"));
+        Platform.runLater(() -> startingSeed.setValue("Grape"));
         clickOn("#submit");
         GuiTest.waitUntil("#startingSeed", Matchers.is(VisibleNodesMatcher.visible()));
         ChoiceBox<String> newStartingSeed = GuiTest.find("#startingSeed");

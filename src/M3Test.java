@@ -1,12 +1,8 @@
-// import javafx.application.Application;
-//import javafx.fxml.FXML;
-
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
@@ -26,10 +22,6 @@ import static org.junit.Assert.assertEquals;
 
 
 public class M3Test extends ApplicationTest {
-    /**
-     * Accessor for primaryStage
-     * @return the primaryStage
-    */
 
     @Override
     public void start(Stage primaryStage) throws IOException {
@@ -60,7 +52,7 @@ public class M3Test extends ApplicationTest {
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(()->startingSeed.setValue("Grape"));
+        Platform.runLater(() -> startingSeed.setValue("Grape"));
         clickOn("#submit");
         GuiTest.waitUntil("#inventory", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#inventory");
