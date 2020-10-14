@@ -23,6 +23,24 @@ public class Game {
     private int dragSeedQ;
     private int beanSeedQ;
 
+    private int raspberrySeedQuantityMarket = 3;
+    private int strawberrySeedQuantityMarket = 3;
+    private int passionFruitSeedQuantityMarket = 3;
+    private int grapeSeedQuantityMarket = 3;
+    private int strawberryCropQMarket = 1;
+    private int raspberryCropQMarket = 1;
+    private int passionFruitCropQMarket = 1;
+    private int grapeCropQMarket = 1;
+    private int watCropQMarket = 0;
+    private int pinCropQMarket = 0;
+    private int dragCropQMarket = 0;
+    private int beanCropQMarket = 0;
+    private int watSeedQMarket = 2;
+    private int pinSeedQMarket = 2;
+    private int dragSeedQMarket = 2;
+    private int beanSeedQMarket = 2;
+
+
     final int inventoryCapacity = 20;
     private int size = 0;
 
@@ -100,8 +118,133 @@ public class Game {
     public int getDragSeedQ(){return dragSeedQ;}
     public int getBeanCropQ(){return beanCropQ;}
     public int getBeanSeedQ(){return beanSeedQ;}
+    public int getRaspberrySeedQuantityMarket() {
+        return raspberrySeedQuantityMarket;
+    }
 
+    public int getStrawberrySeedQuantityMarket() {
+        return strawberrySeedQuantityMarket;
+    }
 
+    public int getPassionFruitSeedQuantityMarket() {
+        return passionFruitSeedQuantityMarket;
+    }
+
+    public int getGrapeSeedQuantityMarket() {
+        return grapeSeedQuantityMarket;
+    }
+
+    public int getStrawberryCropQMarket() {
+        return strawberryCropQMarket;
+    }
+
+    public int getRaspberryCropQMarket() {
+        return raspberryCropQMarket;
+    }
+
+    public int getPassionFruitCropQMarket() {
+        return passionFruitCropQMarket;
+    }
+
+    public int getGrapeCropQMarket() {
+        return grapeCropQMarket;
+    }
+
+    public int getWatCropQMarket() {
+        return watCropQMarket;
+    }
+
+    public int getPinCropQMarket() {
+        return pinCropQMarket;
+    }
+
+    public int getDragCropQMarket() {
+        return dragCropQMarket;
+    }
+
+    public int getBeanCropQMarket() {
+        return beanCropQMarket;
+    }
+
+    public int getWatSeedQMarket() {
+        return watSeedQMarket;
+    }
+
+    public int getPinSeedQMarket() {
+        return pinSeedQMarket;
+    }
+
+    public int getDragSeedQMarket() {
+        return dragSeedQMarket;
+    }
+
+    public int getBeanSeedQMarket() {
+        return beanSeedQMarket;
+    }
+    // incrementer for each item in market
+    public void changeRaspberrySeedQuantityMarket(int raspberrySeedQuantityMarket) {
+        this.raspberrySeedQuantityMarket += raspberrySeedQuantityMarket;
+    }
+
+    public void changeStrawberrySeedQuantityMarket(int strawberrySeedQuantityMarket) {
+        this.strawberrySeedQuantityMarket += strawberrySeedQuantityMarket;
+    }
+
+    public void changePassionFruitSeedQuantityMarket(int passionFruitSeedQuantityMarket) {
+        this.passionFruitSeedQuantityMarket += passionFruitSeedQuantityMarket;
+    }
+
+    public void changeGrapeSeedQuantityMarket(int grapeSeedQuantityMarket) {
+        this.grapeSeedQuantityMarket += grapeSeedQuantityMarket;
+    }
+
+    public void changeStrawberryCropQMarket(int strawberryCropQMarket) {
+        this.strawberryCropQMarket += strawberryCropQMarket;
+    }
+
+    public void changeRaspberryCropQMarket(int raspberryCropQMarket) {
+        this.raspberryCropQMarket += raspberryCropQMarket;
+    }
+
+    public void changePassionFruitCropQMarket(int passionFruitCropQMarket) {
+        this.passionFruitCropQMarket += passionFruitCropQMarket;
+    }
+
+    public void changeGrapeCropQMarket(int grapeCropQMarket) {
+        this.grapeCropQMarket += grapeCropQMarket;
+    }
+
+    public void changeWatCropQMarket(int watCropQMarket) {
+        this.watCropQMarket += watCropQMarket;
+    }
+
+    public void changePinCropQMarket(int pinCropQMarket) {
+        this.pinCropQMarket += pinCropQMarket;
+    }
+
+    public void changeDragCropQMarket(int dragCropQMarket) {
+        this.dragCropQMarket += dragCropQMarket;
+    }
+
+    public void changeBeanCropQMarket(int beanCropQMarket) {
+        this.beanCropQMarket += beanCropQMarket;
+    }
+
+    public void changeWatSeedQMarket(int watSeedQMarket) {
+        this.watSeedQMarket += watSeedQMarket;
+    }
+
+    public void changePinSeedQMarket(int pinSeedQMarket) {
+        this.pinSeedQMarket += pinSeedQMarket;
+    }
+
+    public void changeDragSeedQMarket(int dragSeedQMarket) {
+        this.dragSeedQMarket += dragSeedQMarket;
+    }
+
+    public void changeBeanSeedQMarket(int beanSeedQMarket) {
+        this.beanSeedQMarket += beanSeedQMarket;
+    }
     //made add & remove for each item in inventory
     public void addRaspberrySeed(int x) {
         if (size + x > inventoryCapacity) {
@@ -280,21 +423,40 @@ public class Game {
         size--;
     }
 
-    public int getTotalQuantity() {
+    public int getTotalInventoryQuantity() {
         return getRaspberrySeedQuantity() +
-         getStrawberrySeedQuantity() +
-         getPassionFruitSeedQuantity() +
-         getGrapeSeedQuantity() +
-         getRaspberryCropQ() +
-        getPassionFruitCropQ() +
-         getGrapeFruitCropQ() +
-       getWatCropQ() +
-         getWatSeedQ() +
-       getPinCropQ() +
-        getPinSeedQ() +
-      getDragCropQ() +
-        getDragSeedQ() +
-         getBeanCropQ() +
-         getBeanSeedQ();
+            getStrawberrySeedQuantity() +
+            getPassionFruitSeedQuantity() +
+            getGrapeSeedQuantity() +
+            getRaspberryCropQ() +
+            getPassionFruitCropQ() +
+            getGrapeFruitCropQ() +
+            getWatCropQ() +
+            getWatSeedQ() +
+            getPinCropQ() +
+            getPinSeedQ() +
+            getDragCropQ() +
+            getDragSeedQ() +
+            getBeanCropQ() +
+            getBeanSeedQ();
+    }
+
+    public int getTotalMarketQuantity() {
+        return raspberrySeedQuantityMarket
+            + strawberrySeedQuantityMarket
+            + passionFruitSeedQuantityMarket
+            + grapeSeedQuantityMarket
+            + strawberryCropQMarket
+            + raspberryCropQMarket
+            + passionFruitCropQMarket
+            + grapeCropQMarket
+            + watCropQMarket
+            + pinCropQMarket
+            + dragCropQMarket
+            + beanCropQMarket
+            + watSeedQMarket
+            + pinSeedQMarket
+            + dragSeedQMarket
+            + beanSeedQMarket;
     }
 }
