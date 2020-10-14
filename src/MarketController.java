@@ -215,84 +215,84 @@ public class MarketController implements Initializable {
             switch (((Button) event.getSource()).getId()) {
                 case "dragonBuy":
                     if ((game.getMoney() - market.getPBuy(Items.DRAGONS) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.DRAGONS));
                         game.addDragSeed(1);
                     }
                     break;
                 case "watermelonBuy":
                     if ((game.getMoney() - market.getPBuy(Items.WATERMELONS) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.WATERMELONS));
                         game.addWatSeed(1);
                     }
                     break;
                 case "pineappleBuy":
                     if ((game.getMoney() - market.getPBuy(Items.PINEAPPLES) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.PINEAPPLES));
                         game.addPinSeed(1);
                     }
                     break;
                 case "beanBuy":
                     if ((game.getMoney() - market.getPBuy(Items.BEANS) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.BEANS));
                         game.addBeanSeed(1);
                     }
                     break;
                 case "raspberryCBuy":
                     if ((game.getMoney() - market.getPBuy(Items.RASPBERRYC) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.RASPBERRYC));
                         game.addRaspberryCrop(1);
                     }
                     break;
                 case "strawberryCBuy":
                     if ((game.getMoney() - market.getPBuy(Items.STRAWBERRYC) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.STRAWBERRYC));
                         game.addStrawberryCrop(1);
                     }
                     break;
                 case "grapeCBuy":
                     if ((game.getMoney() - market.getPBuy(Items.GRAPEC) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.GRAPEC));
                         game.addGrapeCrop(1);
                     }
                     break;
                 case "passionCBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.PASSIONC) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.PASSIONC));
                         game.addPassionFruitCrop(1);
                     }
                     break;
                 case "raspberrySBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.RASPBERRYS) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.RASPBERRYS));
                         game.addRaspberrySeed(1);
                     }
                     break;
                 case "strawberrySBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.STRAWBERRYS) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.STRAWBERRYS));
                         game.addStrawberrySeed(1);
                     }
                     break;
                 case "grapeSBuy" :
                     if ((game.getMoney() - market.getPBuy(Items.GRAPES) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.GRAPES));
                         game.addGrapeSeed(1);
                     }
                     break;
                 case "passionSBuy":
                     if ((game.getMoney() - market.getPBuy(Items.PASSIONS) >= 0)
-                            && game.getTotalQuantity() <= game.inventoryCapacity) {
+                            && game.getTotalQuantity() < game.inventoryCapacity) {
                         game.setMoney((int) game.getMoney() - market.getPBuy(Items.PASSIONS));
                         game.addPassionFruitSeed(1);
                     }

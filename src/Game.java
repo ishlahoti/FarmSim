@@ -22,9 +22,9 @@ public class Game {
     private int pinSeedQ;
     private int dragSeedQ;
     private int beanSeedQ;
-    
+
     final int inventoryCapacity = 20;
-    private int size = 4;
+    private int size = 0;
 
     private Game() {
     }
@@ -107,7 +107,7 @@ public class Game {
         if (size + x > inventoryCapacity) {
             return;
         }
-       raspberrySeedQuantity+=x;
+        raspberrySeedQuantity+=x;
         size+=x;
     }
     public void removeRaspberrySeed() {
