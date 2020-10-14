@@ -1,8 +1,8 @@
 public class Game {
     private static Game game;
     private String name = "";
-    private String difficulty = "Medium";
-    private String season = "Fall";
+    private String difficulty = "Easy";
+    private String season = "Spring";
     private String startingSeed;
     private double money = 0.00D;
     private int day = 1;
