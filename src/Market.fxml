@@ -12,29 +12,29 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="marketBackgroundImage" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MarketController">
     <children>
         <Button fx:id="leave" layoutX="678.0" layoutY="759.0" mnemonicParsing="false" onAction="#leave" text="Leave" />
-        <VBox alignment="CENTER" layoutX="6.0" layoutY="57.0" prefHeight="693.0" prefWidth="345.0" styleClass="chalkboardImage">
+        <VBox alignment="CENTER" layoutX="6.0" layoutY="57.0" prefHeight="687.0" prefWidth="314.0" styleClass="chalkboardImage">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="DragonFruit Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="DragonFruit Seed" textFill="WHITE" />
                         <Button fx:id="dragonBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="16.0" textFill="#fff8f8">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="#fff8f8">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="dragonQMarket" minHeight="30.0" minWidth="23.0" prefHeight="30.0" prefWidth="33.0" textFill="WHITE">
+                        <Label fx:id="dragonQMarket" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="0.0" text="x" textFill="WHITE" />
-                        <Label fx:id="dragonBuyPrice" minHeight="30.0" prefHeight="30.0" prefWidth="29.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="dragonBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
@@ -56,27 +56,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Watermelon Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Watermelon Seed" textFill="WHITE" />
                         <Button fx:id="watermelonBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="14.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="watermelonBuyPrice" minHeight="30.0" minWidth="25.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
+                        <Label fx:id="watermelonBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="9.0" text="x" textFill="WHITE" />
-                        <Label fx:id="watermelonQMarket" minHeight="30.0" minWidth="20.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="watermelonQMarket" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="watermelonSell" mnemonicParsing="false" onAction="#sell" prefHeight="25.0" prefWidth="35.0" text="Sell">
@@ -96,27 +96,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Pineapple Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Pineapple Seed" textFill="WHITE" />
                         <Button fx:id="pineappleBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="pineappleBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="pineappleBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="21.0" text="x" textFill="WHITE" />
-                        <Label fx:id="pineappleQMarket" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="pineappleQMarket" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="pineappleSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -136,27 +136,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Bean Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Bean Seed" textFill="WHITE" />
                         <Button fx:id="beanBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="beanBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="beanBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="17.0" text="x" textFill="WHITE" />
-                        <Label fx:id="beanQMarket" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="beanQMarket" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="beanSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -176,27 +176,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Raspberry Crop" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Raspberry Crop" textFill="WHITE" />
                         <Button fx:id="raspberryCBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="raspberryCBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="raspberryCBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="19.0" text="x" textFill="WHITE" />
-                        <Label fx:id="raspberryCrop" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="raspberryCrop" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="raspberryCSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -216,27 +216,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="339.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Strawberry Crop" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Strawberry Crop" textFill="WHITE" />
                         <Button fx:id="strawberryCBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="strawberryCBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="strawberryCBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="17.0" text="x" textFill="WHITE" />
-                        <Label fx:id="strawberryCrop" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="strawberryCrop" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="strawberryCSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -256,27 +256,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="GrapeFruit Crop" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="GrapeFruit Crop" textFill="WHITE" />
                         <Button fx:id="grapeCBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="grapeCBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="grapeCBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" text="x" textFill="WHITE" />
-                        <Label fx:id="grapeCrop" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="grapeCrop" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="grapeCSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -296,27 +296,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="PassionFruit Crop" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="PassionFruit Crop" textFill="WHITE" />
                         <Button fx:id="passionCBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="passionCBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="passionCBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="11.0" text="x" textFill="WHITE" />
-                        <Label fx:id="passionFruitCrop" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="passionFruitCrop" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="passionCSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -336,27 +336,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Raspberry Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Raspberry Seed" textFill="WHITE" />
                         <Button fx:id="raspberrySBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="raspberrySBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="raspberrySBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" text="x" textFill="WHITE" />
-                        <Label fx:id="raspberrySeed" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="raspberrySeed" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="raspberrySSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -376,27 +376,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="Strawberry Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="Strawberry Seed" textFill="WHITE" />
                         <Button fx:id="strawberrySBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="strawberrySBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="strawberrySBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" text="x" textFill="WHITE" />
-                        <Label fx:id="strawberrySeed" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="strawberrySeed" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="strawberrySSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -416,27 +416,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="GrapeFruit Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="GrapeFruit Seed" textFill="WHITE" />
                         <Button fx:id="grapeSBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="grapeSBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="grapeSBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" text="x" textFill="WHITE" />
-                        <Label fx:id="grapeSeed" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="grapeSeed" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="grapeSSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -456,27 +456,27 @@
 
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="100.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="90.0" text="PassionFruit Seed" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="90.0" prefHeight="30.0" prefWidth="100.0" text="PassionFruit Seed" textFill="WHITE" />
                         <Button fx:id="passionSBuy" mnemonicParsing="false" onAction="#buy" text="Buy">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Button>
-                        <Label alignment="CENTER" minHeight="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" textFill="WHITE">
                             <text>$</text>
                             <HBox.margin>
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="passionSBuyPrice" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label fx:id="passionSBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="15.0" text="x" textFill="WHITE" />
-                        <Label fx:id="passionFruitSeed" minHeight="30.0" minWidth="30.0" textFill="WHITE">
+                        <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
+                        <Label fx:id="passionFruitSeed" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
-                                <Insets right="25.0" />
+                                <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Button fx:id="passionSSell" mnemonicParsing="false" onAction="#sell" text="Sell">
@@ -504,11 +504,11 @@
             </padding>
         </VBox>
 
-        <VBox layoutX="611.0" layoutY="47.0" prefHeight="693.0" prefWidth="180.0" styleClass="chalkboardImage">
+        <VBox layoutX="617.0" layoutY="60.0" prefHeight="687.0" prefWidth="170.0" styleClass="chalkboardImage">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
                     <children>
-                        <Label minHeight="30.0" minWidth="100.0" text="Money ($)" textFill="WHITE" />
+                        <Label minHeight="30.0" minWidth="150.0" text="Money ($)" textFill="WHITE" />
                         <Label fx:id="money" alignment="TOP_CENTER" textFill="WHITE" />
                     </children>
                 </HBox>
@@ -586,7 +586,7 @@
                 </HBox>
             </children>
         </VBox>
-        <Text layoutX="48.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farming Trading Screen">
+        <Text layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farming Trading Screen">
             <font>
                 <Font size="25.0" />
             </font>
@@ -596,7 +596,7 @@
                 <Font size="25.0" />
             </font>
         </Text>
-        <Button layoutX="137.0" layoutY="757.0" mnemonicParsing="false" onAction="#changeScreen" text="Go to Farm">
+        <Button layoutX="122.0" layoutY="757.0" mnemonicParsing="false" onAction="#changeScreen" text="Go to Farm">
             <font>
                 <Font name="Avenir Next Bold" size="13.0" />
             </font>
