@@ -1,7 +1,5 @@
 import java.io.IOException;
 import java.net.URL;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Random;
 import java.util.ResourceBundle;
 
@@ -27,7 +25,26 @@ public class IfarmuiController implements Initializable {
     @FXML
     private Label name;
     @FXML
-    private Label text0, text1, text2, text3, text4, text5, text6, text7, text8, text9;
+    private Label text0;
+    @FXML
+    private Label text1;
+    @FXML
+    private Label text2;
+    @FXML
+    private Label text3;
+    @FXML
+    private Label text4;
+    @FXML
+    private Label text5;
+    @FXML
+    private Label text6;
+    @FXML
+    private Label text7;
+    @FXML
+    private Label text8;
+    @FXML
+    private Label text9;
+
     private Label[] plots;
 
     @FXML
@@ -40,22 +57,22 @@ public class IfarmuiController implements Initializable {
 
     @FXML
     private void difficultyLabel() {
-            String difficulty = this.game.getDifficulty();
-            int mon = 0;
-            switch (difficulty) {
-                case "Easy":
-                    mon = 60;
-                    break;
-                case "Medium":
-                    mon = 40;
-                    break;
-                case "Hard":
-                    mon = 20;
-                    break;
-                default:
-                    break;
-            }
-            this.game.setMoney(mon);
+        String difficulty = this.game.getDifficulty();
+        int mon = 0;
+        switch (difficulty) {
+        case "Easy":
+            mon = 60;
+            break;
+        case "Medium":
+            mon = 40;
+            break;
+        case "Hard":
+            mon = 20;
+            break;
+        default:
+            break;
+        }
+        this.game.setMoney(mon);
     }
 
     @FXML
@@ -68,14 +85,15 @@ public class IfarmuiController implements Initializable {
                 plot.setText("Empty Plot");
 
                 String lower = text.toLowerCase();
-                if (lower.contains("strawberry"))
+                if (lower.contains("strawberry")) {
                     game.addStrawberryCrop(1);
-                else if (lower.contains("raspberry"))
+                } else if (lower.contains("raspberry")) {
                     game.addRaspberryCrop(1);
-                else if (lower.contains("passion fruit"))
+                } else if (lower.contains("passion fruit")) {
                     game.addPassionFruitCrop(1);
-                else if (lower.contains("grape"))
+                } else if (lower.contains("grape")) {
                     game.addGrapeCrop(1);
+                }
             }
         }
 
@@ -85,7 +103,8 @@ public class IfarmuiController implements Initializable {
         if (numMature == 0) {
             label = new Label("You don't have any mature plants to harvest!");
         } else {
-            label = new Label("You harvested " + numMature + " mature plant" + (numMature == 1 ? "!" : "s!"));
+            label = new Label("You harvested " + numMature + " mature plant"
+                    + (numMature == 1 ? "!" : "s!"));
         }
         label.setText(label.getText() + "\nClick out of this box to exit");
 
@@ -112,17 +131,17 @@ public class IfarmuiController implements Initializable {
             String type = plantTypes[(new Random()).nextInt(plantTypes.length)];
 
             switch (type) {
-                case "seed":
-                    plot.setText(this.game.getSeed() + " Seed");
-                    break;
-                case "immature":
-                    plot.setText("Immature " + this.game.getSeed() + " Plant");
-                    break;
-                case "mature":
-                    plot.setText("Mature " + this.game.getSeed() + " Plant");
-                    break;
-                default:
-                    break;
+            case "seed":
+                plot.setText(this.game.getSeed() + " Seed");
+                break;
+            case "immature":
+                plot.setText("Immature " + this.game.getSeed() + " Plant");
+                break;
+            case "mature":
+                plot.setText("Mature " + this.game.getSeed() + " Plant");
+                break;
+            default:
+                break;
             }
         }
     }
@@ -143,7 +162,8 @@ public class IfarmuiController implements Initializable {
 
     @FXML
     private void changeScreen(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Inventory.fxml"));
+        FXMLLoader loader
+                = new FXMLLoader(getClass().getClassLoader().getResource("Inventory.fxml"));
         Parent root3 = (Parent) loader.load();
         Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
         Main.getPrimaryStage().show();
