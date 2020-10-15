@@ -18,6 +18,8 @@ public class InventoryController implements Initializable {
     @FXML
     private Label error;
     @FXML
+    private Label inventoryCapacity;
+    @FXML
     private Label raspberrySeedQuantity;
     @FXML
     private Label strawberrySeedQuantity;
@@ -59,6 +61,9 @@ public class InventoryController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Game game = Game.factory();
+        inventoryCapacity.setText("Inventory Capacity: "
+                + game.getTotalInventoryQuantity() + "/"
+                + game.getInventoryCapacity());
         raspberrySeedQuantity.setText("" + game.getRaspberrySeedQuantity());
         strawberrySeedQuantity.setText("" + game.getStrawberrySeedQuantity());
         passionFruitSeedQuantity.setText("" + game.getPassionFruitSeedQuantity());
