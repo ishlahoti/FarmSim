@@ -541,7 +541,7 @@
             </padding>
         </VBox>
 
-        <VBox layoutX="617.0" layoutY="60.0" prefHeight="687.0" prefWidth="170.0" styleClass="chalkboardImage">
+        <VBox layoutX="579.0" layoutY="60.0" prefHeight="687.0" prefWidth="208.0" styleClass="chalkboardImage">
             <children>
                 <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="150.0">
                     <children>
@@ -621,6 +621,11 @@
                         <Label fx:id="beanSQ" alignment="TOP_CENTER" textFill="WHITE" />
                     </children>
                 </HBox>
+            <Label fx:id="inventoryCapacity" alignment="CENTER" prefHeight="56.0" prefWidth="210.0" textAlignment="CENTER" textFill="#00b221">
+               <font>
+                  <Font name="Avenir Next Bold" size="13.0" />
+               </font>
+            </Label>
             </children>
         </VBox>
         <Text layoutX="32.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Farming Trading Screen">
