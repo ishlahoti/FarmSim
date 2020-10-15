@@ -10,8 +10,6 @@ import java.io.IOException;
  * This is the Main class where the applications is launched from
  */
 public class Main extends Application {
-    private static Stage primaryStage;
-
     /**
      * Loads the Main.fxml file and launches the application
      *
@@ -20,7 +18,6 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws IOException {
-        this.primaryStage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("WelcomeScreen.fxml"));
         primaryStage.setTitle("Farm Simulation"); //feel free to replace w/ something more creative
         Scene scene = new Scene(root, 800, 800);
@@ -38,7 +35,4 @@ public class Main extends Application {
      * Accessor for primaryStage
      * @return the primaryStage
     */
-    public static Stage getPrimaryStage() {
-        return primaryStage;
-    }
 }

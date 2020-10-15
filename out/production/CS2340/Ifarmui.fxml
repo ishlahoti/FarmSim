@@ -6,8 +6,8 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
 
 <!--
 This is where all the layout nodes for the initial configuration screen should be added (below children)
@@ -31,7 +31,7 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
             <font>
                 <Font name="Avenir Next Bold" size="24.0" />           </font>
         </Label>
-        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="150.0" layoutY="250.0" prefHeight="300.0" prefWidth="500.0">
+        <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true" layoutX="150.0" layoutY="250.0" prefHeight="100.0" prefWidth="500.0"  styleClass="plotsGrid" stylesheets="@style.css">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="99.0" />
                 <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="101.0" />
@@ -44,22 +44,39 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="2" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="3" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="plotImage" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <!--                <StackPane fx:id="plot0" prefHeight="150.0" prefWidth="200.0" styleClass="seedImage" stylesheets="@style.css" />-->
+                <!--                                    <ImageView fx:id="img0" fitHeight="150.0" fitWidth="200.0" /></ImageView>-->
+                <!--                <StackPane fx:id="plot1" prefHeight="150.0" prefWidth="200.0" styleClass="maturePlantImage" stylesheets="@style.css" GridPane.columnIndex="1" />-->
+                <!--                <StackPane fx:id="plot2" prefHeight="150.0" prefWidth="200.0" styleClass="immaturePlantImage" stylesheets="@style.css" GridPane.columnIndex="2" />-->
+                <!--                <StackPane fx:id="plot3" prefHeight="150.0" prefWidth="200.0" styleClass="immaturePlantImage" stylesheets="@style.css" GridPane.columnIndex="3" />-->
+                <!--                <StackPane fx:id="plot4" prefHeight="150.0" prefWidth="200.0" styleClass="seedImage" stylesheets="@style.css" GridPane.columnIndex="4" />-->
+                <Label fx:id="text0" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" />
+                <Label fx:id="text1" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                <Label fx:id="text2" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="2" />
+                <Label fx:id="text3" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="3" />
+                <Label fx:id="text4" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="4" />
+                <!--                <StackPane fx:id="plot5" prefHeight="150.0" prefWidth="200.0" styleClass="maturePlantImage" stylesheets="@style.css" GridPane.rowIndex="2" />-->
+                <!--                <StackPane fx:id="plot6" prefHeight="150.0" prefWidth="200.0" styleClass="immaturePlantImage" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />-->
+                <!--                <StackPane fx:id="plot7" prefHeight="150.0" prefWidth="200.0" styleClass="seedImage" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="2" />-->
+                <!--                <StackPane fx:id="plot8" prefHeight="150.0" prefWidth="200.0" styleClass="seedImage" stylesheets="@style.css" GridPane.columnIndex="3" GridPane.rowIndex="2" />-->
+                <!--                <StackPane fx:id="plot9" prefHeight="150.0" prefWidth="200.0" styleClass="maturePlantImage" stylesheets="@style.css" GridPane.columnIndex="4" GridPane.rowIndex="2" />-->
+                <Label fx:id="text5" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                <Label fx:id="text6" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label fx:id="text7" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label fx:id="text8" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label fx:id="text9" textAlignment="CENTER" wrapText="true" maxHeight="50.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
             </children>
         </GridPane>
+      <Button fx:id="harvest" layoutX="650" layoutY="750" onAction="#harvest" text="Harvest Plants" />
       <Button fx:id="inventory" layoutX="564.0" layoutY="29.0" mnemonicParsing="false" onAction="#changeScreen" prefHeight="41.0" prefWidth="101.0" text="Inventory">
          <font>
             <Font name="Avenir Next Bold" size="13.0" />
          </font>
       </Button>
+        <Button fx:id="market" layoutX="685.0" layoutY="29.0" mnemonicParsing="false" onAction="#changeScreentoMarket" prefHeight="41.0" prefWidth="101.0" text="Market">
+            <font>
+                <Font name="Avenir Next Bold" size="13.0" />
+            </font>
+        </Button>
     </children>
 </AnchorPane>

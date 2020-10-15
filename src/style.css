@@ -18,7 +18,15 @@
     -fx-background-image: url('https://img.freepik.com/free-vector/farm-barn-house-inside-view_33099-2165.jpg?size=626&ext=jpg');
     -fx-background-size: 100% 100%;
 }
-.inventoryChalkboardImage{
+.marketBackgroundImage{
+    -fx-background-image: url('https://img.freepik.com/free-vector/farmers-street-market-city-flat-illustration-concept-town-background_213110-9.jpg?size=626&ext=jpg');
+    -fx-background-size: 100% 100%;
+}
+.chalkboardImage{
     -fx-background-image: url('https://img.freepik.com/free-photo/black-chalk-board-texture_89245-170.jpg?size=626&ext=jpg');
     -fx-background-size: 100% 100%;
+}
+.plotsGrid {
+    -fx-background-color: #c4c4c4;
+    -fx-table-cell-border-color: #000000;
 }

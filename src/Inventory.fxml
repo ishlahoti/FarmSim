@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="inventoryBackgroundImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="InventoryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="inventoryBackgroundImage" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryController">
    <children>
-      <GridPane gridLinesVisible="true" layoutX="109.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="inventoryChalkboardImage" stylesheets="@style.css">
+      <GridPane gridLinesVisible="true" layoutX="109.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="chalkboardImage" stylesheets="@style.css">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="196.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="33.0" />
@@ -50,7 +50,7 @@
             <Label fx:id="pinSeedQ" text="0" textFill="#fffdfd" GridPane.columnIndex="1" GridPane.rowIndex="9" />
          </children>
       </GridPane>
-      <GridPane gridLinesVisible="true" layoutX="382.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="inventoryChalkboardImage" stylesheets="@style.css">
+      <GridPane gridLinesVisible="true" layoutX="383.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="chalkboardImage" stylesheets="@style.css">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="221.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="67.0" />
@@ -82,10 +82,15 @@
             <Label fx:id="beanCropQ" text="0" textFill="#f5f0f0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
          </children>
       </GridPane>
-      <Button layoutX="611.0" layoutY="33.0" mnemonicParsing="false" onAction="#changeScreen" text="Return To Farm">
+      <Button fx:id="farm" layoutX="329.0" layoutY="757.0" mnemonicParsing="false" onAction="#changeScreen" text="Return To Farm">
          <font>
             <Font name="Avenir Next Bold" size="13.0" />
          </font>
       </Button>
+       <Button fx:id="market" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreentoMarket" text="Go to Market">
+           <font>
+               <Font name="Avenir Next Bold" size="13.0" />
+           </font>
+       </Button>
    </children>
 </AnchorPane>

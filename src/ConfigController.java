@@ -1,13 +1,14 @@
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-// import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -61,14 +62,24 @@ public class ConfigController {
     private void changeScreen(ActionEvent event) throws IOException {
         this.game.setDifficulty((String) this.difficulty.getValue());
         this.game.setSeed((String) this.startingSeed.getValue());
+        if (this.startingSeed.getValue().equals("Strawberry")) {
+            this.game.addStrawberrySeed(1);
+        } else if (this.startingSeed.getValue().equals("Raspberry")) {
+            this.game.addRaspberrySeed(1);
+        } else if (this.startingSeed.getValue().equals("Passion Fruit")) {
+            this.game.addPassionFruitSeed(1);
+        } else {
+            this.game.addGrapeSeed(1);
+        }
         this.game.setSeason((String) this.startingSeason.getValue());
         this.game.setName((String) this.name.getText());
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
         //Main.primaryStage.setScene(new Scene(root3, 800, 800));
         //Main.primaryStage.show();
-        Main.getPrimaryStage().setScene(new Scene(root3, 800, 800));
-        Main.getPrimaryStage().show();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
     }
 
     /**
