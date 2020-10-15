@@ -552,6 +552,7 @@ public class MarketController implements Initializable {
         Stage window = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         window.setScene(new Scene(root3, 800, 800));
         window.show();
+
     }
 }
 

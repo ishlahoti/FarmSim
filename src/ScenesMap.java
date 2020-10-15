@@ -2,7 +2,7 @@ import javafx.scene.Scene;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Scenes {
+public class ScenesMap {
     private static Map scenesMap = new HashMap<String, Scene>();
 
     public static Map getScenesMap() {
@@ -10,6 +10,6 @@ public class Scenes {
     }
 
     public static void addScene(String name, Scene scene) {
-        Scenes.scenesMap.put(name, scene);
+        ScenesMap.scenesMap.put(name, scene);
     }
 }

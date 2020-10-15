@@ -86,7 +86,7 @@ public class InventoryController implements Initializable {
     }
 
     @FXML
-    private void changeScreentoMarket(ActionEvent event) throws IOException {
+    private void changeScreenToMarket(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
         Parent root3 = (Parent) loader.load();
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();

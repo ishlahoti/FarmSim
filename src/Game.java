@@ -1,4 +1,10 @@
+import javafx.scene.Scene;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Game {
+
     private static Game game;
     private String name = "";
     private String difficulty = "Easy";

@@ -57,7 +57,8 @@ public class IfarmuiController implements Initializable {
     @FXML
     private Button market;
     private Game game = Game.factory();
-    private static boolean alreadyExecuted;
+    private Farm farm = Farm.factory();
+    private static boolean alreadyExecuted = false;
 
     @FXML
     private void difficultyLabel() {
@@ -82,11 +83,12 @@ public class IfarmuiController implements Initializable {
     @FXML
     private void harvest(ActionEvent event) throws IOException {
         int numMature = 0;
-        for (Label plot : plots) {
-            String text = plot.getText();
+        for (int i = 0; i < plots.length; i++) {
+            String text = plots[i].getText();
             if (text.contains("Mature")) {
                 numMature++;
-                plot.setText("Empty Plot");
+                farm.editPlot(i, "");
+                plots[i].setText(farm.getPlots()[i]);
 
                 String lower = text.toLowerCase();
                 if (lower.contains("strawberry")) {
@@ -127,23 +129,18 @@ public class IfarmuiController implements Initializable {
 
     @FXML
     private void initializePlants() {
-        String[] plantTypes = new String[3];
-        plantTypes[0] = "seed";
-        plantTypes[1] = "immature";
-        plantTypes[2] = "mature";
-
-        for (Label plot : plots) {
-            String type = plantTypes[(new Random()).nextInt(plantTypes.length)];
+        for (int i = 0; i < plots.length; i++) {
+            String type = farm.getPlots()[i];
 
             switch (type) {
             case "seed":
-                plot.setText(this.game.getSeed() + " Seed");
+                plots[i].setText(this.game.getSeed() + " Seed");
                 break;
             case "immature":
-                plot.setText("Immature " + this.game.getSeed() + " Plant");
+                plots[i].setText("Immature " + this.game.getSeed() + " Plant");
                 break;
             case "mature":
-                plot.setText("Mature " + this.game.getSeed() + " Plant");
+                plots[i].setText("Mature " + this.game.getSeed() + " Plant");
                 break;
             default:
                 break;
@@ -176,7 +173,7 @@ public class IfarmuiController implements Initializable {
     }
 
     @FXML
-    private void changeScreentoMarket(ActionEvent event) throws IOException {
+    private void changeScreenToMarket(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
         Parent root3 = (Parent) loader.load();
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
