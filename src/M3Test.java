@@ -58,8 +58,9 @@ public class M3Test extends ApplicationTest {
         clickOn("#inventory");
         GuiTest.waitUntil("#grapeSeedQuantity", Matchers.is(VisibleNodesMatcher.visible()));
         int grapeQuantity = game.getGrapeSeedQuantity();
+        int grapeExpected = game.getStartingSeedQuantity();
         int passionFruitQuantity = game.getPassionFruitSeedQuantity();
-        assertEquals(1, grapeQuantity);
+        assertEquals(grapeExpected, grapeQuantity);
         assertEquals(0, passionFruitQuantity);
     }
 
@@ -118,7 +119,8 @@ public class M3Test extends ApplicationTest {
         GuiTest.waitUntil("#strawberrySSell", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#strawberrySSell");
         int quantity = game.getStrawberrySeedQuantity();
-        assertEquals(0, quantity);
+        int expected = game.getStartingSeedQuantity() - 1;
+        assertEquals(expected, quantity);
         clickOn("#strawberrySBuy");
     }
 }

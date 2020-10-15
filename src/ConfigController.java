@@ -62,14 +62,15 @@ public class ConfigController {
     private void changeScreen(ActionEvent event) throws IOException {
         this.game.setDifficulty((String) this.difficulty.getValue());
         this.game.setSeed((String) this.startingSeed.getValue());
+        int num = game.getStartingSeedQuantity();
         if (this.startingSeed.getValue().equals("Strawberry")) {
-            this.game.addStrawberrySeed(1);
+            this.game.addStrawberrySeed(num);
         } else if (this.startingSeed.getValue().equals("Raspberry")) {
-            this.game.addRaspberrySeed(1);
+            this.game.addRaspberrySeed(num);
         } else if (this.startingSeed.getValue().equals("Passion Fruit")) {
-            this.game.addPassionFruitSeed(1);
+            this.game.addPassionFruitSeed(num);
         } else {
-            this.game.addGrapeSeed(1);
+            this.game.addGrapeSeed(num);
         }
         this.game.setSeason((String) this.startingSeason.getValue());
         this.game.setName((String) this.name.getText());

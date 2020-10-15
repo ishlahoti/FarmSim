@@ -1,5 +1,5 @@
 public class Game {
-
+    private final int startingSeedQuantity = 3;
     private static Game game;
     private String name = "";
     private String difficulty = "Easy";
@@ -7,6 +7,9 @@ public class Game {
     private String startingSeed;
     private double money = 0.00D;
     private int day = 1;
+    private final int inventoryCapacity = 20;
+    private int inventoryQuantity = 0;
+
     private int raspberrySeedQuantity;
     private int strawberrySeedQuantity;
     private int passionFruitSeedQuantity;
@@ -42,14 +45,6 @@ public class Game {
     private int beanSeedQMarket = 2;
 
 
-    private final int inventoryCapacity = 20;
-
-    public int getInventoryCapacity() {
-        return inventoryCapacity;
-    }
-
-    private int size = 0;
-
     private Game() {
     }
 
@@ -61,6 +56,12 @@ public class Game {
         return game;
     }
 
+    public int getStartingSeedQuantity() {
+        return startingSeedQuantity;
+    }
+    public int getInventoryCapacity() {
+        return inventoryCapacity;
+    }
     public void setName(String name) {
         this.name = name;
     }
@@ -285,137 +286,123 @@ public class Game {
     }
     //made add method for each item in inventory
     public void addRaspberrySeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         raspberrySeedQuantity += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addStrawberrySeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         strawberrySeedQuantity += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addPassionFruitSeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         passionFruitSeedQuantity += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addGrapeSeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         grapeSeedQuantity += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addStrawberryCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         strawberryCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addRaspberryCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         raspberryCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addPassionFruitCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         passionFruitCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addGrapeCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         grapeCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addBeanCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         beanCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addBeanSeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         beanSeedQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
 
     public void addPinCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         pinCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addPinSeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         pinSeedQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
 
     public void addWatCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         watCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
 
     public void addWatSeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         watSeedQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addDragCrop(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         dragCropQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
     public void addDragSeed(int x) {
-        if (size + x > inventoryCapacity) {
+        if (inventoryQuantity + x > inventoryCapacity) {
             return;
         }
         dragSeedQ += x;
-        size += x;
+        inventoryQuantity += x;
     }
 
     public int getTotalInventoryQuantity() {
-        return getRaspberrySeedQuantity()
-            + getStrawberrySeedQuantity()
-            + getPassionFruitSeedQuantity()
-            + getGrapeSeedQuantity()
-            + getRaspberryCropQ()
-            + getPassionFruitCropQ()
-            + getGrapeFruitCropQ()
-            + getWatCropQ()
-            + getWatSeedQ()
-            + getPinCropQ()
-            + getPinSeedQ()
-            + getDragCropQ()
-            + getDragSeedQ()
-            + getBeanCropQ()
-            + getBeanSeedQ();
+        return inventoryQuantity;
     }
 
     public int getTotalMarketQuantity() {
