@@ -28,13 +28,13 @@
                                 <Insets />
                             </HBox.margin>
                         </Label>
-                        <Label fx:id="dragonQMarket" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
+                        <Label fx:id="dragonBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
                         </Label>
                         <Label alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="5.0" text="x" textFill="WHITE" />
-                        <Label fx:id="dragonBuyPrice" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
+                        <Label fx:id="dragonQMarket" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" textFill="WHITE">
                             <HBox.margin>
                                 <Insets right="5.0" />
                             </HBox.margin>
