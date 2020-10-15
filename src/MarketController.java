@@ -25,6 +25,8 @@ public class MarketController implements Initializable {
     @FXML
     private Label marketLabel;
 
+    @FXML
+    private Label inventoryCapacity;
 
     @FXML
     private Label dragonBuyPrice;
@@ -380,6 +382,9 @@ public class MarketController implements Initializable {
         marketLabel.setText("Market Capacity: "
                     + game.getTotalMarketQuantity() + "/"
                     + maxMarketCapacity);
+        inventoryCapacity.setText("Inventory Capacity: "
+                    + game.getTotalInventoryQuantity() + "/"
+                    + game.getInventoryCapacity());
 
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
         watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));
@@ -464,6 +469,9 @@ public class MarketController implements Initializable {
         marketLabel.setText("Market Capacity: "
                 + game.getTotalMarketQuantity() + "/"
                 + maxMarketCapacity);
+        inventoryCapacity.setText("Inventory Capacity: "
+                + game.getTotalInventoryQuantity() + "/"
+                + game.getInventoryCapacity());
         dragonBuyPrice.setText(Integer.toString(market.getPBuy(Items.DRAGONS)));
         watermelonBuyPrice.setText(Integer.toString(market.getPBuy(Items.WATERMELONS)));
         pineappleBuyPrice.setText(Integer.toString(market.getPBuy(Items.PINEAPPLES)));

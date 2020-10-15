@@ -1,5 +1,3 @@
-import javafx.scene.control.Label;
-
 import java.util.Random;
 
 public class Farm {
@@ -35,7 +33,9 @@ public class Farm {
     }
 
     public void editPlot(int index, String val) {
-        if (index >= plots.length) return;
+        if (index >= plots.length) {
+            return;
+        }
         plots[index] = val;
     }
 }
