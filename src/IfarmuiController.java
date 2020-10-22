@@ -134,7 +134,8 @@ public class IfarmuiController implements Initializable {
         Label label;
 
         if (numMature == 0 && numDead == 0) {
-            label = new Label("You don't have any mature plants to harvest or any dead crops to clean!");
+            label = new Label("You don't have any mature plants to harvest "
+                    + "or any dead crops to clean!");
         } else if (numMature > 0 && numDead == 0) {
             label = new Label("You harvested " + numMature + " mature plant"
                     + (numMature == 1 ? "!" : "s!"));
@@ -217,11 +218,13 @@ public class IfarmuiController implements Initializable {
         farm.editWaterPlot(buttonNum, "" + waterLevel);
         waterPlots[buttonNum].setText("" + waterLevel);
         // if this killed a plant, kill the plant
-        if (!farm.getPlots()[buttonNum].equals("Dead") && !farm.getPlots()[buttonNum].equals("Empty") && waterLevel > 15) {
+        if (!farm.getPlots()[buttonNum].equals("Dead")
+                && !farm.getPlots()[buttonNum].equals("Empty")
+                && waterLevel > 15) {
             farm.editPlot(buttonNum, "Dead");
             plots[buttonNum].setText("Dead");
-            label.setText("You over-watered your plant and it died!\n" +
-                    "Click out of this box to exit");
+            label.setText("You over-watered your plant and it died!\n"
+                    + "Click out of this box to exit.");
             popup.show(window);
         }
     }
@@ -231,13 +234,13 @@ public class IfarmuiController implements Initializable {
         this.day.setText("Day " + this.game.getDay());
         this.name.setText(this.game.getName() + "'s Farm");
         plots = new Label[]{text0, text1, text2, text3, text4, text5, text6, text7, text8, text9};
-        waterPlots = new Label[]{water0, water1, water2, water3, water4, water5, water6, water7, water8, water9};
+        waterPlots = new Label[]{water0, water1, water2, water3, water4, water5, water6, water7,
+                                 water8, water9};
         if (!alreadyExecuted) {
             this.initializePlants();
             difficultyLabel();
             alreadyExecuted = true;
-        }
-        else {
+        } else {
             this.updatePlants();
         }
         this.money.setText(String.format("Money $%10.2f", this.game.getMoney()));
