@@ -86,7 +86,7 @@ public class IfarmuiController implements Initializable {
             String text = plots[i].getText();
             if (text.contains("Mature")) {
                 numMature++;
-                farm.editPlot(i, "");
+                farm.editPlot(i, "Empty");
                 plots[i].setText(farm.getPlots()[i]);
 
                 String lower = text.toLowerCase();
@@ -130,7 +130,6 @@ public class IfarmuiController implements Initializable {
     private void initializePlants() {
         for (int i = 0; i < plots.length; i++) {
             String type = farm.getPlots()[i];
-
             switch (type) {
             case "seed":
                 plots[i].setText(this.game.getSeed() + " Seed");
@@ -142,23 +141,37 @@ public class IfarmuiController implements Initializable {
                 plots[i].setText("Mature " + this.game.getSeed() + " Plant");
                 break;
             default:
+                plots[i].setText("Empty");
                 break;
             }
+            farm.editPlot(i, plots[i].getText());
         }
     }
+
+    @FXML
+    private void updatePlants() {
+        for (int i = 0; i < plots.length; i++) {
+            String type = farm.getPlots()[i];
+            plots[i].setText(type);
+        }
+    }
+
+
 
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.day.setText("Day " + this.game.getDay());
         this.name.setText(this.game.getName() + "'s Farm");
+        plots = new Label[]{text0, text1, text2, text3, text4, text5, text6, text7, text8, text9};
         if (!alreadyExecuted) {
+            this.initializePlants();
             difficultyLabel();
             alreadyExecuted = true;
         }
+        else {
+            this.updatePlants();
+        }
         this.money.setText(String.format("Money $%10.2f", this.game.getMoney()));
-
-        plots = new Label[]{text0, text1, text2, text3, text4, text5, text6, text7, text8, text9};
-        this.initializePlants();
     }
 
     @FXML

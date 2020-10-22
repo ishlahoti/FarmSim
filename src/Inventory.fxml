@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" styleClass="inventoryBackgroundImage" stylesheets="@style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InventoryController">
    <children>
-      <GridPane gridLinesVisible="true" layoutX="109.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="chalkboardImage" stylesheets="@style.css">
+      <GridPane gridLinesVisible="true" layoutX="53.0" layoutY="240.0" prefHeight="320.0" prefWidth="225.0" styleClass="chalkboardImage" stylesheets="@style.css">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="196.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="33.0" />
@@ -50,7 +50,7 @@
             <Label fx:id="pinSeedQ" text="0" textFill="#fffdfd" GridPane.columnIndex="1" GridPane.rowIndex="9" />
          </children>
       </GridPane>
-      <GridPane gridLinesVisible="true" layoutX="383.0" layoutY="240.0" prefHeight="320.0" prefWidth="229.0" styleClass="chalkboardImage" stylesheets="@style.css">
+      <GridPane gridLinesVisible="true" layoutX="351.0" layoutY="240.0" prefHeight="320.0" prefWidth="225.0" styleClass="chalkboardImage" stylesheets="@style.css">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="10.0" prefWidth="221.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.0" minWidth="0.0" prefWidth="67.0" />
@@ -97,5 +97,13 @@
             <Font name="Avenir Next Bold" size="19.0" />
          </font>
       </Label>
+      <Button fx:id="raspberryPlant" layoutX="278.0" layoutY="240.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="strawberryPlant" layoutX="278.0" layoutY="275.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="passionPlant" layoutX="278.0" layoutY="308.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="grapePlant" layoutX="278.0" layoutY="342.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="watermelonPlant" layoutX="278.0" layoutY="501.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="pineapplePlant" layoutX="278.0" layoutY="533.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="dragonPlant" layoutX="576.0" layoutY="240.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
+      <Button fx:id="beanPlant" layoutX="576.0" layoutY="275.0" mnemonicParsing="false" onAction="#plant" text="Plant" />
    </children>
 </AnchorPane>

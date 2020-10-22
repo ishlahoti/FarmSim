@@ -2,11 +2,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.text.TextAlignment;
+import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -52,9 +55,9 @@ public class InventoryController implements Initializable {
     @FXML
     private Label watSeedQ;
     @FXML
-    private Button farm;
-    @FXML
     private Button market;
+    Game game = Game.factory();
+    Farm farm = Farm.factory();
 
 
 
@@ -88,6 +91,47 @@ public class InventoryController implements Initializable {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(new Scene(root3, 800, 800));
         window.show();
+    }
+    @FXML
+    private void plant(ActionEvent event) {
+        Label label = new Label();
+        Popup popup = new Popup();
+        String[] plots = farm.getPlots();
+        switch (((Button) event.getSource()).getId()) {
+            case "raspberryPlant" :
+                if (game.getRaspberrySeedQuantity() > 0) {
+                    game.addRaspberrySeed(-1); //reduce quantity
+                    raspberrySeedQuantity.setText("" + game.getRaspberrySeedQuantity());
+                    inventoryCapacity.setText("Inventory Capacity: "
+                            + game.getTotalInventoryQuantity() + "/"
+                            + game.getInventoryCapacity());
+                    label.setText("You planted one Raspberry Seed!");
+                    for (int i = 0; i < plots.length; i++) {
+                        String text = plots[i];;
+                        if (text.compareTo("Empty") == 0) {
+                            farm.editPlot(i, "Raspberry seed");
+                            break;
+                        }
+                    }
+                }
+                else {
+                    label.setText("Oops! You don't have enough raspberry seeds to plant. Visit the market!");
+            }
+                break;
+            case "strawberryPlant" :
+
+        }
+
+        label.setText(label.getText() + "\nClick out of this box to exit");
+        label.setStyle(" -fx-background-color: lightgray;");
+        popup.getContent().add(label);
+        label.setMinWidth(250);
+        label.setMinHeight(50);
+        label.setAlignment(Pos.CENTER);
+        label.setTextAlignment(TextAlignment.CENTER);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        popup.show(window);
+        popup.setAutoHide(true);
     }
 
     @FXML
