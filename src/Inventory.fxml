@@ -28,13 +28,13 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Raspberry Seed" textFill="#7e12a6" />
+            <Label text="Raspberry Seed" textFill="#d15eff" />
             <Label fx:id="raspberrySeedQuantity" alignment="CENTER" contentDisplay="RIGHT" text="1" textFill="WHITE" GridPane.columnIndex="1" />
-            <Label layoutX="10.0" layoutY="17.0" text="Strawberry Seed" textFill="#7e12a6" GridPane.rowIndex="1" />
+            <Label layoutX="10.0" layoutY="17.0" text="Strawberry Seed" textFill="#d15eff" GridPane.rowIndex="1" />
             <Label fx:id="strawberrySeedQuantity" text="1" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Passion Fruit Seed" textFill="#7e12a6" GridPane.rowIndex="2" />
+            <Label text="Passion Fruit Seed" textFill="#d15eff" GridPane.rowIndex="2" />
             <Label fx:id="passionFruitSeedQuantity" text="1" textFill="#f5f4f4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Grape Seed" textFill="#7e12a6" GridPane.rowIndex="3" />
+            <Label text="Grape Seed" textFill="#d15eff" GridPane.rowIndex="3" />
             <Label fx:id="grapeSeedQuantity" text="1" textFill="#f8f6f6" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label fx:id="raspberryCropQ" text="0" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <Label text="Strawberry Crop" textFill="#12a65c" GridPane.rowIndex="5" />
@@ -44,8 +44,8 @@
             <Label prefHeight="17.0" prefWidth="130.0" text="Grape Crop" textFill="#12a65c" GridPane.rowIndex="7" />
             <Label fx:id="grapeCropQ" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
             <Label text="Raspberry Crop" textFill="#12a65c" GridPane.rowIndex="4" />
-            <Label text="Watermelon Seed" textFill="#7e12a6" GridPane.rowIndex="8" />
-            <Label text="Pineapple Seed" textFill="#7e12a6" GridPane.rowIndex="9" />
+            <Label text="Watermelon Seed" textFill="#d15eff" GridPane.rowIndex="8" />
+            <Label text="Pineapple Seed" textFill="#d15eff" GridPane.rowIndex="9" />
             <Label fx:id="watSeedQ" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8" />
             <Label fx:id="pinSeedQ" text="0" textFill="#fffdfd" GridPane.columnIndex="1" GridPane.rowIndex="9" />
          </children>
@@ -68,8 +68,8 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label text="Dragon Fruit Seed" textFill="#7e12a6" />
-            <Label text="Bean Stalk Seed" textFill="#7e12a6" GridPane.rowIndex="1" />
+            <Label text="Dragon Fruit Seed" textFill="#d15eff" />
+            <Label text="Bean Stalk Seed" textFill="#d15eff" GridPane.rowIndex="1" />
             <Label fx:id="dragSeedQ" text="0" textFill="#fcfafa" GridPane.columnIndex="1" />
             <Label fx:id="beanSeedQ" text="0" textFill="#f8f8f8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Watermelon Crop" textFill="#12a65c" GridPane.rowIndex="2" />
