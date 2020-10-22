@@ -3,9 +3,11 @@ import java.util.Random;
 public class Farm {
     private static Farm farm;
     private String[] plots;
+    private String[] waterPlots;
 
     private Farm() {
         plots = new String[10];
+        waterPlots = new String[10];
         initializePlots();
     }
 
@@ -25,11 +27,17 @@ public class Farm {
         for (int i = 0; i < plots.length; i++) {
             plots[i] = plantTypes[(new Random()).nextInt(plantTypes.length)];
         }
+        for (int i = 0; i < waterPlots.length; i++) {
+            waterPlots[i] = "" + 10;
+        }
 
     }
 
     public String[] getPlots() {
         return plots;
+    }
+    public String[] getWaterPlots() {
+        return waterPlots;
     }
 
     public void editPlot(int index, String val) {
@@ -37,6 +45,12 @@ public class Farm {
             return;
         }
         plots[index] = val;
+    }
+    public void editWaterPlot(int index, String val) {
+        if (index >= waterPlots.length) {
+            return;
+        }
+        waterPlots[index] = val;
     }
 
 }

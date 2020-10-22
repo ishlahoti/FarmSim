@@ -252,7 +252,6 @@ public class InventoryController implements Initializable {
                 }
                 break;
         }
-        //outside switch
         inventoryCapacity.setText("Inventory Capacity: "
                 + game.getTotalInventoryQuantity() + "/"
                 + game.getInventoryCapacity());

@@ -178,6 +178,10 @@ public class IfarmuiController implements Initializable {
             String type = farm.getPlots()[i];
             plots[i].setText(type);
         }
+        for (int i = 0; i < waterPlots.length; i++) {
+            String type = farm.getWaterPlots()[i];
+            waterPlots[i].setText(type);
+        }
     }
 
     @FXML
@@ -202,6 +206,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water0.getText()) + 1;
                     waterPlots[0].setText("" + curval);
+                    farm.editWaterPlot(0, waterPlots[0].getText());
                 }
                 break;
             case "wat1" :
@@ -214,6 +219,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water1.getText()) + 1;
                     waterPlots[1].setText("" + curval);
+                    farm.editWaterPlot(1, waterPlots[1].getText());
                 }
                 break;
             case "wat2" :
@@ -226,6 +232,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water2.getText()) + 1;
                     waterPlots[2].setText("" + curval);
+                    farm.editWaterPlot(2, waterPlots[2].getText());
                 }
                 break;
             case "wat3" :
@@ -238,6 +245,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water3.getText()) + 1;
                     waterPlots[3].setText("" + curval);
+                    farm.editWaterPlot(3, waterPlots[3].getText());
                 }
                 break;
             case "wat4" :
@@ -250,6 +258,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water4.getText()) + 1;
                     waterPlots[4].setText("" + curval);
+                    farm.editWaterPlot(4, waterPlots[4].getText());
                 }
                 break;
             case "wat5" :
@@ -262,6 +271,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water5.getText()) + 1;
                     waterPlots[5].setText("" + curval);
+                    farm.editWaterPlot(5, waterPlots[5].getText());
                 }
                 break;
             case "wat6" :
@@ -274,6 +284,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water6.getText()) + 1;
                     waterPlots[6].setText("" + curval);
+                    farm.editWaterPlot(6, waterPlots[6].getText());
                 }
                 break;
             case "wat7" :
@@ -286,6 +297,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water7.getText()) + 1;
                     waterPlots[7].setText("" + curval);
+                    farm.editWaterPlot(7, waterPlots[7].getText());
                 }
                 break;
             case "wat8" :
@@ -298,6 +310,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water8.getText()) + 1;
                     waterPlots[8].setText("" + curval);
+                    farm.editWaterPlot(8, waterPlots[8].getText());
                 }
                 break;
             case "wat9" :
@@ -310,6 +323,7 @@ public class IfarmuiController implements Initializable {
                 else {
                     int curval = Integer.parseInt(water9.getText()) + 1;
                     waterPlots[9].setText("" + curval);
+                    farm.editWaterPlot(9, waterPlots[9].getText());
                 }
                 break;
         }
