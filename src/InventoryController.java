@@ -104,8 +104,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Raspberry Seed!");
-                            farm.editPlot(i, "Raspberry seed");
+                            label.setText("You planted a Raspberry Seed!");
+                            farm.editPlot(i, "Raspberry Seed");
                             empty = true;
                             game.addRaspberrySeed(-1); //reduce quantity
                             raspberrySeedQuantity.setText("" + game.getRaspberrySeedQuantity());
@@ -115,7 +115,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough raspberry seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any raspberry seeds to plant. Visit the market!");
             }
                 break;
             case "strawberryPlant" :
@@ -123,8 +123,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Strawberry Seed!");
-                            farm.editPlot(i, "Strawberry seed");
+                            label.setText("You planted a Strawberry Seed!");
+                            farm.editPlot(i, "Strawberry Seed");
                             empty = true;
                             game.addStrawberrySeed(-1); //reduce quantity
                             strawberrySeedQuantity.setText("" + game.getStrawberrySeedQuantity());
@@ -134,7 +134,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough strawberry seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any strawberry seeds to plant. Visit the market!");
                 }
                 break;
             case "passionPlant" :
@@ -142,8 +142,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Passion Fruit Seed!");
-                            farm.editPlot(i, "Passion Fruit seed");
+                            label.setText("You planted a Passion Fruit Seed!");
+                            farm.editPlot(i, "Passion Fruit Seed");
                             empty = true;
                             game.addPassionFruitSeed(-1); //reduce quantity
                             passionFruitSeedQuantity.setText("" + game.getPassionFruitSeedQuantity());
@@ -153,7 +153,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough passion fruit seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any passion fruit seeds to plant. Visit the market!");
                 }
                 break;
             case "grapePlant" :
@@ -161,8 +161,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Grape Seed!");
-                            farm.editPlot(i, "Grape seed");
+                            label.setText("You planted a Grape Seed!");
+                            farm.editPlot(i, "Grape Seed");
                             empty = true;
                             game.addGrapeSeed(-1); //reduce quantity
                             grapeSeedQuantity.setText("" + game.getGrapeSeedQuantity());
@@ -172,7 +172,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough grape seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any grape seeds to plant. Visit the market!");
                 }
                 break;
             case "watermelonPlant" :
@@ -180,8 +180,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Watermelon Seed!");
-                            farm.editPlot(i, "Watermelon seed");
+                            label.setText("You planted a Watermelon Seed!");
+                            farm.editPlot(i, "Watermelon Seed");
                             empty = true;
                             game.addWatSeed(-1); //reduce quantity
                             watSeedQ.setText("" + game.getWatSeedQ());
@@ -191,7 +191,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough watermelon seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any watermelon seeds to plant. Visit the market!");
                 }
                 break;
             case "pineapplePlant" :
@@ -199,8 +199,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Pineapple Seed!");
-                            farm.editPlot(i, "Pineapple seed");
+                            label.setText("You planted a Pineapple Seed!");
+                            farm.editPlot(i, "Pineapple Seed");
                             empty = true;
                             game.addPinSeed(-1); //reduce quantity
                             pinSeedQ.setText("" + game.getPinSeedQ());
@@ -210,7 +210,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough pineapple seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any pineapple seeds to plant. Visit the market!");
                 }
                 break;
             case "dragonPlant" :
@@ -218,8 +218,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Dragon Fruit Seed!");
-                            farm.editPlot(i, "Dragon Fruit seed");
+                            label.setText("You planted a Dragon Fruit Seed!");
+                            farm.editPlot(i, "Dragon Fruit Seed");
                             empty = true;
                             game.addDragSeed(-1); //reduce quantity
                             dragSeedQ.setText("" + game.getDragSeedQ());
@@ -229,7 +229,7 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough dragon fruit seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any dragon fruit seeds to plant. Visit the market!");
                 }
                 break;
             case "beanPlant" :
@@ -237,8 +237,8 @@ public class InventoryController implements Initializable {
                     for (int i = 0; i < plots.length; i++) {
                         String text = plots[i];;
                         if (text.compareTo("Empty") == 0) {
-                            label.setText("You planted one Bean Stalk Seed!");
-                            farm.editPlot(i, "Bean Stalk seed");
+                            label.setText("You planted a Bean Stalk Seed!");
+                            farm.editPlot(i, "Bean Stalk Seed");
                             empty = true;
                             game.addBeanSeed(-1); //reduce quantity
                             beanSeedQ.setText("" + game.getBeanSeedQ());
@@ -248,16 +248,17 @@ public class InventoryController implements Initializable {
                 }
                 else {
                     empty = true;
-                    label.setText("Oops! You don't have enough bean stalk seeds to plant. Visit the market!");
+                    label.setText("Oops! You don't have any bean stalk seeds to plant. Visit the market!");
                 }
                 break;
         }
         inventoryCapacity.setText("Inventory Capacity: "
                 + game.getTotalInventoryQuantity() + "/"
                 + game.getInventoryCapacity());
-        if (! empty) {
+        if (!empty) {
             label.setText("Oops! You don't have any empty plot spaces. Harvest some crops!");
         }
+
         label.setText(label.getText() + "\nClick out of this box to exit");
         label.setStyle(" -fx-background-color: lightgray;");
         popup.getContent().add(label);

@@ -105,6 +105,7 @@ public class IfarmuiController implements Initializable {
     @FXML
     private void harvest(ActionEvent event) throws IOException {
         int numMature = 0;
+        int numDead = 0;
         for (int i = 0; i < plots.length; i++) {
             String text = plots[i].getText();
             if (text.contains("Mature")) {
@@ -122,17 +123,28 @@ public class IfarmuiController implements Initializable {
                 } else if (lower.contains("grape")) {
                     game.addGrapeCrop(1);
                 }
+            } else if (text.contains("Dead")) {
+                numDead++;
+                farm.editPlot(i, "Empty");
+                plots[i].setText(farm.getPlots()[i]);
             }
         }
 
 
         Label label;
 
-        if (numMature == 0) {
-            label = new Label("You don't have any mature plants to harvest!");
-        } else {
+        if (numMature == 0 && numDead == 0) {
+            label = new Label("You don't have any mature plants to harvest or any dead crops to clean!");
+        } else if (numMature > 0 && numDead == 0) {
             label = new Label("You harvested " + numMature + " mature plant"
                     + (numMature == 1 ? "!" : "s!"));
+        } else if (numMature == 0 && numDead > 0) {
+            label = new Label("You cleaned " + numDead + " dead plant"
+                    + (numDead == 1 ? "!" : "s!"));
+        } else {
+            label = new Label("You harvested " + numMature + " mature plant"
+                    + (numMature == 1 ? "" : "s") + " and cleaned " + numDead
+                    + " dead plant" + (numDead == 1 ? "!" : "s!"));
         }
         label.setText(label.getText() + "\nClick out of this box to exit");
 
@@ -195,137 +207,22 @@ public class IfarmuiController implements Initializable {
         label.setTextAlignment(TextAlignment.CENTER);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         popup.setAutoHide(true);
-        switch (((Button) event.getSource()).getId()) {
-            case "wat0" :
-                if ((Integer.parseInt(water0.getText())) + 1 > 15) {
-                    plots[0].setText("Dead");
-                    farm.editPlot(0, plots[0].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water0.getText()) + 1;
-                    waterPlots[0].setText("" + curval);
-                    farm.editWaterPlot(0, waterPlots[0].getText());
-                }
-                break;
-            case "wat1" :
-                if ((Integer.parseInt(water1.getText())) + 1 > 15) {
-                    plots[1].setText("Dead");
-                    farm.editPlot(1, plots[1].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water1.getText()) + 1;
-                    waterPlots[1].setText("" + curval);
-                    farm.editWaterPlot(1, waterPlots[1].getText());
-                }
-                break;
-            case "wat2" :
-                if ((Integer.parseInt(water2.getText())) + 1 > 15) {
-                    plots[2].setText("Dead");
-                    farm.editPlot(2, plots[2].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water2.getText()) + 1;
-                    waterPlots[2].setText("" + curval);
-                    farm.editWaterPlot(2, waterPlots[2].getText());
-                }
-                break;
-            case "wat3" :
-                if ((Integer.parseInt(water3.getText())) + 1 > 15) {
-                    plots[3].setText("Dead");
-                    farm.editPlot(3, plots[3].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water3.getText()) + 1;
-                    waterPlots[3].setText("" + curval);
-                    farm.editWaterPlot(3, waterPlots[3].getText());
-                }
-                break;
-            case "wat4" :
-                if ((Integer.parseInt(water4.getText())) + 1 > 15) {
-                    plots[4].setText("Dead");
-                    farm.editPlot(4, plots[4].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water4.getText()) + 1;
-                    waterPlots[4].setText("" + curval);
-                    farm.editWaterPlot(4, waterPlots[4].getText());
-                }
-                break;
-            case "wat5" :
-                if ((Integer.parseInt(water5.getText())) + 1 > 15) {
-                    plots[5].setText("Dead");
-                    farm.editPlot(5, plots[5].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water5.getText()) + 1;
-                    waterPlots[5].setText("" + curval);
-                    farm.editWaterPlot(5, waterPlots[5].getText());
-                }
-                break;
-            case "wat6" :
-                if ((Integer.parseInt(water6.getText())) + 1 > 15) {
-                    plots[6].setText("Dead");
-                    farm.editPlot(6, plots[6].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water6.getText()) + 1;
-                    waterPlots[6].setText("" + curval);
-                    farm.editWaterPlot(6, waterPlots[6].getText());
-                }
-                break;
-            case "wat7" :
-                if ((Integer.parseInt(water7.getText())) + 1 > 15) {
-                    plots[7].setText("Dead");
-                    farm.editPlot(7, plots[7].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water7.getText()) + 1;
-                    waterPlots[7].setText("" + curval);
-                    farm.editWaterPlot(7, waterPlots[7].getText());
-                }
-                break;
-            case "wat8" :
-                if ((Integer.parseInt(water8.getText())) + 1 > 15) {
-                    plots[8].setText("Dead");
-                    farm.editPlot(8, plots[8].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water8.getText()) + 1;
-                    waterPlots[8].setText("" + curval);
-                    farm.editWaterPlot(8, waterPlots[8].getText());
-                }
-                break;
-            case "wat9" :
-                if ((Integer.parseInt(water9.getText())) + 1 > 15) {
-                    plots[9].setText("Dead");
-                    farm.editPlot(9, plots[9].getText());
-                    label.setText("You over-watered your plant and it died!");
-                    popup.show(window);
-                }
-                else {
-                    int curval = Integer.parseInt(water9.getText()) + 1;
-                    waterPlots[9].setText("" + curval);
-                    farm.editWaterPlot(9, waterPlots[9].getText());
-                }
-                break;
+
+        // get plot number to edit from the number at the end of the button clicked
+        String buttonText = ((Button) event.getSource()).getId();
+        int buttonNum = Integer.parseInt(buttonText.substring(buttonText.length() - 1));
+        // get new water level in plot after watering
+        int waterLevel = Integer.parseInt(waterPlots[buttonNum].getText()) + 1;
+        // update water level in the plot
+        farm.editWaterPlot(buttonNum, "" + waterLevel);
+        waterPlots[buttonNum].setText("" + waterLevel);
+        // if this killed a plant, kill the plant
+        if (!farm.getPlots()[buttonNum].equals("Dead") && !farm.getPlots()[buttonNum].equals("Empty") && waterLevel > 15) {
+            farm.editPlot(buttonNum, "Dead");
+            plots[buttonNum].setText("Dead");
+            label.setText("You over-watered your plant and it died!\n" +
+                    "Click out of this box to exit");
+            popup.show(window);
         }
     }
 
