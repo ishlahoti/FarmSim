@@ -120,8 +120,16 @@ public class IfarmuiController implements Initializable {
                     game.addRaspberryCrop(1);
                 } else if (lower.contains("passion fruit")) {
                     game.addPassionFruitCrop(1);
+                } else if (lower.contains("dragon fruit")) {
+                    game.addDragCrop(1);
                 } else if (lower.contains("grape")) {
                     game.addGrapeCrop(1);
+                } else if (lower.contains("watermelon")) {
+                    game.addWatCrop(1);
+                } else if (lower.contains("pineapple")) {
+                    game.addPinCrop(1);
+                } else if (lower.contains("bean stalk")) {
+                    game.addBeanCrop(1);
                 }
             } else if (text.contains("Dead")) {
                 numDead++;
@@ -215,7 +223,7 @@ public class IfarmuiController implements Initializable {
                 farm.editPlot(i, growthStage[3] + " " + this.farm.getPlantInPlot(i) + " Plant");
             }
           } else if(!farmPlot[i].contains("Empty")) {
-              farm.editPlot(i,growthStage[3] + " " + this.game.getSeed() + " Plant");
+              farm.editPlot(i,growthStage[3] + " " + this.farm.getPlantInPlot(i) + " Plant");
             }
         }
     }
@@ -244,8 +252,8 @@ public class IfarmuiController implements Initializable {
         if (!farm.getPlots()[buttonNum].equals("Dead")
                 && !farm.getPlots()[buttonNum].equals("Empty")
                 && waterLevel > 15) {
-            farm.editPlot(buttonNum, "Dead " + this.game.getSeed() + " Plant");
-            plots[buttonNum].setText("Dead " + this.game.getSeed() + " Plant");
+            farm.editPlot(buttonNum, "Dead " + this.farm.getPlantInPlot(buttonNum) + " Plant");
+            plots[buttonNum].setText("Dead " + this.farm.getPlantInPlot(buttonNum) + " Plant");
             label.setText("You over-watered your plant and it died!\n"
                     + "Click out of this box to exit.");
             popup.show(window);
