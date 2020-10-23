@@ -5,6 +5,7 @@ public class Farm {
     private String[] plots;
     private String[] waterPlots;
     private int waterPlotLevel;
+    private String plantInPlot;
 
     private Farm() {
         plots = new String[10];
@@ -44,6 +45,20 @@ public class Farm {
     public int getWaterPlotLevel(int x) {
         waterPlotLevel = Integer.parseInt(waterPlots[x]);
         return waterPlotLevel;
+    }
+
+    public String getPlantInPlot(int x) {
+        if (plots[x].contains("Seed")) {
+            return plots[x].substring(0, plots[x].length() - 5);
+        } else if (plots[x].contains("Immature")) {
+            return plots[x].substring(8, plots[x].length() - 6);
+        } else if (plots[x].contains("Mature")) {
+            return plots[x].substring(7, plots[x].length() - 6);
+        } else if (plots[x].contains("Dead")) {
+            return plots[x].substring(5, plots[x].length() - 6);
+        } else {
+            return "Empty";
+        }
     }
 
     public void editPlot(int index, String val) {

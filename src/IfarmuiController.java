@@ -206,13 +206,13 @@ public class IfarmuiController implements Initializable {
         for (int i = 0; i < farmPlot.length; i++) {
           if(farm.getWaterPlotLevel(i) > 0 && farm.getWaterPlotLevel(i) <= 15) {
             if (farmPlot[i].contains(growthStage[0])) {
-                farm.editPlot(i, growthStage[1] + " " + this.game.getSeed() + " Plant");
+                farm.editPlot(i, growthStage[1] + " " + this.farm.getPlantInPlot(i) + " Plant");
             } else if (farmPlot[i].contains(growthStage[1])) {
-                farm.editPlot(i, growthStage[2] + " " + this.game.getSeed() + " Plant");
+                farm.editPlot(i, growthStage[2] + " " + this.farm.getPlantInPlot(i) + " Plant");
             } else if (farmPlot[i].contains(growthStage[2])) {
-                farm.editPlot(i, growthStage[2] + " " + this.game.getSeed() + " Plant");
+                farm.editPlot(i, growthStage[2] + " " + this.farm.getPlantInPlot(i) + " Plant");
             } else if (farmPlot[i].contains(growthStage[3])) {
-                farm.editPlot(i, growthStage[3] + " " + this.game.getSeed() + " Plant");
+                farm.editPlot(i, growthStage[3] + " " + this.farm.getPlantInPlot(i) + " Plant");
             }
           } else if(!farmPlot[i].contains("Empty")) {
               farm.editPlot(i,growthStage[3] + " " + this.game.getSeed() + " Plant");
