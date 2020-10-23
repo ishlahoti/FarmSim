@@ -160,8 +160,6 @@ public class IfarmuiController implements Initializable {
         popup.show(window);
         popup.setAutoHide(true);
     }
-
-
     @FXML
     private void initializePlants() {
         for (int i = 0; i < plots.length; i++) {
@@ -197,6 +195,31 @@ public class IfarmuiController implements Initializable {
         }
     }
 
+    public void plotGrowthCycle(){
+        String[] growthStage = new String[4];
+        growthStage[0] = "Seed";
+        growthStage[1] = "Immature";
+        growthStage[2] = "Mature";
+        growthStage[3] = "Dead";
+        String[] farmPlot = farm.getPlots();
+
+        for (int i = 0; i < farmPlot.length; i++) {
+          if(farm.getWaterPlotLevel(i) > 0 && farm.getWaterPlotLevel(i) <= 15) {
+            if (farmPlot[i].contains(growthStage[0])) {
+                farm.editPlot(i, growthStage[1] + " " + this.game.getSeed() + " Plant");
+            } else if (farmPlot[i].contains(growthStage[1])) {
+                farm.editPlot(i, growthStage[2] + " " + this.game.getSeed() + " Plant");
+            } else if (farmPlot[i].contains(growthStage[2])) {
+                farm.editPlot(i, growthStage[2] + " " + this.game.getSeed() + " Plant");
+            } else if (farmPlot[i].contains(growthStage[3])) {
+                farm.editPlot(i, growthStage[3] + " " + this.game.getSeed() + " Plant");
+            }
+          } else if(!farmPlot[i].contains("Empty")) {
+              farm.editPlot(i,growthStage[3] + " " + this.game.getSeed() + " Plant");
+            }
+        }
+    }
+
     @FXML
     private void water(ActionEvent event) {
         Label label = new Label();
@@ -221,8 +244,8 @@ public class IfarmuiController implements Initializable {
         if (!farm.getPlots()[buttonNum].equals("Dead")
                 && !farm.getPlots()[buttonNum].equals("Empty")
                 && waterLevel > 15) {
-            farm.editPlot(buttonNum, "Dead");
-            plots[buttonNum].setText("Dead");
+            farm.editPlot(buttonNum, "Dead " + this.game.getSeed() + " Plant");
+            plots[buttonNum].setText("Dead " + this.game.getSeed() + " Plant");
             label.setText("You over-watered your plant and it died!\n"
                     + "Click out of this box to exit.");
             popup.show(window);
@@ -259,6 +282,17 @@ public class IfarmuiController implements Initializable {
     @FXML
     private void changeScreenToMarket(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Market.fxml"));
+        Parent root3 = (Parent) loader.load();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(new Scene(root3, 800, 800));
+        window.show();
+    }
+
+    @FXML
+    private void nextDay(ActionEvent event) throws IOException {
+        this.game.incrementDay();
+        this.plotGrowthCycle();
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(new Scene(root3, 800, 800));

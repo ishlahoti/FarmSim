@@ -116,7 +116,8 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
             </Button>
             </children>
         </GridPane>
-      <Button fx:id="harvest" layoutX="600" layoutY="750" onAction="#harvest" text="Harvest and Clean Plots" />
+        <Button fx:id="nextDay"  layoutX="397.0" layoutY="750.0" mnemonicParsing="false" onAction="#nextDay" text="Next Day" />
+        <Button fx:id="harvest" layoutX="600" layoutY="750" onAction="#harvest" text="Harvest and Clean Plots" />
       <Button fx:id="inventory" layoutX="564.0" layoutY="29.0" mnemonicParsing="false" onAction="#changeScreen" prefHeight="41.0" prefWidth="101.0" text="Inventory">
          <font>
             <Font name="Avenir Next Bold" size="13.0" />

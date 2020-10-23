@@ -4,6 +4,7 @@ public class Farm {
     private static Farm farm;
     private String[] plots;
     private String[] waterPlots;
+    private int waterPlotLevel;
 
     private Farm() {
         plots = new String[10];
@@ -38,6 +39,11 @@ public class Farm {
     }
     public String[] getWaterPlots() {
         return waterPlots;
+    }
+
+    public int getWaterPlotLevel(int x) {
+        waterPlotLevel = Integer.parseInt(waterPlots[x]);
+        return waterPlotLevel;
     }
 
     public void editPlot(int index, String val) {
