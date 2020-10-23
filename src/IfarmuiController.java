@@ -195,7 +195,7 @@ public class IfarmuiController implements Initializable {
         }
     }
 
-    public void plotGrowthCycle(){
+    private void plotGrowthCycle(){
         String[] growthStage = new String[4];
         growthStage[0] = "Seed";
         growthStage[1] = "Immature";
