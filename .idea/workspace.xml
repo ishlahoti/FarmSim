@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="823b109b-9fc5-4735-9503-15f6dc728872" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IfarmuiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IfarmuiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InventoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
