@@ -300,6 +300,7 @@ public class IfarmuiController implements Initializable {
     private void nextDay(ActionEvent event) throws IOException {
         this.game.incrementDay();
         this.plotGrowthCycle();
+        this.farm.evaporateWaterPlots();
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();

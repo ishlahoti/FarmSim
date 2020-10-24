@@ -74,4 +74,12 @@ public class Farm {
         waterPlots[index] = val;
     }
 
+    public void evaporateWaterPlots() {
+        for(int i = 0; i < waterPlots.length; i++) {
+            if (getWaterPlotLevel(i) > 0){
+                editWaterPlot(i, ""  + (getWaterPlotLevel(i) - 1));
+            }
+        }
+    }
+
 }
