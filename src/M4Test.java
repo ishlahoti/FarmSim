@@ -16,7 +16,6 @@ import org.loadui.testfx.controls.impl.VisibleNodesMatcher;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit.ApplicationTest;
 
-import javax.xml.soap.Text;
 import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
@@ -86,7 +85,7 @@ public class M4Test extends ApplicationTest {
         Platform.runLater(() -> startingSeed.setValue("Grape"));
         clickOn("#submit");
         String original = farm.getPlots()[0];
-        for (int i = 0; i < 7; i++){
+        for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
         }
@@ -102,7 +101,7 @@ public class M4Test extends ApplicationTest {
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
         Platform.runLater(() -> startingSeed.setValue("Grape"));
         clickOn("#submit");
-        for (int i = 0; i < 7; i++){
+        for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
         }
@@ -121,7 +120,7 @@ public class M4Test extends ApplicationTest {
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
         Platform.runLater(() -> startingSeed.setValue("Grape"));
         clickOn("#submit");
-        for (int i = 0; i < 7; i++){
+        for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
         }
@@ -144,7 +143,7 @@ public class M4Test extends ApplicationTest {
         // kill whatever is in plot 0 first so we can guarantee that it's empty before
         // planting the new grape seed
         clickOn("#submit");
-        for (int i = 0; i < 7; i++){
+        for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
         }
