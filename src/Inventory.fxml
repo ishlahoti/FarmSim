@@ -82,12 +82,12 @@
             <Label fx:id="grapeCropQ" text="0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
-      <Button fx:id="farm" layoutX="329.0" layoutY="757.0" mnemonicParsing="false" onAction="#changeScreen" text="Return To Farm">
+      <Button fx:id="goToFarm" layoutX="329.0" layoutY="757.0" mnemonicParsing="false" onAction="#changeScreen" text="Return To Farm">
          <font>
             <Font name="Avenir Next Bold" size="13.0" />
          </font>
       </Button>
-       <Button fx:id="market" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenToMarket" text="Go to Market">
+       <Button fx:id="goToMarket" layoutX="335.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeScreenToMarket" text="Go to Market">
            <font>
                <Font name="Avenir Next Bold" size="13.0" />
            </font>
