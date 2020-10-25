@@ -248,16 +248,6 @@ public class IfarmuiController implements Initializable {
         // update water level in the plot
         farm.editWaterPlot(buttonNum, "" + waterLevel);
         waterPlots[buttonNum].setText("" + waterLevel);
-        // if this killed a plant, kill the plant
-        if (!farm.getPlots()[buttonNum].equals("Dead")
-                && !farm.getPlots()[buttonNum].equals("Empty")
-                && waterLevel > 15) {
-            farm.editPlot(buttonNum, "Dead " + this.farm.getPlantInPlot(buttonNum) + " Plant");
-            plots[buttonNum].setText("Dead " + this.farm.getPlantInPlot(buttonNum) + " Plant");
-            label.setText("You over-watered your plant and it died!\n"
-                    + "Click out of this box to exit.");
-            popup.show(window);
-        }
     }
 
 
