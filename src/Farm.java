@@ -2,12 +2,18 @@ import java.util.Random;
 
 public class Farm {
     private static Farm farm;
+    private Game game;
     private String[] plots;
     private String[] waterPlots;
     private int waterPlotLevel;
     private String plantInPlot;
 
+    public static void reset() {
+        farm = null;
+    }
+
     private Farm() {
+        game = Game.factory();
         plots = new String[10];
         waterPlots = new String[10];
         initializePlots();
@@ -21,10 +27,11 @@ public class Farm {
     }
 
     private void initializePlots() {
+        String startingSeed = game.getSeed();
         String[] plantTypes = new String[3];
-        plantTypes[0] = "seed";
-        plantTypes[1] = "immature";
-        plantTypes[2] = "mature";
+        plantTypes[0] = startingSeed + " " + "Seed";
+        plantTypes[1] = "Immature " + startingSeed + " Plant";
+        plantTypes[2] = "Mature " + startingSeed + " Plant";
 
         for (int i = 0; i < plots.length; i++) {
             plots[i] = plantTypes[(new Random()).nextInt(plantTypes.length)];

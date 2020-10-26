@@ -3,6 +3,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
@@ -41,6 +42,8 @@ public class M4Test extends ApplicationTest {
 
     @After
     public void tearDown() throws Exception {
+        Game.reset();
+        Farm.reset();
         FxToolkit.hideStage();
         release(new KeyCode[]{});
         release(new MouseButton[]{});
@@ -48,7 +51,6 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkWaterIncrease() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
@@ -56,14 +58,12 @@ public class M4Test extends ApplicationTest {
         clickOn("#submit");
         GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#wat0");
-        int actual = farm.getWaterPlotLevel(0);
+        int actual = Integer.parseInt(((Label) GuiTest.find("#water0")).getText());
         assertEquals(11, actual);
-        farm.editWaterPlot(0, "10");
     }
 
     @Test
     public void checkWaterDecrease() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
@@ -71,31 +71,27 @@ public class M4Test extends ApplicationTest {
         clickOn("#submit");
         GuiTest.waitUntil("#nextDay", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#nextDay");
-        int actual = farm.getWaterPlotLevel(0);
+        int actual = Integer.parseInt(((Label) GuiTest.find("#water0")).getText());
         assertEquals(9, actual);
-        farm.editWaterPlot(0, "10");
     }
 
     @Test
     public void checkPlantSurvivesUntilNextDay() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
         Platform.runLater(() -> startingSeed.setValue("Grape"));
         clickOn("#submit");
-        String original = farm.getPlots()[0];
+        String original = ((Label) GuiTest.find("#text0")).getText();
         for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
         }
-        String current = farm.getPlots()[0];
+        String current = ((Label) GuiTest.find("#text0")).getText();
         assertEquals(original, current);
-        farm.editWaterPlot(0, "10");
     }
     @Test
     public void checkPlantDiesAfterNextDay() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
@@ -107,14 +103,12 @@ public class M4Test extends ApplicationTest {
         }
         GuiTest.waitUntil("#nextDay", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#nextDay");
-        String actual = farm.getPlots()[0].substring(0, 4);
+        String actual = ((Label) GuiTest.find("#text0")).getText().substring(0, 4);
         assertEquals("Dead", actual);
-        farm.editWaterPlot(0, "10");
     }
 
     @Test
     public void checkDeadPlantIsCleared() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
@@ -128,14 +122,12 @@ public class M4Test extends ApplicationTest {
         clickOn("#nextDay");
         GuiTest.waitUntil("#harvest", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#harvest");
-        String actual = farm.getPlots()[0];
+        String actual = ((Label) GuiTest.find("#text0")).getText();
         assertEquals("Empty", actual);
-        farm.editWaterPlot(0, "10");
     }
 
     @Test
     public void checkPlantSeed() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
@@ -156,13 +148,15 @@ public class M4Test extends ApplicationTest {
         clickOn("#inventory");
         GuiTest.waitUntil("#grapePlant", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#grapePlant");
-        assertEquals("Grape Seed", farm.getPlots()[0]);
-        farm.editWaterPlot(0, "10");
+        clickOn("#grapePlant");
+        clickOn("#goToFarm");
+        GuiTest.waitUntil("#text0", Matchers.is(VisibleNodesMatcher.visible()));
+        String actual = ((Label) GuiTest.find("#text0")).getText();
+        assertEquals("Grape Seed", actual);
     }
 
     @Test
     public void checkPlantGrows() {
-        Farm farm = Farm.factory();
         TextField name = (TextField) GuiTest.find("#name");
         name.setText("Name");
         ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
@@ -195,7 +189,7 @@ public class M4Test extends ApplicationTest {
         clickOn("#goToFarm");
         GuiTest.waitUntil("#nextDay", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#nextDay");
-        assertEquals("Immature Grape Plant", farm.getPlots()[0]);
-        farm.editWaterPlot(0, "10");
+        String actual = ((Label) GuiTest.find("#text0")).getText();
+        assertEquals("Immature Grape Plant", actual);
     }
 }

@@ -171,23 +171,8 @@ public class IfarmuiController implements Initializable {
     @FXML
     private void initializePlants() {
         for (int i = 0; i < plots.length; i++) {
-            String type = farm.getPlots()[i];
-            switch (type) {
-            case "seed":
-                plots[i].setText(this.game.getSeed() + " Seed");
-                break;
-            case "immature":
-                plots[i].setText("Immature " + this.game.getSeed() + " Plant");
-                break;
-            case "mature":
-                plots[i].setText("Mature " + this.game.getSeed() + " Plant");
-                break;
-            default:
-                plots[i].setText("Empty");
-                break;
-            }
+            plots[i].setText(farm.getPlots()[i]);
             waterPlots[i].setText("" + 10);
-            farm.editPlot(i, plots[i].getText());
         }
     }
 

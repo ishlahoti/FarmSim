@@ -55,6 +55,9 @@ public class Game {
 
         return game;
     }
+    public static void reset() {
+        game = null;
+    }
 
     public int getStartingSeedQuantity() {
         return startingSeedQuantity;
