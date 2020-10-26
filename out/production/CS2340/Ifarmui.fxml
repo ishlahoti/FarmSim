@@ -173,7 +173,7 @@ TODO: add layout nodes. player enters name/selects starting season/seed/game dif
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
       </Label>
-      <Label fx:id="watLabel9" layoutX="638.0" layoutY="450.0" prefHeight="16.0" prefWidth="80.0" style="-fx-background-color: blue;" text="9:" textFill="WHITE">
+      <Label fx:id="watLabel9" layoutX="638.0" layoutY="450.0" prefHeight="16.0" prefWidth="80.0" style="-fx-background-color: blue;" text="Water Level:" textFill="WHITE">
          <font>
             <Font name="Arial Rounded MT Bold" size="13.0" />
          </font>
