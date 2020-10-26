@@ -38,6 +38,12 @@ public class M4Test extends ApplicationTest {
     public void setUp() throws Exception {
         clickOn("#start");
         GuiTest.waitUntil("#submit", Matchers.is(VisibleNodesMatcher.visible()));
+        GuiTest.waitUntil("#name", Matchers.is(VisibleNodesMatcher.visible()));
+        TextField name = GuiTest.find("#name");
+        name.setText("Name");
+        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
+        Platform.runLater(() -> startingSeed.setValue("Grape"));
+        clickOn("#submit");
     }
 
     @After
@@ -51,11 +57,6 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkWaterIncrease() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
-        clickOn("#submit");
         GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#wat0");
         int actual = Integer.parseInt(((Label) GuiTest.find("#water0")).getText());
@@ -64,11 +65,6 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkWaterDecrease() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
-        clickOn("#submit");
         GuiTest.waitUntil("#nextDay", Matchers.is(VisibleNodesMatcher.visible()));
         clickOn("#nextDay");
         int actual = Integer.parseInt(((Label) GuiTest.find("#water0")).getText());
@@ -77,11 +73,7 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkPlantSurvivesUntilNextDay() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
-        clickOn("#submit");
+        GuiTest.waitUntil("#text0", Matchers.is(VisibleNodesMatcher.visible()));
         String original = ((Label) GuiTest.find("#text0")).getText();
         for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
@@ -92,11 +84,6 @@ public class M4Test extends ApplicationTest {
     }
     @Test
     public void checkPlantDiesAfterNextDay() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
-        clickOn("#submit");
         for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
@@ -109,11 +96,6 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkDeadPlantIsCleared() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
-        clickOn("#submit");
         for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
@@ -128,13 +110,8 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkPlantSeed() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
         // kill whatever is in plot 0 first so we can guarantee that it's empty before
         // planting the new grape seed
-        clickOn("#submit");
         for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
@@ -157,13 +134,8 @@ public class M4Test extends ApplicationTest {
 
     @Test
     public void checkPlantGrows() {
-        TextField name = (TextField) GuiTest.find("#name");
-        name.setText("Name");
-        ChoiceBox<String> startingSeed = GuiTest.find("#startingSeed");
-        Platform.runLater(() -> startingSeed.setValue("Grape"));
         // kill whatever is in plot 0 first so we can guarantee that it's empty before
         // planting the new grape seed
-        clickOn("#submit");
         for (int i = 0; i < 7; i++) {
             GuiTest.waitUntil("#wat0", Matchers.is(VisibleNodesMatcher.visible()));
             clickOn("#wat0");
