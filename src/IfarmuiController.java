@@ -66,10 +66,32 @@ public class IfarmuiController implements Initializable {
     private Label water8;
     @FXML
     private Label water9;
+    @FXML
+    private Label fert0;
+    @FXML
+    private Label fert1;
+    @FXML
+    private Label fert2;
+    @FXML
+    private Label fert3;
+    @FXML
+    private Label fert4;
+    @FXML
+    private Label fert5;
+    @FXML
+    private Label fert6;
+    @FXML
+    private Label fert7;
+    @FXML
+    private Label fert8;
+    @FXML
+    private Label fert9;
 
     private Label[] plots;
 
     private Label[] waterPlots;
+
+    private Label[] fertPlots;
 
     @FXML
     private GridPane grid;
@@ -173,6 +195,7 @@ public class IfarmuiController implements Initializable {
         for (int i = 0; i < plots.length; i++) {
             plots[i].setText(farm.getPlots()[i]);
             waterPlots[i].setText("" + 10);
+            fertPlots[i].setText("" + 0);
         }
     }
 
@@ -186,45 +209,46 @@ public class IfarmuiController implements Initializable {
             String type = farm.getWaterPlots()[i];
             waterPlots[i].setText(type);
         }
+        for (int i = 0; i < fertPlots.length; i++) {
+            String type = farm.getFertilizePlots()[i];
+            fertPlots[i].setText(type);
+        }
     }
 
     private void plotGrowthCycle() {
-        String[] growthStage = new String[4];
+        String[] growthStage = new String[6];
         growthStage[0] = "Seed";
-        growthStage[1] = "Immature";
-        growthStage[2] = "Mature";
-        growthStage[3] = "Dead";
+        growthStage[1] = "Sprout";
+        growthStage[2] = "Immature";
+        growthStage[3] = "Ripening";
+        growthStage[4] = "Mature";
+        growthStage[5] = "Dead";
         String[] farmPlot = farm.getPlots();
 
         for (int i = 0; i < farmPlot.length; i++) {
             if (farm.getWaterPlotLevel(i) > 0 && farm.getWaterPlotLevel(i) <= 15) {
                 if (farmPlot[i].contains(growthStage[0])) {
-                    farm.editPlot(i, growthStage[1] + " " + this.farm.getPlantInPlot(i) + " Plant");
+                    farm.editPlot(i, this.farm.getPlantInPlot(i) + " " + growthStage[1]);
                 } else if (farmPlot[i].contains(growthStage[1])) {
                     farm.editPlot(i, growthStage[2] + " " + this.farm.getPlantInPlot(i) + " Plant");
                 } else if (farmPlot[i].contains(growthStage[2])) {
-                    farm.editPlot(i, growthStage[2] + " " + this.farm.getPlantInPlot(i) + " Plant");
-                } else if (farmPlot[i].contains(growthStage[3])) {
                     farm.editPlot(i, growthStage[3] + " " + this.farm.getPlantInPlot(i) + " Plant");
+                } else if (farmPlot[i].contains(growthStage[3])) {
+                    farm.editPlot(i, growthStage[4] + " " + this.farm.getPlantInPlot(i) + " Plant");
+                } else if (farmPlot[i].contains(growthStage[4])) {
+                    farm.editPlot(i, growthStage[4] + " " + this.farm.getPlantInPlot(i) + " Plant");
+                }
+                else if (farmPlot[i].contains(growthStage[5])) {
+                    farm.editPlot(i, growthStage[5] + " " + this.farm.getPlantInPlot(i) + " Plant");
                 }
             } else if (!farmPlot[i].contains("Empty")) {
-                farm.editPlot(i, growthStage[3] + " " + this.farm.getPlantInPlot(i) + " Plant");
+                farm.editPlot(i, growthStage[5] + " " + this.farm.getPlantInPlot(i) + " Plant");
             }
         }
     }
 
     @FXML
     private void water(ActionEvent event) {
-        Label label = new Label();
-        Popup popup = new Popup();
-        label.setStyle(" -fx-background-color: black;");
-        label.setTextFill(Color.WHITE);
-        popup.getContent().add(label);
-        label.setAlignment(Pos.TOP_CENTER);
-        label.setTextAlignment(TextAlignment.CENTER);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        popup.setAutoHide(true);
-
         // get plot number to edit from the number at the end of the button clicked
         String buttonText = ((Button) event.getSource()).getId();
         int buttonNum = Integer.parseInt(buttonText.substring(buttonText.length() - 1));
@@ -235,6 +259,18 @@ public class IfarmuiController implements Initializable {
         waterPlots[buttonNum].setText("" + waterLevel);
     }
 
+    @FXML
+    private void fertilize(ActionEvent event) {
+        // get plot number to edit from the number at the end of the button clicked
+        String buttonText = ((Button) event.getSource()).getId();
+        int buttonNum = Integer.parseInt(buttonText.substring(buttonText.length() - 1));
+        // get new water level in plot after watering
+        int fertLevel = Integer.parseInt(fertPlots[buttonNum].getText()) + 1;
+        // update water level in the plot
+        farm.editFertilizePlot(buttonNum, "" + fertLevel);
+        fertPlots[buttonNum].setText("" + fertLevel);
+    }
+
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
         this.day.setText("Day " + this.game.getDay());
@@ -242,6 +278,7 @@ public class IfarmuiController implements Initializable {
         plots = new Label[]{text0, text1, text2, text3, text4, text5, text6, text7, text8, text9};
         waterPlots = new Label[]{water0, water1, water2, water3, water4, water5, water6, water7,
                                  water8, water9};
+        fertPlots = new Label[]{fert0, fert1, fert2, fert3, fert4, fert5, fert6, fert7, fert8, fert9};
         if (!alreadyExecuted) {
             this.initializePlants();
             difficultyLabel();
@@ -276,6 +313,7 @@ public class IfarmuiController implements Initializable {
         this.game.incrementDay();
         this.plotGrowthCycle();
         this.farm.evaporateWaterPlots();
+        this.farm.evaporateFertilizePlots();
         FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Ifarmui.fxml"));
         Parent root3 = (Parent) loader.load();
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
