@@ -125,7 +125,7 @@ public class Farm {
     public void evaporateFertilizePlots() {
         for (int i = 0; i < fertilizePlots.length; i++) {
             if (getFertilizeLevel(i) > 0) {
-                editWaterPlot(i, "" + (getWaterPlotLevel(i) - 1));
+                editFertilizePlot(i, "" + (getFertilizeLevel(i) - 1));
             }
         }
     }
